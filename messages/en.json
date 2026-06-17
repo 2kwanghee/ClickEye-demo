@@ -645,7 +645,7 @@
           "description": "Choose from AI-generated solution candidates"
         },
         "pm-recommendation": {
-          "label": "PM recommendation",
+          "label": "PM match",
           "description": "AI analyzes the optimal PM"
         },
         "pm-selection": {

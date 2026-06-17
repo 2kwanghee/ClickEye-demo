@@ -167,9 +167,9 @@
         "loadingDesc": "Searching for PM profiles optimized for your prototype",
         "loadingStep1": "Analyzing prototype requirements...",
         "loadingStep2": "Matching PM profiles...",
-        "loadingStep3": "Finalizing optimal PM selection...",
+        "loadingStep3": "Selecting the optimal PM...",
         "emptyState": "No recommended PM profiles available",
-        "recommendBanner": "AI has recommended the best PM based on your selected prototype. Higher match rates indicate better project success probability.",
+        "recommendBanner": "AI has recommended the best PM based on your selected prototype. A higher match rate indicates a greater chance of project success.",
         "compositionLabel": "Selected PM composition",
         "listAriaLoading": "Loading PM profiles",
         "listAriaLabel": "PM profile list"
@@ -241,7 +241,7 @@
         "wslStep3": "Set username and password, then you're done",
         "wslGuideLink": "Open official installation guide →",
         "wsl2Desc": "Windows Subsystem for Linux 2 — Claude Code officially recommended environment",
-        "windowsDesc": "Direct execution via PowerShell / cmd",
+        "windowsDesc": "Run directly in PowerShell / cmd",
         "macosDesc": "zsh / bash terminal",
         "linuxDesc": "Ubuntu, Debian, Fedora, etc."
       }
@@ -250,7 +250,7 @@
       "env": {
         "authTitle": "Claude Authentication",
         "authApiKeyLabel": "API Key",
-        "authApiKeyDesc": "Enter the sk-ant-... key issued from Anthropic Console directly.",
+        "authApiKeyDesc": "Directly enter the sk-ant-... key you generated in the Anthropic Console.",
         "authOAuthLabel": "Browser OAuth (claude login)",
         "authOAuthDesc": "For Claude Pro/Max subscribers only. When you run bash start.sh, claude login will proceed automatically.",
         "oauthNote": "ANTHROPIC_API_KEY will not be included in .env. Browser login will start automatically when you run bash start.sh.",
@@ -299,9 +299,9 @@
         "desc": "Compare the cost of building the same solution with traditional staffing vs. ClickEye.",
         "baselineCard": "Traditional Staffing",
         "clickeyeCard": "With ClickEye",
-        "timeSuffix": "estimated",
+        "timeSuffix": "required",
         "savingsLabel": "Estimated Savings",
-        "savingsRateLabel": "Savings Rate",
+        "savingsRateLabel": "Savings rate",
         "traditionalLabel": "Traditional",
         "calcFailed": "Failed to calculate ROI",
         "breakdownTitle": "Role Breakdown",
@@ -367,7 +367,7 @@
         "sectionRoi": "ROI Comparison Summary",
         "recalcBtn": "Recalculate",
         "baselineCost": "Traditional staffing cost",
-        "clickeyeCost": "ClickEye introduction cost",
+        "clickeyeCost": "ClickEye adoption cost",
         "savingsAmount": "Estimated savings",
         "savingsRate": "Savings rate",
         "formulaVersion": "Formula version:",
@@ -390,7 +390,7 @@
         "solutionTypeFullstack": "Fullstack",
         "solutionTypeInternalTool": "Internal Tool",
         "solutionTypeCustom": "Custom",
-        "notSet": "Not set",
+        "notSet": "Not configured",
         "validating": "Validating...",
         "deferredPlaceholder": "Enter value (alphanumeric)",
         "stepNavAriaLabel": "Go to {label} step",
@@ -411,7 +411,7 @@
     },
     "metricBadges": {
       "weeksUnit": "w",
-      "personsUnit": "",
+      "personsUnit": "ppl",
       "maintenance": {
         "low": "Low maintenance",
         "medium": "Medium maintenance",
@@ -548,7 +548,7 @@
       },
       "companyDescription": {
         "label": "Company description",
-        "optional": "(optional)",
+        "optional": "(Optional)",
         "placeholder": "Describe your company background, team structure, tech level, etc.",
         "max1000": "Must be 1,000 characters or less"
       },
@@ -558,7 +558,7 @@
         "placeholder": "e.g. We want to automate our customer data management currently handled in Excel. We need a CRM system for 10 sales team members, ideally integrated with Slack...",
         "required": "Please enter at least 50 characters",
         "max2000": "Must be 2,000 characters or less",
-        "minHint": "({remaining} more)"
+        "minHint": "({remaining} more characters)"
       },
       "autoDecompose": {
         "title": "ClickEye Auto Analysis",
@@ -570,7 +570,7 @@
     },
     "step2": {
       "starting": "Preparing...",
-      "completed": "Prototypes generated!",
+      "completed": "Prototype generation complete!",
       "generating": "AI is designing solution prototypes",
       "counterAriaLabel": "{ready} of {total} completed",
       "progressAriaLabel": "Prototype generation progress",
@@ -757,7 +757,7 @@
           "fintech": "Finance / Fintech",
           "ecommerce": "E-commerce / Retail",
           "healthcare": "Healthcare / Medical",
-          "education": "Education / Edtech",
+          "education": "Education / Edutech",
           "manufacturing": "Manufacturing",
           "logistics": "Logistics / Delivery",
           "marketing": "Marketing / Advertising",
@@ -773,7 +773,7 @@
         "companySizeMap": {
           "startup": "Startup",
           "small": "Small",
-          "medium": "Small-medium",
+          "medium": "Medium",
           "mid-large": "Mid-large",
           "enterprise": "Enterprise"
         },
@@ -877,7 +877,7 @@
         "unknownError": "An unknown error occurred.",
         "retry": "Try again",
         "readyMessage": "Analysis complete. Review the recommendations in the next step.",
-        "missingConnection": "GitHub connection or repository selection is missing. Please go back to the previous step.",
+        "missingConnection": "GitHub connection or repository selection is missing. Please return to the previous step.",
         "createSessionFail": "Failed to create analysis session",
         "statusFail": "Failed to fetch status"
       },
@@ -1028,7 +1028,7 @@
       }
     },
     "maturityResult": {
-      "viewPresets": "View Recommended Presets",
+      "viewPresets": "View recommended presets",
       "configureManually": "Configure manually"
     },
     "tour": {
@@ -1143,7 +1143,7 @@
       "statusArchived": "Archived",
       "createdAt": "Created: {date}",
       "statusMeta": "Status: {status}",
-      "configSummary": "Configuration Summary",
+      "configSummary": "Configuration summary",
       "labelCompany": "Company",
       "labelSolution": "Solution",
       "labelAgents": "Agents",
@@ -1297,7 +1297,7 @@
       "colStatus": "Status",
       "colJoinedAt": "Joined",
       "colActions": "Actions",
-      "deleteConfirm": "Are you sure you want to remove?",
+      "deleteConfirm": "Are you sure you want to remove this member?",
       "confirmBtn": "Confirm",
       "removeTitle": "Remove member",
       "statusActive": "Active",
@@ -1325,7 +1325,7 @@
       "apiKeyLabel": "Linear API key",
       "apiKeyKeepEmpty": "(leave empty to keep current)",
       "teamIdLabel": "Team ID",
-      "apiKeyHelp": "Issued from Linear → Settings → API → Personal API keys",
+      "apiKeyHelp": "Get from Linear → Settings → API → Personal API keys",
       "teamIdHelp": "Linear → Settings → Workspace → Teams → Click the team name → Copy ID",
       "webhookSectionTitle": "Webhook configuration",
       "webhookSectionNote": "(for real-time Claude trigger)",
@@ -1370,7 +1370,7 @@
       "apiKeyCardTitle": "API Key",
       "apiKeyCardDescription": "Used when 'API Key' mode is selected in the wizard. It is automatically injected into the ZIP's .env as ANTHROPIC_API_KEY.",
       "apiKeyInvalid": "Invalid format (must start with sk-ant-... and be at least 20 characters)",
-      "apiKeyExternalLink": "Issue from console.anthropic.com → API Keys (sk-ant-... format)",
+      "apiKeyExternalLink": "Get from console.anthropic.com → API Keys (sk-ant-... format)",
       "apiKeyHelper": "The key is stored on the server with Fernet encryption. When analyzing solution blueprints in the wizard, this key is used first and credits from your own account are consumed before the server key.",
       "oauthNoRegistrationTitle": "No separate registration required",
       "oauthNoRegistrationDesc": "When 'OAuth Browser' mode is selected in the wizard, no credentials are stored in the ClickEye cloud.",
@@ -1484,7 +1484,7 @@
       "mcpsRegistry": "MCP registry",
       "prototypeCatalog": "Prototype catalog",
       "prototypeTags": "Prototype tags",
-      "roiStandards": "ROI standards",
+      "roiStandards": "ROI cost & effort",
       "globalSettings": "Global settings",
       "recommendations": "Recommendation log",
       "audit": "Audit log"
@@ -1710,7 +1710,7 @@
         "next": "Next"
       },
       "list": {
-        "title": "PM profile management",
+        "title": "PM Profile Management",
         "subtitle": "Create and edit AI PM profiles (admin only)",
         "createPm": "Create PM",
         "createTitle": "Create new PM profile",
@@ -1755,7 +1755,7 @@
         "addCount": "Add ({count})"
       },
       "markdownPane": {
-        "title": "Full MD editing",
+        "title": "Edit full MD",
         "subtitle": "Full markdown including YAML frontmatter",
         "note": "Content below <code>---bio---</code> is used for Claude PM recommendations. Click Save to apply."
       }
@@ -1925,7 +1925,7 @@
       "title": "Contract Management",
       "subtitle": "Manage central contracts and deploy them to projects",
       "newContract": "New Contract",
-      "createFirst": "Create first contract",
+      "createFirst": "Create First Contract",
       "emptyState": "No contracts registered",
       "loadError": "Failed to load the contract list.",
       "types": {
@@ -2034,19 +2034,19 @@
       "notFound": "Customer not found",
       "employeeCount": "{size} employees",
       "mainProduct": "Main product: {product}",
-      "managerPm": "PM in charge: {name}",
+      "managerPm": "Assigned PM: {name}",
       "filter": {
         "allStatuses": "All statuses"
       },
       "status": {
         "active": "Active",
         "paused": "Paused",
-        "archived": "Archived"
+        "archived": "Ended"
       },
       "actions": {
         "pause": "Pause",
         "resume": "Resume",
-        "archive": "Archive"
+        "archive": "End"
       },
       "card": {
         "projectCount": "{count} projects",
@@ -2474,7 +2474,7 @@
   },
   "credentials": {
     "card": {
-      "daysUntilExpiry": "{days} day(s) to expiry",
+      "daysUntilExpiry": "{days} day(s) until expiry",
       "saveSuccess": "{title} saved.",
       "saveFail": "Failed to save.",
       "deleteSuccess": "{title} deleted.",
@@ -2501,7 +2501,7 @@
       "steps": {
         "step1Label": "1. Download .env or re-download the full ZIP",
         "step1Detail": "Click the per-project button below.",
-        "step2Label": "2. Overwrite the project root with the downloaded .env file",
+        "step2Label": "2. Place the downloaded .env file in the project root (overwriting the existing one)",
         "step3Label": "3. Run the refresh script",
         "step4Label": "4. (Optional) Restart any open Claude Code session",
         "step4Detail": "Ctrl+C → claude (from the project root)"

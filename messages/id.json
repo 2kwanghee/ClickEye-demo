@@ -155,7 +155,7 @@
         "complete": "Analisis rekomendasi PM selesai!",
         "progressLabel": "Progres rekomendasi PM",
         "cardsLabel": "Status rekomendasi PM",
-        "nextHint": "Klik tombol Next di bawah untuk memilih PM.",
+        "nextHint": "Klik tombol Berikutnya di bawah untuk memilih PM.",
         "failTitle": "Analisis rekomendasi PM gagal",
         "failDesc": "Terjadi kesalahan sementara. Silakan coba lagi.",
         "retry": "Coba lagi",
@@ -257,7 +257,7 @@
         "requiredKeysTitle": "API Key yang Diperlukan",
         "requiredKeysSummary": "({satisfied}/{total} dikonfigurasi)",
         "guideLink": "Panduan Penerbitan",
-        "statusSet": "Diatur",
+        "statusSet": "Dikonfigurasi",
         "statusDeferred": "Masukkan nanti",
         "statusRequired": "Wajib",
         "editBtn": "Ubah",
@@ -265,7 +265,7 @@
         "laterBtn": "Nanti",
         "cancelBtn": "Batal",
         "saveBtn": "Simpan",
-        "nonAsciiWarning": "Karakter non-ASCII (Korea, emoji, dll.) otomatis dihapus. Masukkan hanya huruf dan angka Inggris.",
+        "nonAsciiWarning": "Karakter non-ASCII (Korea, emoji, dll.) otomatis dihapus. Masukkan hanya huruf Latin dan angka.",
         "apiKeyNeeded": "API Key Diperlukan",
         "setupGuideBtn": "Panduan Penyiapan",
         "missingKeysAlert": "{count} key wajib belum dikonfigurasi. Masukkan nilai atau tandai sebagai \"Masukkan nanti\".",
@@ -299,7 +299,7 @@
         "desc": "Bandingkan biaya membangun solusi yang sama dengan perekrutan tradisional dibandingkan ClickEye.",
         "baselineCard": "Perekrutan Tradisional",
         "clickeyeCard": "Dengan ClickEye",
-        "timeSuffix": "perkiraan",
+        "timeSuffix": "diperlukan",
         "savingsLabel": "Perkiraan Penghematan",
         "savingsRateLabel": "Tingkat Penghematan",
         "traditionalLabel": "Tradisional",
@@ -375,7 +375,7 @@
         "deferredDesc": "Ini adalah key yang Anda pilih untuk dimasukkan nanti. Masukkan sekarang atau edit file .env secara langsung setelah membuat proyek.",
         "deferredSaveBtn": "Simpan",
         "allConfirmed": "Semua pengaturan dikonfirmasi",
-        "proceedHint": "Klik \"Proceed\" untuk membuat proyek Anda",
+        "proceedHint": "Klik \"Lanjutkan\" untuk membuat proyek Anda",
         "businessTypeInternal": "Alat Internal",
         "industryIt": "IT/Software",
         "industryFintech": "Fintech/Keuangan",
@@ -390,7 +390,7 @@
         "solutionTypeFullstack": "Fullstack",
         "solutionTypeInternalTool": "Alat Internal",
         "solutionTypeCustom": "Kustom",
-        "notSet": "Belum diatur",
+        "notSet": "Belum dikonfigurasi",
         "validating": "Memvalidasi...",
         "deferredPlaceholder": "Masukkan nilai (alfanumerik)",
         "stepNavAriaLabel": "Pergi ke langkah {label}",
@@ -411,7 +411,7 @@
     },
     "metricBadges": {
       "weeksUnit": "mgg",
-      "personsUnit": "",
+      "personsUnit": "orang",
       "maintenance": {
         "low": "Pemeliharaan rendah",
         "medium": "Pemeliharaan sedang",
@@ -578,7 +578,7 @@
       "cardGeneratingAriaLabel": "Membuat prototipe",
       "cardReadyAriaLabel": "Prototipe \"{name}\" siap",
       "waitingHint": "Ini biasanya memakan waktu 30 detik hingga 1 menit. Mohon tunggu.",
-      "doneHint": "Klik tombol <strong>Next</strong> di bawah untuk meninjau prototipe.",
+      "doneHint": "Klik tombol <strong>Berikutnya</strong> di bawah untuk meninjau prototipe.",
       "disabled": {
         "title": "Pratinjau langsung tidak tersedia",
         "description": "Fitur pratinjau langsung saat ini dinonaktifkan.",
@@ -749,7 +749,7 @@
         "confirm": "Semua pengaturan selesai.",
         "matching": "{score}% cocok",
         "countValue": "{count}",
-        "envCountValue": "{count} diatur",
+        "envCountValue": "{count} dikonfigurasi",
         "savings": "Penghematan",
         "savingsRatio": "Tingkat penghematan",
         "industryMap": {
@@ -773,7 +773,7 @@
         "companySizeMap": {
           "startup": "Startup",
           "small": "Kecil",
-          "medium": "Kecil-menengah",
+          "medium": "Menengah",
           "mid-large": "Menengah-besar",
           "enterprise": "Enterprise"
         },
@@ -804,7 +804,7 @@
         },
         "navigation": {
           "title": "Navigasi langkah",
-          "content": "Kembali ke langkah sebelumnya atau maju. Setelah semua kolom wajib terisi, tombol Next akan aktif."
+          "content": "Kembali ke langkah sebelumnya atau maju. Setelah semua kolom wajib terisi, tombol Berikutnya akan aktif."
         }
       },
       "locale": {
@@ -1076,7 +1076,7 @@
     },
     "status": {
       "completed": "Selesai",
-      "generating": "Menghasilkan",
+      "generating": "Sedang dibuat",
       "pending": "Tertunda",
       "failed": "Gagal"
     },
@@ -1085,7 +1085,7 @@
       "resumeDesc": "Anda dapat melanjutkan sesi wizard sebelumnya atau memulai yang baru.",
       "noRequest": "(Tidak ada permintaan)",
       "sessionCompleted": "Prototipe dihasilkan",
-      "sessionGenerating": "Menghasilkan",
+      "sessionGenerating": "Sedang dibuat",
       "sessionPending": "Tertunda",
       "startNew": "Mulai baru",
       "sessionDeleteAria": "Hapus sesi",
@@ -1227,7 +1227,7 @@
       "usedLabel": "Digunakan",
       "thanks": "Terima kasih atas umpan balik Anda. Ini membantu kami meningkatkan PM kami.",
       "like": "Suka",
-      "dislike": "Kurang bagus",
+      "dislike": "Tidak suka",
       "commentPlaceholder": "Beri tahu kami apa yang dilakukan PM ini dengan baik dan apa yang bisa ditingkatkan. Ini sangat membantu kami.",
       "submitting": "Mengirim...",
       "submit": "Kirim umpan balik"
@@ -1261,7 +1261,7 @@
     "contracts": {
       "loading": "Memuat...",
       "active": "Aktif",
-      "inactive": "Tidak aktif",
+      "inactive": "Nonaktif",
       "editCancelAria": "Batalkan pengeditan",
       "editOverrideAria": "Ubah override",
       "updatedAt": "Diperbarui: {date}",
@@ -1484,7 +1484,7 @@
       "mcpsRegistry": "Registry MCP",
       "prototypeCatalog": "Katalog Prototipe",
       "prototypeTags": "Tag Prototipe",
-      "roiStandards": "Standar ROI",
+      "roiStandards": "Tarif & Effort ROI",
       "globalSettings": "Pengaturan global",
       "recommendations": "Log rekomendasi",
       "audit": "Log audit"
@@ -1906,7 +1906,7 @@
       "valuePlaceholder": "mis. 900000",
       "effortByRole": "Effort per peran (hari)",
       "currencyValue": "{value} KRW",
-      "daysValue": "{key}:{value}h"
+      "daysValue": "{key}:{value} hari"
     },
     "markdownEditor": {
       "edit": "Ubah",
@@ -2041,12 +2041,12 @@
       "status": {
         "active": "Aktif",
         "paused": "Dijeda",
-        "archived": "Diarsipkan"
+        "archived": "Ditutup"
       },
       "actions": {
         "pause": "Jeda",
         "resume": "Lanjutkan",
-        "archive": "Arsipkan"
+        "archive": "Tutup"
       },
       "card": {
         "projectCount": "{count} proyek",
@@ -2310,9 +2310,9 @@
       },
       "relative": {
         "justNow": "Baru saja",
-        "minutesAgo": "{count} mnt lalu",
+        "minutesAgo": "{count} menit lalu",
         "hoursAgo": "{count} jam lalu",
-        "daysAgo": "{count} hr lalu"
+        "daysAgo": "{count} hari lalu"
       }
     },
     "artifactStatus": {
@@ -2350,7 +2350,7 @@
       "emptyState": "Belum ada data fase",
       "sampleCount": "Total {count} sampel",
       "duration": {
-        "seconds": "{value}d",
+        "seconds": "{value}dtk",
         "minutes": "{value}mnt",
         "hours": "{value}j"
       },
@@ -2371,7 +2371,7 @@
       "title": "Linimasa proyek",
       "emptyState": "Belum ada riwayat fase",
       "duration": {
-        "seconds": "{value}d",
+        "seconds": "{value}dtk",
         "minutes": "{value}mnt",
         "hours": "{hours}j",
         "hoursMinutes": "{hours}j {minutes}mnt"
@@ -2411,7 +2411,7 @@
       "automated": "Otomasi ClickEye",
       "savings": "{percent}% waktu hemat",
       "duration": {
-        "seconds": "{value}d",
+        "seconds": "{value}dtk",
         "minutes": "{value}mnt",
         "hours": "{value}j"
       }

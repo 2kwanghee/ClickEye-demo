@@ -231,7 +231,7 @@
         "codexDesc": "OpenAI CodexをベースにしたAgent"
       },
       "os": {
-        "description": "プロジェクトを解凍して実行するOS環境を選択してください。選択した環境向けの起動スクリプトが含まれます。",
+        "description": "ZIPを解凍して実行するOS環境を選択してください。選択した環境向けの起動スクリプトが含まれます。",
         "recommended": "推奨",
         "comingSoon": "近日公開",
         "wslNotInstalled": "WSL2をインストールしていませんか？",
@@ -299,7 +299,7 @@
         "desc": "同じソリューションを従来の人員体制で構築する場合と、ClickEyeで構築する場合のコストを比較します。",
         "baselineCard": "従来の人員体制",
         "clickeyeCard": "ClickEye利用時",
-        "timeSuffix": "見込み",
+        "timeSuffix": "所要",
         "savingsLabel": "削減見込み額",
         "savingsRateLabel": "削減率",
         "traditionalLabel": "従来",
@@ -371,11 +371,11 @@
         "savingsAmount": "削減見込み額",
         "savingsRate": "削減率",
         "formulaVersion": "計算式バージョン：",
-        "deferredTitle": "未設定のAPI Key（{count}）",
+        "deferredTitle": "未設定のAPI Key（{count}件）",
         "deferredDesc": "後で入力することを選択したキーです。今入力するか、プロジェクト作成後に.envファイルを直接編集してください。",
         "deferredSaveBtn": "保存",
         "allConfirmed": "すべての設定が確認されました",
-        "proceedHint": "「進む」をクリックしてプロジェクトを作成してください",
+        "proceedHint": "「このまま進む」をクリックするとプロジェクトが作成されます",
         "businessTypeInternal": "社内ツール",
         "industryIt": "IT/ソフトウェア",
         "industryFintech": "Fintech/金融",
@@ -411,7 +411,7 @@
     },
     "metricBadges": {
       "weeksUnit": "週",
-      "personsUnit": "",
+      "personsUnit": "名",
       "maintenance": {
         "low": "メンテナンス容易",
         "medium": "メンテナンス中程度",
@@ -563,7 +563,7 @@
       "autoDecompose": {
         "title": "ClickEye自動分析",
         "ariaLabel": "ClickEye自動分析",
-        "description": "ONにすると、ダウンロード後に<code>bash start.sh</code>を実行した際、ソリューション要件を自動的に分析・分解してAI Team検収カードを生成します。手動で設計する場合はOFFにしてください。"
+        "description": "ONにすると、ダウンロード後に<code>bash start.sh</code>を実行した際、ソリューション要件を自動的に分析・分解してAI Teamレビューカードを生成します。手動で設計する場合はOFFにしてください。"
       },
       "prefillTargetUsers": "対象ユーザー",
       "prefillFeatures": "主な機能"
@@ -825,7 +825,7 @@
     },
     "pmProfileCard": {
       "match": "{score}% マッチ",
-      "completedCount": "完了",
+      "completedCount": "完了件数",
       "usageCount": "利用回数",
       "successRate": "成功率",
       "avgCompletionDays": "平均日数",
@@ -912,7 +912,7 @@
         "branchLabel": "ブランチ",
         "scenarioLabel": "シナリオ",
         "acceptedLabel": "選択した推奨事項",
-        "acceptedCount": "{count}",
+        "acceptedCount": "{count}件",
         "finalizeWithLinear": "Linearに自動登録 + ZIPをダウンロード",
         "finalizeZipOnly": "ZIPのみダウンロード（Linear登録をスキップ）",
         "selectAtLeastOne": "続行するには推奨事項を1つ以上選択してください。",
@@ -921,7 +921,7 @@
         "zipReady": "ZIPの準備が完了しました",
         "linearRegistered": "{count}件をLinearに登録しました",
         "linearFailed": "{count}件が失敗しました",
-        "openParentIssue": "Linearの親イシューを開く",
+        "openParentIssue": "Linearの親課題を開く",
         "redownloadZip": "ZIPを再ダウンロード",
         "finalizeFail": "確定に失敗しました",
         "zipDownloadFail": "ZIPのダウンロードに失敗しました"
@@ -967,7 +967,7 @@
       "title": "クイックスタート",
       "subtitle": "プリセットを選択すると、Agent・スキル・パイプラインが自動的に構成されます",
       "presetsTitle": "プリセットを選択",
-      "presetsCount": "（{count}）",
+      "presetsCount": "（{count}個）",
       "presetsLoading": "プリセットを読み込み中...",
       "presetsEmpty": "利用可能なプリセットがありません。ウィザードで手動で構成してください。",
       "skipBtn": "スキップして手動で構成",
@@ -1127,7 +1127,7 @@
     "detail": {
       "backToList": "プロジェクト一覧",
       "staleKeyTitle": "APIキーが変更されました",
-      "staleKeyDesc": "ローカルの.envファイルを更新する必要があります。{keys} 個のキーが古くなっています。",
+      "staleKeyDesc": "ローカルの.envファイルを更新する必要があります。{keys} のキーが古くなっています。",
       "staleKeyAnthropicLabel": "Anthropic",
       "staleKeyLinearLabel": "Linear",
       "downloadEnv": ".envをダウンロード",
@@ -1356,7 +1356,7 @@
         "tunnelWarning": "無料のCloudflareトンネルはWSL2の再起動時にURLが変わります。再起動後にbash start.shを再実行してください。systemdサービスとして登録する（install-service.sh）と、Webhookサーバーとwatcherが自動的に実行され続けます。",
         "tunnelDocsLink": "Cloudflare Tunnel公式ドキュメント",
         "webhookTitle": "Webhookシークレットとは何ですか？",
-        "webhookDesc": "LinearがローカルサーバーにイベントWebを送信する際の署名検証に使用されるランダムな文字列です。任意ですが、セキュリティのため推奨されます。",
+        "webhookDesc": "Linearがローカルサーバーにイベントを送信する際の署名検証に使用されるランダムな文字列です。任意ですが、セキュリティのため推奨されます。",
         "webhookGenerateTitle": "ターミナルでランダムなシークレットを生成:",
         "webhookPasteDesc": "出力をコピーして、下の入力欄とZIP内の.envファイルのWEBHOOK_SECRETの両方に入力してください。",
         "webhookNote": "トンネルURLを登録すると、ClickEyeが自動的にLinear Webhookを登録します。ここで入力したシークレットがそのWebhookに適用されます。"
@@ -1484,7 +1484,7 @@
       "mcpsRegistry": "MCPレジストリ",
       "prototypeCatalog": "プロトタイプカタログ",
       "prototypeTags": "プロトタイプタグ",
-      "roiStandards": "ROI基準",
+      "roiStandards": "ROI単価/工数",
       "globalSettings": "グローバル設定",
       "recommendations": "推奨ログ",
       "audit": "監査ログ"
@@ -1530,7 +1530,7 @@
     },
     "features": {
       "sectionTitle": "なぜClickEyeなのか？",
-      "sectionDescription": "AI開発自動化プラットフォーム — Webで設計し、ZIPとして出荷",
+      "sectionDescription": "AI開発自動化プラットフォーム — Webで設計し、ZIPで始める",
       "wizard": {
         "title": "7ステップウィザード",
         "desc": "会社情報からプラットフォーム選択まで、ブラウザ上の7つのステップでAIソリューションを設計します。1行のコードも書かずに始められます。"
@@ -1558,7 +1558,7 @@
       },
       "review": {
         "label": "レビュー承認率",
-        "desc": "修正なしで初回レビューに承認"
+        "desc": "修正なしで初回レビューで通過"
       },
       "speed": {
         "label": "開発の高速化",
@@ -2041,12 +2041,12 @@
       "status": {
         "active": "稼働中",
         "paused": "一時停止",
-        "archived": "アーカイブ済み"
+        "archived": "終了"
       },
       "actions": {
         "pause": "一時停止",
         "resume": "再開",
-        "archive": "アーカイブ"
+        "archive": "終了"
       },
       "card": {
         "projectCount": "{count} 件のプロジェクト",
@@ -2355,16 +2355,16 @@
         "hours": "{value}時間"
       },
       "phases": {
-        "requested": "リクエスト済み",
-        "decomposed": "分解済み",
-        "assigned": "割り当て済み",
-        "drafting": "ドラフト作成中",
-        "reviewing": "レビュー中",
-        "revising": "修正中",
-        "approved": "承認済み",
+        "requested": "リクエスト",
+        "decomposed": "分解",
+        "assigned": "割り当て",
+        "drafting": "ドラフト作成",
+        "reviewing": "レビュー",
+        "revising": "修正",
+        "approved": "承認",
         "in_development": "開発",
-        "validated": "検証済み",
-        "released": "リリース済み"
+        "validated": "検証",
+        "released": "リリース"
       }
     },
     "timeline": {

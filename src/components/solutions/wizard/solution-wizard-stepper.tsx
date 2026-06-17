@@ -39,8 +39,8 @@ export function SolutionWizardStepper({
 
   return (
     <nav aria-label={t("stepper.navAria")} className="w-full">
-      {/* 데스크톱: 가로 스텝 */}
-      <ol className="hidden items-center gap-0 md:flex">
+      {/* 데스크톱: 가로 스텝 (items-start: 라벨이 2줄로 줄바꿈돼도 원형/연결선 정렬 유지) */}
+      <ol className="hidden items-start gap-0 md:flex">
         {steps.map((step, index) => {
           const isCompleted = index < currentStep;
           const isCurrent = index === currentStep;
@@ -114,7 +114,7 @@ export function SolutionWizardStepper({
 
                 <p
                   className={cn(
-                    "text-xs font-medium transition-colors",
+                    "text-center text-xs font-medium transition-colors",
                     isCurrent
                       ? "font-semibold text-zinc-900"
                       : isCompleted

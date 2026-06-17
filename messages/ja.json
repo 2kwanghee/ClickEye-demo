@@ -1,0 +1,2523 @@
+{
+  "common": {
+    "actions": {
+      "create": "作成",
+      "cancel": "キャンセル",
+      "save": "保存",
+      "delete": "削除",
+      "close": "閉じる",
+      "submit": "送信",
+      "processing": "処理中...",
+      "loginIn": "ログイン中...",
+      "login": "ログイン"
+    },
+    "aria": {
+      "close": "閉じる",
+      "languageToggle": "言語を変更",
+      "notifications": "通知",
+      "help": "ヘルプ"
+    },
+    "header": {
+      "viewGuide": "ガイドを見る",
+      "restartTour": "チュートリアルを再開",
+      "logout": "ログアウト"
+    },
+    "roleGuard": {
+      "title": "アクセスが拒否されました",
+      "description": "このページにアクセスするには管理者権限が必要です。"
+    },
+    "projectForm": {
+      "nameLabel": "プロジェクト名",
+      "namePlaceholder": "例：私のAIプロジェクト",
+      "descriptionLabel": "説明",
+      "descriptionPlaceholder": "プロジェクトの簡単な説明（任意）"
+    },
+    "projectDialog": {
+      "newProject": "新しいプロジェクト",
+      "deleteTitle": "プロジェクトを削除",
+      "deleteConfirm": "<name>{name}</name> プロジェクトを削除してもよろしいですか？この操作は元に戻せません。",
+      "deleting": "削除中..."
+    },
+    "errorPage": {
+      "title": "問題が発生しました",
+      "description": "不明なエラーが発生しました。もう一度お試しください。",
+      "retry": "再試行"
+    },
+    "notFound": {
+      "description": "リクエストされたページが見つかりませんでした",
+      "backHome": "ホームに戻る"
+    },
+    "meta": {
+      "description": "AI Agent開発オーケストレーションプラットフォーム"
+    }
+  },
+  "validation": {
+    "required": "この項目は必須です",
+    "email": "有効なメールアドレスを入力してください",
+    "url": "有効なURLを入力してください",
+    "name": "名前を入力してください",
+    "slug": "Slugを入力してください",
+    "slugPattern": "使用できるのは小文字、数字、ハイフンのみです",
+    "password": "パスワードを入力してください",
+    "passwordMin": "パスワードは8文字以上で入力してください",
+    "confirmPassword": "パスワードを確認してください",
+    "projectName": "プロジェクト名を入力してください",
+    "max100": "100文字以内で入力してください",
+    "max200": "200文字以内で入力してください",
+    "passwordMismatch": "パスワードが一致しません",
+    "integration": {
+      "nonAscii": "{field}に非ASCII文字（日本語、絵文字など）は使用できません。英字と数字のみを使用してください。",
+      "connectFailed": "検証サーバーに接続できませんでした。ネットワークまたは入力内容を確認してください。",
+      "requestFailed": "検証リクエストに失敗しました。ネットワークを確認してください。",
+      "requestFailedDetail": "検証リクエストに失敗しました：{detail}"
+    }
+  },
+  "toast": {
+    "generic": {
+      "saveSuccess": "保存しました",
+      "saveFail": "保存に失敗しました",
+      "deleteSuccess": "削除しました",
+      "deleteFail": "削除に失敗しました",
+      "requestError": "リクエストの処理中にエラーが発生しました",
+      "loginRequired": "ログインが必要です。",
+      "loginRequiredRefresh": "ログインが必要です。ページを更新してください。",
+      "sessionDeleteError": "セッションの削除中にエラーが発生しました。"
+    },
+    "contracts": {
+      "createSuccess": "契約を作成しました",
+      "createFail": "契約の作成に失敗しました",
+      "updateSuccess": "契約を更新しました",
+      "updateFail": "契約の更新に失敗しました",
+      "deleteSuccess": "契約を削除しました",
+      "deleteFail": "契約の削除に失敗しました",
+      "applySuccess": "契約をプロジェクトに適用しました",
+      "applyFail": "契約の適用に失敗しました",
+      "syncSuccess": "{count}件の契約をAgentに同期しました",
+      "syncFail": "同期に失敗しました",
+      "overrideUpdateSuccess": "オーバーライドを更新しました",
+      "overrideUpdateFail": "オーバーライドの更新に失敗しました"
+    },
+    "pm": {
+      "createSuccess": "PMプロファイルを作成しました。",
+      "deleteSuccess": "PMプロファイルを削除しました。",
+      "updateSuccess": "PMプロファイルを更新しました。",
+      "nameSlugRequired": "名前とSlugは必須です。",
+      "markdownLoadFail": "Markdownの読み込みに失敗しました。",
+      "markdownSaveSuccess": "Markdownを保存しました。",
+      "compositionAddSuccess": "{count}件を追加しました。",
+      "compositionAddFail": "追加中にエラーが発生しました。"
+    },
+    "users": {
+      "roleChangeSuccess": "ロールを{role}に変更しました",
+      "roleChangeFail": "ロールの変更に失敗しました"
+    },
+    "projects": {
+      "fetchFail": "プロジェクトの読み込みに失敗しました",
+      "createFail": "プロジェクトの作成に失敗しました。"
+    },
+    "solutions": {
+      "sessionCreateFail": "セッションの作成に失敗しました。",
+      "sessionMissing": "セッション情報がありません。最初からやり直してください。",
+      "companyNameMissing": "会社名がありません。ステップ1に戻って会社名を入力してください。",
+      "sessionExpired": "セッションの有効期限が切れました。もう一度ログインしてください。",
+      "networkError": "ネットワーク接続を確認してください"
+    },
+    "members": {
+      "addSuccess": "メンバーを追加しました",
+      "addFail": "メンバーの追加に失敗しました",
+      "removeSuccess": "メンバーを削除しました",
+      "removeFail": "メンバーの削除に失敗しました",
+      "userIdRequired": "ユーザーIDを入力してください"
+    },
+    "registry": {
+      "updateSuccess": "項目を更新しました。",
+      "addSuccess": "項目を追加しました。",
+      "deleteSuccess": "項目を削除しました。"
+    },
+    "prototypeCatalog": {
+      "updateSuccess": "カタログ項目を更新しました",
+      "createSuccess": "カタログ項目を作成しました",
+      "saveFail": "保存に失敗しました",
+      "deleteSuccess": "削除しました",
+      "deleteFail": "削除に失敗しました",
+      "tagUpdateSuccess": "タグを更新しました",
+      "tagCreateSuccess": "タグを作成しました"
+    },
+    "appSettings": {
+      "prototypeVariantSaveSuccess": "プロトタイプのバリエーション数を保存しました",
+      "ragTopKSaveSuccess": "RAG top-kを保存しました"
+    }
+  },
+  "wizard": {
+    "step4": {
+      "pmRecommend": {
+        "analyzing": "プロトタイプに最適なPMを分析しています",
+        "complete": "PM推薦分析が完了しました！",
+        "progressLabel": "PM推薦の進捗",
+        "cardsLabel": "PM推薦の状況",
+        "nextHint": "下の「次へ」ボタンをクリックしてPMを選択してください。",
+        "failTitle": "PM推薦分析に失敗しました",
+        "failDesc": "一時的なエラーが発生しました。もう一度お試しください。",
+        "retry": "もう一度試す",
+        "matchReasons": "マッチング理由",
+        "analysisComplete": "PM「{name}」の分析が完了しました"
+      },
+      "pmSelect": {
+        "loadingTitle": "PM推薦を分析中...",
+        "loadingDesc": "プロトタイプに最適化されたPMプロファイルを検索しています",
+        "loadingStep1": "プロトタイプの要件を分析中...",
+        "loadingStep2": "PMプロファイルをマッチング中...",
+        "loadingStep3": "最適なPMの選定を確定中...",
+        "emptyState": "推薦できるPMプロファイルがありません",
+        "recommendBanner": "選択したプロトタイプに基づいて、AIが最適なPMを推薦しました。マッチ率が高いほどプロジェクト成功の可能性が高くなります。",
+        "compositionLabel": "選択したPM構成",
+        "listAriaLoading": "PMプロファイルを読み込み中",
+        "listAriaLabel": "PMプロファイル一覧"
+      },
+      "pmComposition": {
+        "noSelection": "PMが選択されていません。",
+        "backToSelection": "PM選択に戻る",
+        "loadingItems": "構成要素を読み込み中...",
+        "errorTitle": "構成の読み込みに失敗しました",
+        "retry": "もう一度試す",
+        "nextHint": "このPMのデフォルトチーム（Agent、Skill、MCP、Hook）は、次のAgent設定ステップで自動的に選択されます。PMチームの項目はロックされており削除できませんが、項目を自由に追加できます。",
+        "reselectBtn": "PMを再選択",
+        "listAriaLabel": "PM構成一覧",
+        "itemRequired": "必須",
+        "itemOptional": "任意",
+        "matchRate": "{score}% マッチ",
+        "agents": "AI Agent",
+        "skills": "Skill",
+        "hooks": "Hook",
+        "mcpServers": "MCPサーバー",
+        "plugins": "プラグイン"
+      }
+    },
+    "step5": {
+      "agents": {
+        "pmLockBanner": "{pmName}のデフォルトチーム項目が自動的に適用されました。ロックされた項目は削除できませんが、追加の項目を自由に追加できます。",
+        "catalogRecBanner": "選択したプロトタイプのカタログに基づいて、AgentとSkillが推薦されました。必要に応じて調整してください。",
+        "defaultBanner": "選択したプロトタイプのAgent構成を確認し、必要に応じて調整してください。",
+        "pmTeamBadge": "PMチーム",
+        "pmTeamTitle": "{pmName} PMのデフォルトチーム項目",
+        "sectionAgents": "AI Agent",
+        "agentsLoadError": "Agentの読み込みに失敗しました。",
+        "sectionSkills": "連携Skill",
+        "ticketSource": "チケットソース",
+        "ticketRequired": "必須",
+        "ticketSelectOne": "1つ選択",
+        "ticketDesc": "課題／チケットを管理するプラットフォームを選択してください。",
+        "skillsLoadError": "Skillの読み込みに失敗しました。",
+        "ticketLockedByPm": "{pmName}が{label}をロックしています。他のチケットソースは選択できません。",
+        "ticketRequiredAlert": "チケットソースを1つ選択してください（LinearまたはNotion）",
+        "additionalSkills": "追加Skill",
+        "optional": "（任意）",
+        "mcpSection": "MCPサーバー",
+        "mcpLoadError": "MCPサーバーの読み込みに失敗しました。",
+        "hooksSection": "Hook",
+        "hooksLoadError": "Hookの読み込みに失敗しました。",
+        "recommendedBadge": "推奨",
+        "defaultPmName": "選択したPM"
+      },
+      "platform": {
+        "description": "生成したソリューションを実行するAgentプラットフォームを選択してください。",
+        "notSupportedByPm": "PMでは未対応",
+        "recommended": "推奨",
+        "comingSoon": "近日公開",
+        "comingSoonNote": "Gemini CLI、Cursor、Codexのサポートは今後のアップデートで提供予定です。",
+        "claudeCodeDesc": "Anthropic ClaudeをベースにしたAIコーディングAgent",
+        "geminiCliDesc": "Google GeminiをベースにしたCLI Agent",
+        "cursorDesc": "AIファーストのコードエディタ",
+        "codexDesc": "OpenAI CodexをベースにしたAgent"
+      },
+      "os": {
+        "description": "プロジェクトを解凍して実行するOS環境を選択してください。選択した環境向けの起動スクリプトが含まれます。",
+        "recommended": "推奨",
+        "comingSoon": "近日公開",
+        "wslNotInstalled": "WSL2をインストールしていませんか？",
+        "wslGuideDesc": "WSL2は、Windows上でLinux環境を実行するためのMicrosoft公式機能です。",
+        "wslStep1": "PowerShellで実行（管理者として）：",
+        "wslStep2": "PCを再起動した後、Ubuntuアプリを開きます",
+        "wslStep3": "ユーザー名とパスワードを設定すれば完了です",
+        "wslGuideLink": "公式インストールガイドを開く →",
+        "wsl2Desc": "Windows Subsystem for Linux 2 — Claude Code公式推奨環境",
+        "windowsDesc": "PowerShell／cmdから直接実行",
+        "macosDesc": "zsh／bashターミナル",
+        "linuxDesc": "Ubuntu、Debian、Fedoraなど"
+      }
+    },
+    "step6": {
+      "env": {
+        "authTitle": "Claude認証",
+        "authApiKeyLabel": "API Key",
+        "authApiKeyDesc": "Anthropic Consoleで発行したsk-ant-...キーを直接入力してください。",
+        "authOAuthLabel": "ブラウザOAuth（claude login）",
+        "authOAuthDesc": "Claude Pro／Maxの契約者のみ対象です。bash start.shを実行すると、claude loginが自動的に進行します。",
+        "oauthNote": "ANTHROPIC_API_KEYは.envに含まれません。bash start.shを実行すると、ブラウザログインが自動的に開始されます。",
+        "requiredKeysTitle": "必須のAPI Key",
+        "requiredKeysSummary": "（{satisfied}/{total} 設定済み）",
+        "guideLink": "発行ガイド",
+        "statusSet": "設定済み",
+        "statusDeferred": "後で入力",
+        "statusRequired": "必須",
+        "editBtn": "編集",
+        "enterBtn": "入力",
+        "laterBtn": "後で",
+        "cancelBtn": "キャンセル",
+        "saveBtn": "保存",
+        "nonAsciiWarning": "非ASCII文字（日本語、絵文字など）は自動的に削除されます。半角英数字のみを入力してください。",
+        "apiKeyNeeded": "API Keyが必要です",
+        "setupGuideBtn": "セットアップガイド",
+        "missingKeysAlert": "必須キーが{count}件未設定です。値を入力するか「後で入力」を選択してください。",
+        "deferredKeysNote": "後で入力するキーが{count}件あります — 最終確認ステップで追加できます。",
+        "trackingTitle": "リアルタイムトラッキング方式",
+        "trackingOptional": "（任意）",
+        "trackingDesc": "Linearの課題ステータスが変更されたときに、ローカルのClaudeを自動的にトリガーする方法を選択してください。",
+        "cfTitle": "Cloudflare Tunnel",
+        "cfDesc": "無料・固定URL（推奨）",
+        "ngrokTitle": "ngrok",
+        "ngrokDesc": "有料の固定URL／無料の一時URL",
+        "pollingTitle": "30秒ポーリング",
+        "pollingDesc": "Webhook不要・30秒の遅延",
+        "ngrokToken": "ngrok Auth Token",
+        "ngrokTokenLink": "（ngrok.comで取得）",
+        "cfNote": "解凍後にbash scripts/setup-tunnel.shを実行すると、cloudflaredが自動インストールされます。",
+        "pollingNote": "python3 scripts/linear_watcher.pyを実行すると、30秒ごとにLinearをポーリングします。Webhookサーバーは不要です。",
+        "securityNote": "入力したキーはZIPファイル内の.envに保存されます。ZIPファイルを共有しないでください。不明な場合はZIP内のdocs/api-keys/フォルダを参照してください。",
+        "securityNoteOAuth": "ブラウザOAuthモードでは、Anthropicキーは.envに含まれません。bash start.shを実行すると、claude loginが自動的に開始されます。",
+        "extraVarsTitle": "追加の環境変数",
+        "emptyValue": "（空）",
+        "addVarTitle": "環境変数を追加",
+        "addVarOptional": "（任意）",
+        "addVarValuePlaceholder": "値（後で入力可・英数字）",
+        "anthropicKeyLabel": "Anthropic API key",
+        "anthropicKeyDesc": "Claude AIモデルを呼び出すために必要な認証キー",
+        "validating": "検証中..."
+      },
+      "roi": {
+        "title": "ROI比較",
+        "desc": "同じソリューションを従来の人員体制で構築する場合と、ClickEyeで構築する場合のコストを比較します。",
+        "baselineCard": "従来の人員体制",
+        "clickeyeCard": "ClickEye利用時",
+        "timeSuffix": "見込み",
+        "savingsLabel": "削減見込み額",
+        "savingsRateLabel": "削減率",
+        "traditionalLabel": "従来",
+        "calcFailed": "ROIの計算に失敗しました",
+        "breakdownTitle": "ロール別内訳",
+        "resetBtn": "標準値にリセット",
+        "perDay": " KRW/日",
+        "adjustedBadge": "調整済み",
+        "rateNote": "* 単価を調整しても管理者の標準値は変更されません。このセッションにのみ適用されます。計算式バージョン：{version}",
+        "rolePm": "プロジェクトマネージャー",
+        "roleBe": "バックエンド開発者",
+        "roleFe": "フロントエンド開発者",
+        "roleQa": "QAエンジニア",
+        "roleDesigner": "UI/UXデザイナー",
+        "daysUnit": " 日"
+      }
+    },
+    "step7": {
+      "simpleConfirm": {
+        "sectionCompany": "会社情報",
+        "companyName": "会社名",
+        "businessType": "事業形態",
+        "mainProduct": "主力製品",
+        "businessTypeInternal": "社内ツール",
+        "solutionTypeFullstack": "フルスタック",
+        "solutionTypeInternalTool": "社内ツール",
+        "solutionTypeCustom": "カスタム",
+        "sectionPrototype": "ソリューションプロトタイプ",
+        "protoName": "名称",
+        "protoType": "タイプ",
+        "noPrototype": "プロトタイプが選択されていません",
+        "sectionPm": "PM",
+        "pmSelected": "PM選択済み（ID: {id}...）",
+        "noPm": "PMが選択されていません",
+        "sectionAgents": "AgentとSkill",
+        "agentsLabel": "Agent",
+        "skillsLabel": "Skill",
+        "noAgents": "未設定",
+        "noSkills": "なし",
+        "sectionPlatform": "プラットフォーム",
+        "noPlatform": "未設定",
+        "sectionEnv": "環境変数",
+        "envCount": "{count}件設定済み",
+        "allConfirmed": "すべての設定が確認されました",
+        "submitHint": "プロジェクトを作成すると、ソリューション構成が保存されます"
+      },
+      "confirmation": {
+        "regionLabel": "最終確認",
+        "sectionCompany": "会社情報",
+        "reconfigBtn": "再設定",
+        "companyName": "会社名",
+        "industry": "業種",
+        "businessType": "事業形態",
+        "mainProduct": "主力製品",
+        "authMethod": "Claude認証",
+        "authOAuth": "OAuthブラウザログイン",
+        "authApiKey": "API Key",
+        "sectionPrototype": "ソリューションプロトタイプ",
+        "reselectBtn": "再選択",
+        "noPrototype": "プロトタイプが選択されていません",
+        "sectionPm": "プロジェクトマネージャー",
+        "pmLoading": "PM情報を読み込み中...",
+        "noPm": "PMが選択されていません",
+        "pmCompositionTitle": "PM構成",
+        "sectionRoi": "ROI比較サマリー",
+        "recalcBtn": "再計算",
+        "baselineCost": "従来の人員体制のコスト",
+        "clickeyeCost": "ClickEye導入コスト",
+        "savingsAmount": "削減見込み額",
+        "savingsRate": "削減率",
+        "formulaVersion": "計算式バージョン：",
+        "deferredTitle": "未設定のAPI Key（{count}）",
+        "deferredDesc": "後で入力することを選択したキーです。今入力するか、プロジェクト作成後に.envファイルを直接編集してください。",
+        "deferredSaveBtn": "保存",
+        "allConfirmed": "すべての設定が確認されました",
+        "proceedHint": "「進む」をクリックしてプロジェクトを作成してください",
+        "businessTypeInternal": "社内ツール",
+        "industryIt": "IT/ソフトウェア",
+        "industryFintech": "Fintech/金融",
+        "industryEcommerce": "Eコマース",
+        "industryHealthcare": "ヘルスケア",
+        "industryEducation": "教育",
+        "industryManufacturing": "製造",
+        "industryLogistics": "物流",
+        "industryMarketing": "マーケティング",
+        "industryGame": "ゲーム",
+        "industryOther": "その他",
+        "solutionTypeFullstack": "フルスタック",
+        "solutionTypeInternalTool": "社内ツール",
+        "solutionTypeCustom": "カスタム",
+        "notSet": "未設定",
+        "validating": "検証中...",
+        "deferredPlaceholder": "値を入力（英数字）",
+        "stepNavAriaLabel": "{label}ステップへ移動",
+        "compositionAgents": "Agent",
+        "compositionSkills": "Skill",
+        "compositionMcp": "MCP",
+        "compositionHooks": "Hook"
+      }
+    },
+    "pmCompositionView": {
+      "title": "{name}の構成",
+      "loading": "構成情報を読み込み中...",
+      "empty": "構成項目がありません。",
+      "agents": "AI Agent",
+      "skills": "Skill",
+      "mcpServers": "MCPサーバー",
+      "hooks": "Hook"
+    },
+    "metricBadges": {
+      "weeksUnit": "週",
+      "personsUnit": "",
+      "maintenance": {
+        "low": "メンテナンス容易",
+        "medium": "メンテナンス中程度",
+        "high": "メンテナンス困難"
+      }
+    },
+    "comparisonTable": {
+      "metric": "指標",
+      "recommended": "推奨",
+      "rows": {
+        "architecture": "アーキテクチャ",
+        "devDuration": "開発期間",
+        "teamSize": "チーム規模",
+        "monthlyCost": "月額コスト",
+        "complexity": "複雑さ（低いほどシンプル）",
+        "scalability": "拡張性（高いほど良い）",
+        "maintenance": "メンテナンスの難易度",
+        "techStack": "技術スタック",
+        "skillRequirements": "必要なスキル",
+        "companyFit": "会社との適合性",
+        "pros": "メリット",
+        "cons": "デメリット"
+      },
+      "maintenance": {
+        "low": "低",
+        "medium": "中",
+        "high": "高"
+      }
+    },
+    "prototypeCard": {
+      "recommended": "推奨",
+      "pros": "メリット",
+      "cons": "デメリット",
+      "skillRequirements": "必要なスキル",
+      "aiMatchNote": "AI分析のテキストは現在、韓国語で表示されています。バックエンドのi18nは対応中です。",
+      "solutionTypes": {
+        "saas": "SaaS",
+        "restApi": "REST API",
+        "fullstack": "フルスタックWeb",
+        "internalTool": "社内ツール",
+        "mvp": "MVP",
+        "custom": "カスタム"
+      },
+      "complexityLabel": "複雑さ",
+      "scalabilityLabel": "拡張性"
+    },
+    "step1": {
+      "companyName": {
+        "label": "会社名",
+        "placeholder": "例：Acme Corp",
+        "required": "会社名を入力してください",
+        "max200": "200文字以内で入力してください"
+      },
+      "companySize": {
+        "label": "会社規模",
+        "required": "会社規模を選択してください",
+        "options": {
+          "startup": {
+            "label": "スタートアップ",
+            "sub": "1〜10"
+          },
+          "small": {
+            "label": "小規模",
+            "sub": "11〜50"
+          },
+          "medium": {
+            "label": "中規模",
+            "sub": "51〜200"
+          },
+          "midLarge": {
+            "label": "中堅",
+            "sub": "201〜1,000"
+          },
+          "enterprise": {
+            "label": "大企業",
+            "sub": "1,000以上"
+          }
+        }
+      },
+      "industry": {
+        "label": "業種",
+        "required": "業種を選択してください",
+        "options": {
+          "it": "IT/ソフトウェア",
+          "fintech": "金融/Fintech",
+          "ecommerce": "Eコマース/小売",
+          "healthcare": "ヘルスケア/医療",
+          "education": "教育/Edutech",
+          "manufacturing": "製造",
+          "logistics": "物流",
+          "marketing": "マーケティング/広告",
+          "game": "ゲーム/エンターテインメント",
+          "other": "その他"
+        }
+      },
+      "techStack": {
+        "label": "技術スタック",
+        "optional": "（任意、複数選択可）",
+        "selectedCount": "{count}件選択中",
+        "categories": {
+          "language": "言語",
+          "framework": "フレームワーク／ライブラリ",
+          "database": "データベース",
+          "cloud": "クラウド／インフラ"
+        }
+      },
+      "mainProduct": {
+        "label": "主力製品／サービス",
+        "placeholder": "例：エンタープライズ向けHRプラットフォーム",
+        "required": "主力製品／サービスを記入してください",
+        "max500": "500文字以内で入力してください"
+      },
+      "businessType": {
+        "label": "事業形態",
+        "required": "事業形態を選択してください",
+        "options": {
+          "b2b": {
+            "label": "B2B",
+            "description": "法人向け"
+          },
+          "b2c": {
+            "label": "B2C",
+            "description": "消費者向け"
+          },
+          "b2b2c": {
+            "label": "B2B2C",
+            "description": "ハイブリッドモデル"
+          },
+          "internal": {
+            "label": "社内ツール",
+            "description": "社内システム"
+          }
+        }
+      },
+      "companyDescription": {
+        "label": "会社の説明",
+        "optional": "（任意）",
+        "placeholder": "会社の背景、チーム構成、技術レベルなどを記入してください。",
+        "max1000": "1,000文字以内で入力してください"
+      },
+      "solutionRequest": {
+        "label": "必要なソリューションを記入してください",
+        "hint": "自然な文章で自由に記入してください。AIが分析し、最適なソリューションを設計します。",
+        "placeholder": "例：現在Excelで管理している顧客データの管理を自動化したいです。営業チーム10名向けのCRMシステムが必要で、できればSlackと連携したいです...",
+        "required": "50文字以上入力してください",
+        "max2000": "2,000文字以内で入力してください",
+        "minHint": "（あと{remaining}文字）"
+      },
+      "autoDecompose": {
+        "title": "ClickEye自動分析",
+        "ariaLabel": "ClickEye自動分析",
+        "description": "ONにすると、ダウンロード後に<code>bash start.sh</code>を実行した際、ソリューション要件を自動的に分析・分解してAI Team検収カードを生成します。手動で設計する場合はOFFにしてください。"
+      },
+      "prefillTargetUsers": "対象ユーザー",
+      "prefillFeatures": "主な機能"
+    },
+    "step2": {
+      "starting": "準備中...",
+      "completed": "プロトタイプが生成されました！",
+      "generating": "AIがソリューションプロトタイプを設計しています",
+      "counterAriaLabel": "{total}件中{ready}件完了",
+      "progressAriaLabel": "プロトタイプ生成の進捗",
+      "listAriaLabel": "プロトタイプ生成の状況",
+      "cardGeneratingAriaLabel": "プロトタイプを生成中",
+      "cardReadyAriaLabel": "プロトタイプ「{name}」の準備が完了しました",
+      "waitingHint": "通常、30秒〜1分ほどかかります。お待ちください。",
+      "doneHint": "下の<strong>次へ</strong>ボタンをクリックしてプロトタイプを確認してください。",
+      "disabled": {
+        "title": "ライブプレビューを利用できません",
+        "description": "ライブプレビュー機能は現在無効になっています。",
+        "contactAdmin": "この機能を有効にするには管理者にお問い合わせください。"
+      },
+      "failed": {
+        "title": "プロトタイプの生成に失敗しました",
+        "description": "一時的なエラーが発生しました。もう一度お試しください。",
+        "retry": "もう一度試す"
+      }
+    },
+    "step3": {
+      "empty": {
+        "title": "生成されたプロトタイプがありません",
+        "description": "前に戻って情報を確認してください。"
+      },
+      "noComparison": "比較するプロトタイプがありません。",
+      "aiHint": "AIが分析したソリューション候補です。最適な方向性を選択してください。",
+      "viewCards": "カード",
+      "viewCompare": "比較",
+      "listAriaLabel": "ソリューションプロトタイプ一覧"
+    },
+    "shell": {
+      "header": {
+        "newTitle": "新規ソリューション",
+        "newSubtitle": "AIが会社に合わせたソリューションを設計します",
+        "modernizeTitle": "既存コードのモダナイゼーション",
+        "modernizeSubtitle": "GitHubリポジトリを接続すると、AIがコードを診断し、モダナイゼーションタスクを自動登録します"
+      },
+      "nav": {
+        "prev": "戻る",
+        "next": "次へ",
+        "proceed": "このまま進む",
+        "creating": "作成中...",
+        "analyzing": "分析中...",
+        "prevAria": "前のステップへ移動",
+        "nextAria": "次のステップへ移動（{label}）",
+        "submitAria": "プロジェクトを作成",
+        "groupAria": "ウィザードナビゲーション",
+        "previewToggleAria": "ライブプレビューを開く",
+        "previewToggleTitle": "ライブプレビュー",
+        "restartTourAria": "ウィザードガイドを再生",
+        "solutionsLink": "ソリューション",
+        "solutionsLinkAria": "ソリューション一覧へ移動"
+      },
+      "stepper": {
+        "navAria": "ソリューションウィザードの進捗",
+        "stepAria": "{label}（{current}/{total}）- {status}",
+        "statusCompleted": "完了",
+        "statusCurrent": "現在のステップ",
+        "statusUpcoming": "未着手"
+      },
+      "steps": {
+        "company": {
+          "label": "会社情報",
+          "description": "会社情報とソリューション要件を入力します"
+        },
+        "generation": {
+          "label": "生成",
+          "description": "AIがソリューションプロトタイプを生成します"
+        },
+        "prototypes": {
+          "label": "プロトタイプ",
+          "description": "AIが生成したソリューション候補から選択します"
+        },
+        "pm-recommendation": {
+          "label": "PM推薦",
+          "description": "AIが最適なPMを分析します"
+        },
+        "pm-selection": {
+          "label": "PM選択",
+          "description": "プロジェクトマネージャーAIを選択します"
+        },
+        "pm-composition": {
+          "label": "PM構成",
+          "description": "選択したPMの構成要素を確認します"
+        },
+        "agents": {
+          "label": "Agent",
+          "description": "AI Agentの設定を確認します"
+        },
+        "platform": {
+          "label": "プラットフォーム",
+          "description": "Agentプラットフォームを選択します"
+        },
+        "os": {
+          "label": "実行環境",
+          "description": "ソリューションを実行するOS環境を選択します"
+        },
+        "env": {
+          "label": "環境変数",
+          "description": "API Keyと環境変数を入力します"
+        },
+        "roi": {
+          "label": "ROI比較",
+          "description": "ClickEye導入の効率価値を試算します"
+        },
+        "confirm": {
+          "label": "最終確認",
+          "description": "設定を確認してプロジェクトを作成します"
+        },
+        "repo-connect": {
+          "label": "GitHub接続",
+          "description": "既存のコードベースを取り込むためGitHubリポジトリを接続します"
+        },
+        "repo-select": {
+          "label": "リポジトリ選択",
+          "description": "分析するリポジトリとブランチを選択します"
+        },
+        "diagnose": {
+          "label": "コード診断",
+          "description": "AIがコードを分析します"
+        },
+        "diagnosis-review": {
+          "label": "診断レビュー",
+          "description": "モダナイゼーションのシナリオと推奨事項を選択します"
+        }
+      }
+    },
+    "preview": {
+      "title": "ライブプレビュー",
+      "closeAria": "プレビューを閉じる",
+      "panelAria": "ソリューション設定の進捗サマリー",
+      "skeletonAria": "プレビューを読み込み中",
+      "emptyStepSummary": "このステップを完了するとサマリーが表示されます。",
+      "emptyBlueprint": "ソリューション要件を入力するとAIブループリントが表示されます。",
+      "emptyPanel": "ウィザードを進めると、設定内容がここに表示されます。",
+      "blueprint": {
+        "tooShort": "もう少し詳しく入力するとブループリントが表示されます。",
+        "creditError": "Anthropic APIのクレジットが不足しています。",
+        "creditServerSuffix": " 共有サーバーのキーのクレジットが不足しています。",
+        "creditUserSuffix": " Plans & Billingでチャージして、もう一度お試しください。",
+        "registerKey": "自分のAPI Keyを登録 →",
+        "authError": "API Keyの認証に失敗しました。",
+        "authUserSuffix": " 設定ページでキーを確認してください。",
+        "authServerSuffix": " ANTHROPIC_API_KEYの設定を確認してください。",
+        "resetKey": "API Keyをリセット →",
+        "genericError": "一時的なエラーが発生しました。しばらくしてからもう一度お試しください。",
+        "complexityPrefix": "複雑さ",
+        "features": "主な機能",
+        "techStack": "推奨技術スタック",
+        "keyRequirements": "主な要件",
+        "complexity": {
+          "low": "低",
+          "medium": "中",
+          "high": "高"
+        }
+      },
+      "summary": {
+        "companyName": "会社",
+        "industry": "業種",
+        "businessType": "事業形態",
+        "companySize": "規模",
+        "agents": "Agent",
+        "skills": "Skill",
+        "hooks": "Hook",
+        "platform": "プラットフォーム",
+        "os": "実行環境",
+        "authMethod": "認証方式",
+        "envVars": "環境変数",
+        "noPrototype": "プロトタイプが選択されていません。",
+        "noPm": "PMが選択されていません。",
+        "noAgents": "Agentが選択されていません。",
+        "noPlatform": "プラットフォームが選択されていません。",
+        "noOs": "実行環境が選択されていません。",
+        "noRoi": "ROI分析が完了していません。",
+        "pmComposition": "PMの構成要素が確認されました。",
+        "confirm": "すべての設定が完了しました。",
+        "matching": "{score}% マッチ",
+        "countValue": "{count}",
+        "envCountValue": "{count}件設定済み",
+        "savings": "削減額",
+        "savingsRatio": "削減率",
+        "industryMap": {
+          "it": "IT / ソフトウェア",
+          "fintech": "金融 / Fintech",
+          "ecommerce": "Eコマース / 小売",
+          "healthcare": "ヘルスケア / 医療",
+          "education": "教育 / Edtech",
+          "manufacturing": "製造",
+          "logistics": "物流 / 配送",
+          "marketing": "マーケティング / 広告",
+          "game": "ゲーム / エンターテインメント",
+          "other": "その他"
+        },
+        "businessTypeMap": {
+          "b2b": "B2B",
+          "b2c": "B2C",
+          "b2b2c": "B2B2C",
+          "internal": "社内ツール"
+        },
+        "companySizeMap": {
+          "startup": "スタートアップ",
+          "small": "小規模",
+          "medium": "中小規模",
+          "mid-large": "中堅",
+          "enterprise": "大企業"
+        },
+        "authMethodMap": {
+          "api_key": "API key",
+          "oauth_browser": "OAuthブラウザ"
+        },
+        "platformMap": {
+          "claude-code": "Claude Code",
+          "gemini-cli": "Gemini CLI",
+          "cursor": "Cursor",
+          "codex": "Codex"
+        },
+        "osMap": {
+          "wsl2": "WSL2"
+        }
+      }
+    },
+    "tour": {
+      "steps": {
+        "progress": {
+          "title": "進捗ステップ",
+          "content": "このウィザードは各ステップを案内します。完了したステップをクリックすると、いつでも戻って編集できます。"
+        },
+        "input": {
+          "title": "ステップごとの入力",
+          "content": "会社情報からAgent設定、環境変数まで、各ステップでAIがソリューションを設計するために必要な情報を収集します。"
+        },
+        "navigation": {
+          "title": "ステップナビゲーション",
+          "content": "前のステップに戻ったり、次に進んだりできます。必須項目をすべて入力すると、「次へ」ボタンが有効になります。"
+        }
+      },
+      "locale": {
+        "back": "戻る",
+        "close": "閉じる",
+        "last": "完了",
+        "next": "次へ",
+        "skip": "スキップ"
+      }
+    },
+    "prototypePreview": {
+      "menuCount": "{count}個のメニュー",
+      "pageCount": "{count}ページ",
+      "colorPalette": "カラーパレット",
+      "menuStructure": "メニュー構造",
+      "pageLayout": "ページレイアウト",
+      "moreCount": "+{count}"
+    },
+    "pmProfileCard": {
+      "match": "{score}% マッチ",
+      "completedCount": "完了",
+      "usageCount": "利用回数",
+      "successRate": "成功率",
+      "avgCompletionDays": "平均日数",
+      "daysValue": "{days}日"
+    },
+    "modernize": {
+      "repoConnect": {
+        "regionLabel": "GitHub接続",
+        "title": "GitHubリポジトリを接続",
+        "description": "ClickEye Modernizeは、GitHub Appを介してprivateリポジトリに安全にアクセスします。最小限の権限（Contents read、Metadata read）のみを要求します。",
+        "loading": "インストール情報を読み込み中...",
+        "loadFail": "インストール情報の読み込みに失敗しました。",
+        "installUrlFail": "インストールURLの発行に失敗しました",
+        "installing": "GitHubのインストールを待機中...",
+        "connectBtn": "GitHubを接続",
+        "repoCount": "{count}件のリポジトリ",
+        "permissionLabel": "権限",
+        "permissionAll": "すべて",
+        "permissionSelected": "選択済み",
+        "connectOther": "別のアカウントを接続"
+      },
+      "repoSelect": {
+        "regionLabel": "リポジトリ選択",
+        "connectFirst": "先にGitHubアカウントを接続してください。",
+        "instruction": "分析するリポジトリとブランチを選択してください。",
+        "refreshAria": "リポジトリ一覧を更新",
+        "refresh": "更新",
+        "loading": "リポジトリを読み込み中...",
+        "loadFail": "リポジトリ一覧の読み込みに失敗しました。",
+        "emptyState": "アクセス可能なリポジトリがありません。GitHub Appのインストール時にリポジトリを選択したか確認してください。",
+        "privateAria": "private",
+        "selected": "選択済み"
+      },
+      "diagnose": {
+        "regionLabel": "コード診断",
+        "repoFallback": "リポジトリ",
+        "analyzing": "{repo}を分析中",
+        "analyzingDesc": "AIがリポジトリをクローンしてスキャンし、依存関係とコード構造を分析します。通常、30〜90秒ほどかかります。",
+        "percentComplete": "{progress}% 完了",
+        "stepClone": "リポジトリをクローン",
+        "stepDetect": "言語／フレームワークを検出",
+        "stepDeps": "依存関係を分析",
+        "stepOutdated": "古いパッケージを確認",
+        "stepSampling": "コードをサンプリング",
+        "stepSummary": "AIサマリー",
+        "stepDone": "完了",
+        "creatingSession": "分析セッションを作成中...",
+        "failTitle": "分析に失敗しました",
+        "unknownError": "不明なエラーが発生しました。",
+        "retry": "もう一度試す",
+        "readyMessage": "分析が完了しました。次のステップで推奨事項を確認してください。",
+        "missingConnection": "GitHubの接続またはリポジトリの選択がありません。前のステップに戻ってください。",
+        "createSessionFail": "分析セッションの作成に失敗しました",
+        "statusFail": "ステータスの取得に失敗しました"
+      },
+      "diagnosisReview": {
+        "regionLabel": "診断レビュー",
+        "detectedStack": "検出されたスタック",
+        "aiSummary": "AI診断サマリー",
+        "scenarioTitle": "モダナイゼーションシナリオ",
+        "scenarioVersionup": {
+          "title": "VersionUp",
+          "desc": "パッケージバージョンのアップグレード + EOLランタイムへの対応"
+        },
+        "scenarioRefactor": {
+          "title": "Refactor",
+          "desc": "コードスメル／レイヤリング／デッドコードの整理"
+        },
+        "scenarioLanguageMigrate": {
+          "title": "LanguageMigrate",
+          "desc": "スタックの移行（例：Express → FastAPI）"
+        },
+        "recommendations": "推奨事項",
+        "selectedCount": "（{accepted}/{total} 選択済み）",
+        "noRecommendations": "推奨事項がありません。シナリオを変更するか、分析を再実行してください。",
+        "selectRec": "{title}を選択",
+        "loading": "診断結果を読み込み中...",
+        "loadFail": "分析結果の読み込みに失敗しました"
+      },
+      "confirm": {
+        "regionLabel": "最終確認",
+        "summaryTitle": "構成サマリー",
+        "repoLabel": "リポジトリ",
+        "branchLabel": "ブランチ",
+        "scenarioLabel": "シナリオ",
+        "acceptedLabel": "選択した推奨事項",
+        "acceptedCount": "{count}",
+        "finalizeWithLinear": "Linearに自動登録 + ZIPをダウンロード",
+        "finalizeZipOnly": "ZIPのみダウンロード（Linear登録をスキップ）",
+        "selectAtLeastOne": "続行するには推奨事項を1つ以上選択してください。",
+        "done": "完了",
+        "zipStarted": "ZIPのダウンロードを開始しました",
+        "zipReady": "ZIPの準備が完了しました",
+        "linearRegistered": "{count}件をLinearに登録しました",
+        "linearFailed": "{count}件が失敗しました",
+        "openParentIssue": "Linearの親イシューを開く",
+        "redownloadZip": "ZIPを再ダウンロード",
+        "finalizeFail": "確定に失敗しました",
+        "zipDownloadFail": "ZIPのダウンロードに失敗しました"
+      }
+    }
+  },
+  "setupGuide": {
+    "title": "ソリューションを作成しました！",
+    "subtitle": "以下の手順に従って、ローカル開発環境をセットアップしてください",
+    "stepsAriaLabel": "セットアップ手順",
+    "integrationsTitle": "連携セットアップガイド",
+    "workflowTitle": "セットアップ後のワークフロー",
+    "workflowDesc1": "bash start.sh → 環境チェック・バックグラウンドサービス起動・自動終了",
+    "workflowDesc2Wsl": "bash scripts/install-service.sh → systemdサービスを登録（WSL2再起動後に自動復旧）",
+    "workflowDesc3Wsl": "ClickEye Web → AI Team → タスクを承認（Todo）",
+    "workflowDesc3": "ClickEye Web → AI Team → タスクを承認（Todo）",
+    "workflowDesc4Wsl": "ローカルパイプラインが自動的にClaudeを呼び出してコードを記述",
+    "workflowDesc4": "ローカルパイプラインが自動的にClaudeを呼び出してコードを記述",
+    "workflowSlide": "チーム共有用スライドガイド：ZIP内の docs/setup-guide.pptx",
+    "goToProjectBtn": "プロジェクトページへ移動",
+    "projectPageHint": "プロジェクトページでZIPをダウンロードし、連携ステータスを確認してください",
+    "step1Label": "ZIPをダウンロード",
+    "step1Desc": "プロジェクトページの「ZIPをダウンロード」ボタンをクリック",
+    "step1Link": "プロジェクトページを開く",
+    "step2Label": "解凍",
+    "step2DescWsl": "WSL2 Ubuntuターミナルで任意のフォルダに解凍",
+    "step2Desc": "ZIPファイルを任意のフォルダに解凍",
+    "step2CommandWsl": "unzip '<project>'.zip -d ~/projects/my-project && cd ~/projects/my-project",
+    "step2Command": "unzip '<project>'.zip -d my-project && cd my-project",
+    "step2NoteWsl": "Windowsエクスプローラーでダブルクリックするのではなく、WSLターミナルから実行してください",
+    "step3Label": "ランチャースクリプトを実行",
+    "step3Desc": "環境をチェックし、バックグラウンドでサービスを起動した後、自動的に終了します。ターミナルを閉じてもパイプラインは実行され続けます。",
+    "step3Command": "bash start.sh",
+    "step4LabelWsl": "永続サービスとして登録（推奨）",
+    "step4Label": "セットアップ完了を確認",
+    "step4DescWsl": "WSL2のシャットダウンや再起動後にサービスが自動的に復旧します。systemdユーザーサービスとして登録してください。",
+    "step4Desc": "ClickEye Web の AI Team がタスクを登録すると、ローカルパイプラインが自動的に実行されます。",
+    "step4CommandWsl": "bash scripts/install-service.sh",
+    "step4NoteWsl": "任意ですが、安定した運用のために推奨します"
+  },
+  "onboarding": {
+    "preset": {
+      "title": "クイックスタート",
+      "subtitle": "プリセットを選択すると、Agent・スキル・パイプラインが自動的に構成されます",
+      "presetsTitle": "プリセットを選択",
+      "presetsCount": "（{count}）",
+      "presetsLoading": "プリセットを読み込み中...",
+      "presetsEmpty": "利用可能なプリセットがありません。ウィザードで手動で構成してください。",
+      "skipBtn": "スキップして手動で構成",
+      "applyBtn": "プリセットを適用して開始"
+    },
+    "maturity": {
+      "title": "成熟度アセスメント",
+      "subtitle": "チームの開発成熟度を評価し、プリセットの推奨を受け取りましょう",
+      "skipBtn": "スキップして手動で構成",
+      "resultTitle": "アセスメント結果",
+      "resultSubtitle": "チームのAI開発成熟度を分析しました",
+      "loadingQuestions": "質問を読み込み中...",
+      "questionsError": "質問を読み込めませんでした。しばらくしてからもう一度お試しください。",
+      "goToWizard": "ウィザードへ進む"
+    },
+    "naturalLanguage": {
+      "title": "自然言語で構成する",
+      "subtitle": "プロジェクトを自然言語で説明すると、最適な構成の推奨を受け取れます",
+      "placeholder": "例：Next.js + FastAPI でSaaSを構築したいです。コードレビューとテスト自動化が必要です。",
+      "ariaLabel": "自然言語による構成入力",
+      "analyzeAriaLabel": "構成を分析",
+      "analyzing": "分析中...",
+      "analyzeBtn": "分析",
+      "resultTitle": "AI分析結果",
+      "confidence": "信頼度 {percent}%",
+      "agentsCount": "Agent {count}個",
+      "skillsCount": "スキル {count}個",
+      "pipelinesCount": "パイプライン {count}個",
+      "proceedBtn": "この分析でウィザードを開始"
+    },
+    "questionnaire": {
+      "progressLabel": "{answered}/{total} 回答済み",
+      "prevBtn": "前へ",
+      "analyzing": "分析中...",
+      "checkResults": "結果を確認",
+      "nextBtn": "次へ",
+      "categories": {
+        "team": {
+          "label": "チーム能力",
+          "description": "チームの規模とAI経験のレベルについて教えてください"
+        },
+        "process": {
+          "label": "開発プロセス",
+          "description": "コードレビューとブランチ戦略を確認します"
+        },
+        "tooling": {
+          "label": "開発ツール",
+          "description": "IDEとテスト自動化のレベルを評価します"
+        },
+        "ci": {
+          "label": "CI/CD",
+          "description": "パイプラインとデプロイ頻度を確認します"
+        },
+        "ai": {
+          "label": "AI活用",
+          "description": "AIツールの利用状況と品質管理を評価します"
+        }
+      }
+    },
+    "maturityResult": {
+      "viewPresets": "推奨プリセットを見る",
+      "configureManually": "手動で構成"
+    },
+    "tour": {
+      "steps": {
+        "navigation": {
+          "title": "ナビゲーションメニュー",
+          "content": "左側のサイドバーから、ダッシュボードの主要機能へすばやく移動できます。"
+        },
+        "newSolution": {
+          "title": "新しいソリューションを作成",
+          "content": "7ステップのウィザードでAI Agentソリューションを設計し、ZIPとしてダウンロードできます。"
+        },
+        "settings": {
+          "title": "設定（Linear連携）",
+          "content": "組織メンバーの管理やLinearプロジェクト連携など、チーム設定を構成します。"
+        },
+        "aiTeam": {
+          "title": "AI Team",
+          "content": "プロジェクト内でAI Teamを構築し、自動化パイプラインを実行・監視できます。"
+        },
+        "help": {
+          "title": "ヘルプ",
+          "content": "ここからいつでもユーザーガイドを表示したり、このチュートリアルを再開したりできます。"
+        }
+      }
+    }
+  },
+  "solutions": {
+    "page": {
+      "title": "ソリューションウィザード",
+      "subtitle": "AIが御社に合わせたソリューションを自動的に設計します",
+      "newBtn": "新しいソリューション",
+      "newBtnAria": "新しいソリューションウィザードを開始",
+      "heroTitle": "7ステップのウィザードでAIソリューションを設計",
+      "heroDesc": "会社情報を入力すると、AIがカスタムプロトタイプを生成し、PM推奨、Agent構成、プラットフォーム選択までガイドします。",
+      "heroLink": "今すぐ開始",
+      "recentSessions": "最近のセッション",
+      "loadingAria": "セッション一覧を読み込み中",
+      "emptyState": "セッションがまだありません",
+      "emptyStateHint": "新しいソリューションウィザードを開始",
+      "startBtn": "新しいソリューションを開始",
+      "loadError": "セッション一覧を読み込めません。",
+      "recentSessionsListAria": "最近のソリューションセッション一覧",
+      "openSessionAria": "{name} セッションを開く"
+    },
+    "status": {
+      "completed": "完了",
+      "generating": "生成中",
+      "pending": "保留中",
+      "failed": "失敗"
+    },
+    "new": {
+      "resumeTitle": "進行中のセッションがあります",
+      "resumeDesc": "以前のウィザードセッションを続行するか、新しく開始できます。",
+      "noRequest": "（リクエストなし）",
+      "sessionCompleted": "プロトタイプを生成しました",
+      "sessionGenerating": "生成中",
+      "sessionPending": "保留中",
+      "startNew": "新しく開始",
+      "sessionDeleteAria": "セッションを削除",
+      "retry": "再試行",
+      "proceed": "そのまま進む"
+    },
+    "meta": {
+      "newTitle": "新しいソリューション | ClickEye",
+      "newDescription": "7ステップのウィザードでAIソリューションを自動設計"
+    },
+    "modernizeConnected": {
+      "title": "GitHub連携完了",
+      "redirecting": "まもなくウィザードにリダイレクトします..."
+    }
+  },
+  "projects": {
+    "page": {
+      "wizardBannerTitle": "新規ソリューションウィザード",
+      "wizardBannerDesc": "AIソリューションを自分で設計し、ZIPダウンロードですぐに始められます",
+      "wizardBannerBtn": "ソリューション設計を開始",
+      "wizardBannerBtnAria": "新規ソリューションウィザードを開始",
+      "modernizeBannerTitle": "既存コードのモダナイズ",
+      "modernizeBannerDesc": "GitHubリポジトリを接続すると、AIがコードを診断し、モダナイズ作業をLinearに自動登録します",
+      "modernizeBannerBtn": "リポジトリを接続",
+      "modernizeBannerBtnAria": "コードモダナイズウィザードを開始",
+      "title": "プロジェクト",
+      "subtitle": "AI Agentが作業するプロジェクトを管理します",
+      "searchPlaceholder": "プロジェクトを検索...",
+      "searchAria": "プロジェクトを検索",
+      "filterAll": "すべて",
+      "filterActive": "アクティブ",
+      "filterArchived": "アーカイブ済み",
+      "loadError": "プロジェクトの読み込みに失敗しました。",
+      "prevPageAria": "前のページ",
+      "nextPageAria": "次のページ",
+      "pageAria": "ページ {page}",
+      "totalCount": "プロジェクト合計 {count} 件"
+    },
+    "detail": {
+      "backToList": "プロジェクト一覧",
+      "staleKeyTitle": "APIキーが変更されました",
+      "staleKeyDesc": "ローカルの.envファイルを更新する必要があります。{keys} 個のキーが古くなっています。",
+      "staleKeyAnthropicLabel": "Anthropic",
+      "staleKeyLinearLabel": "Linear",
+      "downloadEnv": ".envをダウンロード",
+      "downloadZip": "ZIPを再ダウンロード",
+      "editTitle": "プロジェクトを編集",
+      "submitLabel": "保存",
+      "editBtn": "編集",
+      "dashboardBtn": "ダッシュボード",
+      "settingsBtn": "設定",
+      "loading": "読み込み中...",
+      "loadError": "プロジェクトの読み込みに失敗しました: {message}",
+      "statusActive": "アクティブ",
+      "statusArchived": "アーカイブ済み",
+      "createdAt": "作成日: {date}",
+      "statusMeta": "ステータス: {status}",
+      "configSummary": "設定の概要",
+      "labelCompany": "会社",
+      "labelSolution": "ソリューション",
+      "labelAgents": "Agent",
+      "labelSkills": "Skill",
+      "labelPipelines": "パイプライン",
+      "labelPlatform": "プラットフォーム",
+      "noWizardData": "ウィザードの設定がありません。ソリューションウィザードを再実行してZIPを再生成してください。",
+      "oauthNote": "OAuthブラウザ認証モードです。bash start.shを実行するとclaude loginが自動的に進行します。",
+      "envNote": "APIキーはサーバーに保存されません。ZIP内の.envに直接書き込まれます。",
+      "missingEnvAlert": "ZIPをダウンロードするには、必須の環境変数 {count} 個 ({labels}) を入力する必要があります。",
+      "downloadBtn": "ZIPをダウンロード",
+      "downloading": "ダウンロード中...",
+      "downloadHintMissing": "環境変数を入力するとダウンロードできます",
+      "downloadHintReady": "保存された設定とご自身のAPIキーでZIPが生成されます",
+      "sanitizedWarning": "ASCII以外の文字（韓国語、絵文字など）は自動的に削除されます。英数字のみを入力してください。",
+      "dangerZoneTitle": "危険な操作",
+      "dangerZoneDesc": "以下の操作は元に戻せません。慎重に実行してください。",
+      "resetTitle": "プロジェクトをリセット",
+      "resetDesc": "ウィザード設定、チケット、成果物、セッションデータを削除します。プロジェクトIDと名前は保持されます。",
+      "resetBtn": "リセット",
+      "deleteTitle": "プロジェクトを削除",
+      "deleteDesc": "プロジェクトと関連するすべてのデータを完全に削除します。",
+      "deleteBtn": "削除",
+      "resetSuccess": "プロジェクトをリセットしました。",
+      "resetKeyUpdateNote": "ローカルの.envファイルのLICENSE_KEYを、上記の新しいキーで更新してください。",
+      "notSet": "未設定",
+      "countItem": "{count} 件",
+      "redownloadError": "再ダウンロードに失敗しました",
+      "editFail": "更新に失敗しました。",
+      "validating": "検証中...",
+      "solutionTypeFullstack": "フルスタック",
+      "solutionTypeInternalTool": "社内ツール",
+      "solutionTypeCustom": "カスタム",
+      "licenseKeyLabel": "新しいライセンスキー:"
+    },
+    "linear": {
+      "cardTitle": "Linear連携ステータス",
+      "compactNote": "（サーバー自動化用）",
+      "refreshBtn": "更新",
+      "credentialsSaved": "認証情報を保存しました",
+      "credentialsSavedDesc": "Linear APIキーが登録されています",
+      "teamIdDesc": "チームID: {teamId}",
+      "credentialsNotSavedDesc": "プロジェクト作成時にLinear APIキーとチームIDを入力すると自動保存されます",
+      "apiKeyConfirmed": "APIキーを確認しました",
+      "startAiTeamBtn": "AI Teamを開始",
+      "newSolutionBtn": "新規ソリューションを作成",
+      "savedNote": "このプロジェクトのLinear認証情報は保存されています。",
+      "notSavedNote": "プロジェクト作成ウィザードでLinear APIキーを入力すると、このプロジェクト用に保存されます。"
+    },
+    "reset": {
+      "title": "プロジェクトをリセット",
+      "warning": "<name>{name}</name> プロジェクトをリセットすると、以下のデータが完全に削除されます。この操作は元に戻せません。",
+      "confirmLabel": "確認のため、プロジェクト名 <name>{name}</name> を入力してください",
+      "itemWizard": "ウィザード設定（wizard_data）",
+      "itemTickets": "チケットとイベント",
+      "itemSessions": "オーケストレーターセッションとメッセージ",
+      "itemArtifacts": "成果物",
+      "itemAgents": "Agent接続情報",
+      "itemConfigs": "プロジェクト設定（project_configs）",
+      "itemOverrides": "契約のオーバーライド",
+      "itemLicense": "ライセンスキー（新しいキーとして再発行されます）",
+      "resetting": "リセット中...",
+      "resetBtn": "リセット"
+    },
+    "list": {
+      "emptyTitle": "プロジェクトがまだありません",
+      "emptyHint": "最初のプロジェクトを作成して始めましょう",
+      "createBtn": "新規プロジェクトを作成"
+    },
+    "card": {
+      "automationRate": "自動化率",
+      "reviewAcceptanceRate": "レビュー承認率",
+      "releasedArtifacts": "リリース済み成果物",
+      "keyStale": "キーの更新が必要"
+    },
+    "pmFeedback": {
+      "title": "PMフィードバック",
+      "subtitle": "ご利用中のPMへの評価を残してください",
+      "later": "後で",
+      "usageCount": "{count} 回利用",
+      "usedLabel": "利用済み",
+      "thanks": "フィードバックありがとうございます。PMの改善に役立てます。",
+      "like": "良い",
+      "dislike": "いまひとつ",
+      "commentPlaceholder": "このPMの優れている点や改善できる点を教えてください。改善に大いに役立ちます。",
+      "submitting": "送信中...",
+      "submit": "フィードバックを送信"
+    },
+    "dashboard": {
+      "title": "{name} ダッシュボード",
+      "fallbackName": "プロジェクト",
+      "lastGenerated": "最終生成: {date}",
+      "refresh": "更新",
+      "loadError": "レポートの読み込みに失敗しました。もう一度お試しください。"
+    },
+    "insights": {
+      "title": "{name} KPIインサイト",
+      "fallbackName": "プロジェクト",
+      "lastAggregated": "最終集計: {date}",
+      "refresh": "更新",
+      "loadError": "KPIデータの読み込みに失敗しました。もう一度お試しください。"
+    },
+    "settings": {
+      "notFound": "プロジェクトが見つかりません。",
+      "backToList": "一覧に戻る",
+      "title": "プロジェクト設定",
+      "subtitle": "プロジェクト情報を編集し、ステータスを管理します",
+      "basicInfo": "基本情報",
+      "updateSuccess": "プロジェクトを更新しました。",
+      "statusTitle": "プロジェクトステータス",
+      "statusDesc": "プロジェクトをアーカイブまたは再アクティブ化できます",
+      "archiveBtn": "アーカイブ",
+      "activateBtn": "アクティブ化"
+    },
+    "contracts": {
+      "loading": "読み込み中...",
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "editCancelAria": "編集をキャンセル",
+      "editOverrideAria": "オーバーライドを編集",
+      "updatedAt": "更新日: {date}",
+      "applyTitle": "契約を適用",
+      "applyDesc": "このプロジェクトに適用する中央契約を選択してください。",
+      "noAvailable": "適用できる契約がありません",
+      "applying": "適用中...",
+      "applyBtn": "適用",
+      "backToDetail": "プロジェクト詳細",
+      "title": "プロジェクト契約",
+      "subtitle": "このプロジェクトに適用された契約とオーバーライドを管理します",
+      "syncBtn": "同期",
+      "loadError": "プロジェクト契約の読み込みに失敗しました。",
+      "totalCount": "合計 {count} 件",
+      "emptyState": "適用された契約がありません",
+      "applyFirst": "最初の契約を適用"
+    }
+  },
+  "settings": {
+    "members": {
+      "title": "組織メンバー",
+      "subtitle": "組織メンバーを招待・管理します",
+      "inviteBtn": "メンバーを招待",
+      "userIdLabel": "ユーザーID",
+      "userIdPlaceholder": "UUIDを入力...",
+      "roleLabel": "ロール",
+      "addingBtn": "追加中...",
+      "addBtn": "追加",
+      "cancelBtn": "キャンセル",
+      "loadError": "メンバー一覧の読み込みに失敗しました。",
+      "colUser": "ユーザー",
+      "colRole": "ロール",
+      "colStatus": "ステータス",
+      "colJoinedAt": "参加日",
+      "colActions": "操作",
+      "deleteConfirm": "本当に削除しますか？",
+      "confirmBtn": "確認",
+      "removeTitle": "メンバーを削除",
+      "statusActive": "アクティブ",
+      "statusInactive": "非アクティブ",
+      "emptyState": "組織メンバーがいません",
+      "emptyStateHint": "上の「メンバーを招待」ボタンからメンバーを追加してください",
+      "totalCount": "メンバー合計 {count} 名",
+      "roles": {
+        "org_admin": "管理者",
+        "org_member": "メンバー",
+        "org_viewer": "閲覧者"
+      }
+    },
+    "linear": {
+      "title": "Linear連携",
+      "subtitle": "AI Teamのタスクは自動的にLinearのissueとして登録され、ステータスが変更されるとローカルのClaudeが自動的に実行されます。",
+      "savedTitle": "保存された認証情報",
+      "apiKeyLabel_header": "APIキー",
+      "teamIdLabel_header": "チームID",
+      "webhookSecretLabel_header": "Webhookシークレット",
+      "tunnelUrlLabel_header": "トンネルURL",
+      "webhookRegistered": "Linear Webhookが登録されました",
+      "formTitle_update": "認証情報を更新",
+      "formTitle_new": "認証情報を登録",
+      "apiKeyLabel": "Linear APIキー",
+      "apiKeyKeepEmpty": "（変更しない場合は空のままにしてください）",
+      "teamIdLabel": "チームID",
+      "apiKeyHelp": "Linear → Settings → API → Personal API keys から発行",
+      "teamIdHelp": "Linear → Settings → Workspace → Teams → チーム名をクリック → IDをコピー",
+      "webhookSectionTitle": "Webhook設定",
+      "webhookSectionNote": "（リアルタイムClaudeトリガー用）",
+      "tunnelUrlLabel": "トンネルURL",
+      "webhookSecretLabel": "Webhookシークレット（任意）",
+      "tunnelUrlHelp": "ZIP内のsetup-tunnel.shを実行した後に出力されるURL",
+      "webhookPlaceholderSet": "設定済み - 変更するには新しい値を入力してください",
+      "webhookPlaceholderUnset": "openssl rand -hex 32 で生成",
+      "updateBtn": "更新",
+      "saveBtn": "保存",
+      "deleteBtn": "削除",
+      "saveSuccess_webhook": "保存しました。Linear Webhookが自動的に登録されました。",
+      "saveSuccess": "Linear認証情報を保存しました。",
+      "deleteSuccess": "Linear認証情報を削除しました。",
+      "saveFail": "保存に失敗しました。",
+      "deleteFail": "削除に失敗しました。",
+      "webhookSet": "設定済み",
+      "webhookNotSet": "未設定",
+      "tunnelNotSet": "未設定",
+      "guide": {
+        "tunnelTitle": "トンネルURLはどうやって取得しますか？",
+        "tunnelDesc": "トンネルURLは、ローカルのWebhookサーバーをインターネットからアクセス可能にする外部アドレスです。bash start.shを実行すると自動的に設定されます。",
+        "tunnelStep1Title": "解凍後にランチャーを実行（トンネルとWebhookが自動設定されます）",
+        "tunnelStep2Title": "発行されたトンネルURLを確認",
+        "tunnelStep2Paste": "出力されたURLを下の入力欄に貼り付けてください。",
+        "tunnelStep3Title": "URLの更新が必要な場合（WSL2再起動後）",
+        "tunnelStep3Note": "再実行すると、新しいURLでWebhookが自動的に再登録されます。",
+        "tunnelWarning": "無料のCloudflareトンネルはWSL2の再起動時にURLが変わります。再起動後にbash start.shを再実行してください。systemdサービスとして登録する（install-service.sh）と、Webhookサーバーとwatcherが自動的に実行され続けます。",
+        "tunnelDocsLink": "Cloudflare Tunnel公式ドキュメント",
+        "webhookTitle": "Webhookシークレットとは何ですか？",
+        "webhookDesc": "LinearがローカルサーバーにイベントWebを送信する際の署名検証に使用されるランダムな文字列です。任意ですが、セキュリティのため推奨されます。",
+        "webhookGenerateTitle": "ターミナルでランダムなシークレットを生成:",
+        "webhookPasteDesc": "出力をコピーして、下の入力欄とZIP内の.envファイルのWEBHOOK_SECRETの両方に入力してください。",
+        "webhookNote": "トンネルURLを登録すると、ClickEyeが自動的にLinear Webhookを登録します。ここで入力したシークレットがそのWebhookに適用されます。"
+      }
+    },
+    "anthropic": {
+      "title": "Anthropic認証情報",
+      "subtitle": "Claudeの認証方式に必要な認証情報を登録してください。ウィザードで選択したモードに応じた適切な認証情報が、ZIP生成時に自動的に注入されます。",
+      "apiKeySection": "APIキーモード",
+      "oauthSection": "OAuthブラウザモード",
+      "apiKeyCardTitle": "APIキー",
+      "apiKeyCardDescription": "ウィザードで「APIキー」モードを選択した場合に使用されます。ZIPの.envにANTHROPIC_API_KEYとして自動的に注入されます。",
+      "apiKeyInvalid": "形式が無効です（sk-ant-... で始まり、20文字以上である必要があります）",
+      "apiKeyExternalLink": "console.anthropic.com → API Keys から発行（sk-ant-... 形式）",
+      "apiKeyHelper": "キーはFernet暗号化されてサーバーに保存されます。ウィザードでソリューションブループリントを分析する際、このキーが優先して使用され、サーバーキーより先にご自身のアカウントのクレジットが消費されます。",
+      "oauthNoRegistrationTitle": "個別の登録は不要です",
+      "oauthNoRegistrationDesc": "ウィザードで「OAuthブラウザ」モードを選択した場合、ClickEyeクラウドには認証情報は保存されません。",
+      "oauthBullet1": "bash start.shを実行すると、claude loginが自動的に進行します。",
+      "oauthBullet2": "認証トークンはOSキーチェーン（~/.claude.json）にのみ保存され、ClickEyeには送信されません。",
+      "oauthBullet3": "このモードでは、このページで管理するものはありません。ウィザードで認証方式を選択し、ZIPをダウンロードしてください。"
+    },
+    "language": {
+      "title": "Language / 言語",
+      "subtitle": "表示言語を選択してください"
+    }
+  },
+  "guide": {
+    "title": "ユーザーガイド",
+    "subtitle": "ClickEyeプラットフォームの使い方を順を追って説明します。",
+    "toc": "目次"
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "ログインしてAI Agentを管理しましょう",
+      "registeredSuccess": "登録が完了しました。ログインしてください。",
+      "credentialsError": "メールアドレスまたはパスワードが正しくありません",
+      "orContinueWithEmail": "またはメールアドレスで続行",
+      "emailLabel": "メールアドレス",
+      "passwordLabel": "パスワード",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "passwordPlaceholder": "パスワードを入力してください",
+      "submit": "ログイン",
+      "submitting": "ログイン中...",
+      "noAccountPrompt": "アカウントをお持ちでないですか？",
+      "signupLink": "新規登録"
+    },
+    "register": {
+      "title": "はじめる",
+      "subtitle": "無料アカウントを作成して、AI Agentの力を体験しましょう",
+      "genericError": "登録中にエラーが発生しました",
+      "orContinueWithEmail": "またはメールアドレスで登録",
+      "emailLabel": "メールアドレス",
+      "nameLabel": "名前",
+      "namePlaceholder": "表示名",
+      "passwordLabel": "パスワード",
+      "passwordPlaceholder": "8文字以上",
+      "confirmPasswordLabel": "パスワードの確認",
+      "confirmPasswordPlaceholder": "パスワードを再入力してください",
+      "requirements": {
+        "minLength": "8文字以上",
+        "hasUpper": "大文字を含む",
+        "hasNumber": "数字を含む"
+      },
+      "termsPrefix": "登録すると、以下に同意したものとみなされます：",
+      "termsLink": "利用規約",
+      "termsConjunction": "および",
+      "privacyLink": "プライバシーポリシー",
+      "termsSuffix": "。",
+      "submit": "アカウントを作成",
+      "submitting": "登録中...",
+      "hasAccountPrompt": "すでにアカウントをお持ちですか？",
+      "loginLink": "ログイン"
+    },
+    "layout": {
+      "tabLogin": "ログイン",
+      "tabRegister": "新規登録",
+      "heroTitleLine1": "AIがコードを書く",
+      "heroTitleLine2": "新しい開発体験",
+      "heroDescLine1": "チケットの割り当てからコードレビュー、PR作成まで。",
+      "heroDescLine2": "決して眠らないAI開発Agentに出会いましょう。",
+      "features": {
+        "orchestration": {
+          "title": "AI Agentオーケストレーション",
+          "desc": "Claudeを活用した自律型開発Agent"
+        },
+        "security": {
+          "title": "エンタープライズセキュリティ",
+          "desc": "隔離された実行環境とライセンス管理"
+        },
+        "automation": {
+          "title": "自動化されたワークフロー",
+          "desc": "チケットからPRまでのエンドツーエンド自動化"
+        }
+      },
+      "copyright": "© 2026 ClickEye. All rights reserved."
+    }
+  },
+  "nav": {
+    "main": "メインナビゲーション",
+    "sidebar": {
+      "collapse": "サイドバーを折りたたむ",
+      "expand": "サイドバーを展開"
+    },
+    "items": {
+      "newSolution": "新しいソリューション",
+      "projects": "プロジェクト",
+      "guide": "ガイド"
+    },
+    "sections": {
+      "settings": "設定",
+      "admin": "管理"
+    },
+    "settings": {
+      "members": "組織メンバー",
+      "anthropic": "Anthropic認証情報"
+    },
+    "admin": {
+      "controlTower": "コントロールタワー",
+      "users": "ユーザー管理",
+      "contracts": "契約",
+      "pm": "PM管理",
+      "agentsRegistry": "Agentレジストリ",
+      "skillsRegistry": "スキルレジストリ",
+      "mcpsRegistry": "MCPレジストリ",
+      "prototypeCatalog": "プロトタイプカタログ",
+      "prototypeTags": "プロトタイプタグ",
+      "roiStandards": "ROI基準",
+      "globalSettings": "グローバル設定",
+      "recommendations": "推奨ログ",
+      "audit": "監査ログ"
+    }
+  },
+  "home": {
+    "nav": {
+      "features": "機能",
+      "howItWorks": "仕組み",
+      "platforms": "プラットフォーム",
+      "login": "ログイン",
+      "ctaStart": "設計を開始"
+    },
+    "hero": {
+      "badge": "Webファーストの AIソリューションビルダー",
+      "titleLine1": "自分で設計し、",
+      "titleLine2": "1つのZIPで始める、",
+      "titleLine3": "AI開発",
+      "descLine1": "ブラウザでAgent、Skill、パイプラインを選ぶだけで、",
+      "descLine2": "Claude Code / Gemini CLI / Cursor / Codex 向けのプロジェクトを自動生成します。",
+      "primaryCta": "設計を開始",
+      "secondaryCta": "仕組みを見る",
+      "wizardSteps": {
+        "company": "会社",
+        "solution": "ソリューション",
+        "agent": "Agent",
+        "skill": "Skill",
+        "pipeline": "パイプライン",
+        "platform": "プラットフォーム",
+        "preview": "プレビュー"
+      },
+      "agentSelectPrompt": "プロジェクトに配置するAI Agentを選択してください",
+      "agentRequired": "必須",
+      "recommendationNote": "ソリューションタイプに基づいたおすすめが適用されました",
+      "demoAgents": {
+        "harness": "ハーネスエンジニア",
+        "backend": "シニアバックエンド",
+        "frontend": "フロントエンドスペシャリスト",
+        "uiux": "UI/UXデザイナー",
+        "devops": "DevOps",
+        "fullstack": "フルスタック"
+      }
+    },
+    "features": {
+      "sectionTitle": "なぜClickEyeなのか？",
+      "sectionDescription": "AI開発自動化プラットフォーム — Webで設計し、ZIPとして出荷",
+      "wizard": {
+        "title": "7ステップウィザード",
+        "desc": "会社情報からプラットフォーム選択まで、ブラウザ上の7つのステップでAIソリューションを設計します。1行のコードも書かずに始められます。"
+      },
+      "catalog": {
+        "title": "自動おすすめカタログ",
+        "desc": "ソリューションタイプを選ぶだけで、Agent、Skill、パイプラインを自動的におすすめします — Harness、TDD、AIレビューなどの実績あるパイプラインも含まれます。"
+      },
+      "security": {
+        "title": "BYOKセキュリティモデル",
+        "desc": "APIキーはZIPの.envファイル内にのみ存在します。サーバーにキーを一切保存しないゼロトラスト設計です。"
+      },
+      "platform": {
+        "title": "マルチプラットフォーム対応",
+        "desc": "Claude Code、Gemini CLI、Cursor、Codex。どのAIコーディングツールを使っても、同じウィザードが同じ品質のプロジェクトを生成します。"
+      }
+    },
+    "metrics": {
+      "badge": "実際の顧客メトリクス",
+      "sectionTitle": "数字が証明する実績",
+      "sectionDescription": "ClickEyeを利用しているチームの実際の開発メトリクス",
+      "automation": {
+        "label": "平均自動化率",
+        "desc": "サブタスクの87%をAIが処理"
+      },
+      "review": {
+        "label": "レビュー承認率",
+        "desc": "修正なしで初回レビューに承認"
+      },
+      "speed": {
+        "label": "開発の高速化",
+        "desc": "平均で手動の3.5倍の速さ"
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "どのように機能しますか？",
+      "sectionDescription": "3つのステップでAI開発環境を完成させます",
+      "design": {
+        "title": "Webで設計",
+        "desc": "ログイン後、7ステップウィザードで会社情報、ソリューションタイプ、Agent、Skill、パイプライン、プラットフォームを選択します。ソリューションタイプに基づいておすすめが適用されます。"
+      },
+      "download": {
+        "title": "ZIPをダウンロード",
+        "desc": "設定が完了したら、ファイルをプレビューしてプロジェクトのZIPをダウンロードします — CLAUDE.md、Agentガイド、.env、すべての設定が含まれます。"
+      },
+      "run": {
+        "title": "ローカルで実行",
+        "desc": "解凍してAIコーディングツールを起動します。claude、gemini、cursor — どのツールもプロジェクトガイドを読み込み、すぐに開発を始めます。"
+      },
+      "terminal": {
+        "loadingClaudeMd": "CLAUDE.mdを読み込み中...",
+        "harnessActivated": "ハーネスエンジニアリングの4段階パイプラインを有効化しました",
+        "starting": "プロジェクト開発を開始"
+      }
+    },
+    "platforms": {
+      "sectionTitle": "対応プラットフォーム",
+      "sectionDescription": "どのAIコーディングツールを使っても、ClickEyeがそれに合った適切な設定を生成します",
+      "claudeCode": {
+        "name": "Claude Code",
+        "desc": "Anthropicのターミナル AI Agent"
+      },
+      "geminiCli": {
+        "name": "Gemini CLI",
+        "desc": "Googleのターミナル AI Agent"
+      },
+      "cursor": {
+        "name": "Cursor",
+        "desc": "AIネイティブIDE"
+      },
+      "codex": {
+        "name": "Codex",
+        "desc": "OpenAIのターミナル AI Agent"
+      }
+    },
+    "earlyAccess": {
+      "sectionTitle": "今なら無料です",
+      "sectionDescLine1": "アーリーアクセス期間中は、すべての機能を無料でご利用いただけます。",
+      "sectionDescLine2": "必要なのは、ご利用のAIプラットフォームのAPIキーだけです。",
+      "planName": "Early Access",
+      "freeBadge": "無料",
+      "features": {
+        "unlimitedWizard": "7ステップウィザードを無制限に利用",
+        "catalog": "すべてのAgent・Skillカタログ",
+        "platforms": "4つのAIプラットフォームに対応",
+        "downloads": "ZIPダウンロード無制限"
+      },
+      "cta": "無料で始める",
+      "byokNote": "BYOK — Bring Your Own Key。APIキーは当社のサーバーに一切保存しません。"
+    },
+    "finalCta": {
+      "title": "7ステップでAI開発",
+      "description": "ブラウザで設計し、ZIPで始める。APIキーはご自身のマシンに保管されます。",
+      "button": "設計を開始"
+    },
+    "footer": {
+      "copyright": "© 2026 ClickEye. All rights reserved."
+    }
+  },
+  "admin": {
+    "common": {
+      "add": "追加",
+      "edit": "編集",
+      "active": "有効",
+      "inactive": "無効",
+      "translationMissing": "未翻訳",
+      "langKorean": "韓国語",
+      "langEnglish": "英語",
+      "tagInputPlaceholder": "入力して Enter キーを押す",
+      "pagination": {
+        "prev": "前のページ",
+        "next": "次のページ",
+        "page": "{page} ページ",
+        "total": "全 {count} 件"
+      }
+    },
+    "pm": {
+      "loading": "読み込み中...",
+      "backToList": "一覧へ戻る",
+      "saveMd": "MD を保存",
+      "sections": {
+        "basic": "基本情報",
+        "composition": "構成コンポーネント",
+        "specialtyTags": "専門分野タグ",
+        "freeText": "自由記述",
+        "skill": "SKILL — 技術スタックタグ",
+        "agent": "AGENT — 業界タグ",
+        "supportedPlatforms": "対応プラットフォーム",
+        "feedback": "ユーザーフィードバック"
+      },
+      "form": {
+        "nameRequired": "名前 *",
+        "slugRequired": "Slug *",
+        "title": "肩書き",
+        "domain": "ドメイン",
+        "domainPlaceholder": "例: saas, fintech",
+        "yearsExperience": "経験年数",
+        "language": "言語",
+        "langKorean": "韓国語",
+        "langEnglish": "English",
+        "activeStatus": "有効状態",
+        "specialties": "専門分野",
+        "specialtiesPlaceholder": "例: product, saas",
+        "preferredSolutionTypes": "優先ソリューションタイプ",
+        "preferredSolutionTypesPlaceholder": "例: saas, rest-api",
+        "description": "一行説明",
+        "bioLong": "詳細プロフィール (bio_long) — PM 推薦時に Claude へ渡されます",
+        "bioLongPlaceholder": "PM の専門性、経験、スタイルを詳しく記述してください。",
+        "bioLongHint": "具体的で詳細なほど、Claude の推薦品質が向上します。",
+        "techStackTags": "技術スタックタグ",
+        "techStackTagsPlaceholder": "例: nextjs, fastapi, react",
+        "industryTags": "業界タグ",
+        "industryTagsPlaceholder": "例: fintech, ecommerce, healthtech",
+        "supportedPlatforms": "対応 AI プラットフォーム",
+        "supportedPlatformsPlaceholder": "例: claude-code, cursor, gemini-cli, codex",
+        "supportedPlatformsHint": "この PM が対応する AI Agent プラットフォームの Slug を入力してください。対応していないプラットフォームは、ウィザードの Step 7（プラットフォーム選択）で無効になります。"
+      },
+      "enTranslation": {
+        "sectionTitle": "英語翻訳 (i18n)",
+        "missingCount": "{count} 件未入力",
+        "note": "英語ユーザーに表示されるテキストです。空欄の場合は韓国語の原文が使用されます。",
+        "nameLabel": "名前 (name_en)",
+        "titleLabel": "肩書き (title_en)",
+        "descriptionLabel": "一行説明 (description_en)",
+        "bioLabel": "詳細プロフィール (bio_long_en)"
+      },
+      "feedback": {
+        "likes": "高評価",
+        "dislikes": "低評価",
+        "totalFeedback": "フィードバック合計",
+        "usageCount": "利用回数",
+        "empty": "まだフィードバックはありません",
+        "noComment": "コメントなし"
+      },
+      "pagination": {
+        "prev": "前へ",
+        "next": "次へ"
+      },
+      "list": {
+        "title": "PM プロフィール管理",
+        "subtitle": "AI PM プロフィールの作成と編集（管理者専用）",
+        "createPm": "PM を作成",
+        "createTitle": "新しい PM プロフィールを作成",
+        "namePlaceholder": "例: Alex Chen",
+        "slugPlaceholder": "例: alex-chen",
+        "titlePlaceholder": "例: Senior PM",
+        "descriptionPlaceholder": "PM の簡単な説明",
+        "deleteConfirm": "PM「{name}」を削除しますか？",
+        "colName": "名前",
+        "colDomain": "ドメイン",
+        "colSpecialty": "専門分野",
+        "colUsage": "利用回数",
+        "colFeedback": "フィードバック",
+        "colStatus": "ステータス",
+        "colActions": "操作",
+        "usageUnit": "回",
+        "empty": "PM プロフィールがありません。上のボタンから追加してください。"
+      },
+      "composition": {
+        "title": "構成コンポーネント（チーム）",
+        "hint": "レジストリに登録された項目のみ追加できます。タイプごとに複数選択できます。",
+        "loading": "読み込み中...",
+        "add": "追加",
+        "adding": "追加中...",
+        "emptyItems": "まだ追加された項目はありません。",
+        "removeConfirm": "「{name}」を削除しますか？",
+        "removeAria": "{name} を削除",
+        "sectionLabels": {
+          "agent": "AI Agent",
+          "skill": "スキル",
+          "mcp_server": "MCP サーバー",
+          "hook": "Hook"
+        }
+      },
+      "picker": {
+        "searchPlaceholder": "名前または Slug で検索...",
+        "loading": "読み込み中...",
+        "noResults": "検索結果がありません。",
+        "alreadyAdded": "追加済み",
+        "selectedCount": "{count} 件選択中",
+        "selectPrompt": "項目を選択してください",
+        "addCount": "追加 ({count})"
+      },
+      "markdownPane": {
+        "title": "MD 全体編集",
+        "subtitle": "YAML frontmatter を含む全体の Markdown",
+        "note": "<code>---bio---</code> 以下の内容が Claude PM 推薦時に使用されます。保存ボタンを押して適用してください。"
+      }
+    },
+    "registry": {
+      "types": {
+        "agents": "Agent",
+        "skills": "スキル",
+        "hooks": "Hook",
+        "mcps": "MCP サーバー"
+      },
+      "loading": "読み込み中...",
+      "empty": "項目がありません。",
+      "addType": "{type} を追加",
+      "editTitle": "{type} を編集",
+      "addTitle": "{type} を追加",
+      "col": {
+        "name": "名前",
+        "category": "カテゴリー",
+        "version": "バージョン",
+        "public": "公開",
+        "actions": "操作"
+      },
+      "bodyMdEmpty": "（空）",
+      "bodyMdPreviewAria": "body_md のプレビュー",
+      "editAria": "{name} を編集",
+      "deleteAria": "{name} を削除",
+      "deleteConfirm": "項目「{name}」を削除しますか？",
+      "fields": {
+        "version": "バージョン",
+        "category": "カテゴリー",
+        "name": "名前",
+        "namePlaceholder": "例: Claude Code Agent",
+        "description": "説明",
+        "descriptionPlaceholder": "一行説明",
+        "bodyMdHint": "（Markdown 詳細説明）",
+        "bodyMdPlaceholder": "# Markdown 形式で記述\n## 機能\n- 機能 1\n- 機能 2",
+        "nameEn": "名前（英語）",
+        "descriptionEn": "説明（英語）",
+        "bodyMdEn": "body_md（英語）",
+        "isPublic": "公開（一般ユーザーに表示）",
+        "metadataTitle": "メタデータ（推薦アルゴリズムで使用）",
+        "tags": "タグ",
+        "tagsPlaceholder": "例: project-management, automation",
+        "domains": "ドメイン",
+        "domainsPlaceholder": "例: fintech, ecommerce, healthcare",
+        "compatibleSpecialties": "互換性のある PM 専門分野",
+        "compatibleSpecialtiesPlaceholder": "例: fullstack, backend, frontend",
+        "slugPlaceholder": "例: claude-code",
+        "categoryPlaceholder": "例: ai, automation"
+      }
+    },
+    "prototypeCatalog": {
+      "tabs": {
+        "basic": "基本情報",
+        "tech": "技術構成",
+        "proscons": "メリット・デメリット",
+        "agent": "Agent コンテキスト"
+      },
+      "drawer": {
+        "editTitle": "カタログ項目を編集",
+        "newTitle": "新しいカタログ項目"
+      },
+      "fields": {
+        "slug": "Slug *",
+        "slugHint": "小文字・数字・ハイフンのみ使用可（例: saas-fullstack-standard）",
+        "title": "タイトル *",
+        "description": "説明",
+        "tags": "タグ",
+        "tagsHint": "カンマ区切り（例: saas, fullstack, multi-tenant）",
+        "primaryTag": "代表タグ (primary_tag)",
+        "primaryTagHint": "例: saas, rest-api, mvp",
+        "designPatternHint": "例: saas-fullstack",
+        "architecturePatternHint": "例: monolithic 3-tier",
+        "priority": "優先度（高いほど先に表示）",
+        "active": "有効",
+        "activate": "有効化",
+        "techStackTags": "技術スタックタグ",
+        "techStackTagsHint": "カンマ区切り（例: Next.js, FastAPI, PostgreSQL）",
+        "pros": "メリット（1 行に 1 つ）",
+        "prosPlaceholder": "例:\nAPI-first 設計でスケールしやすい\nマルチテナント対応",
+        "cons": "デメリット（1 行に 1 つ）",
+        "consPlaceholder": "例:\n初期設定が複雑\n学習コストが高い",
+        "designPhilosophy": "設計思想",
+        "implementationConstraints": "実装上の制約（1 行に 1 つ）",
+        "recommendedAgents": "推奨 Agent",
+        "recommendedAgentsHint": "カンマ区切り（例: backend, fullstack, frontend）",
+        "optionalAgents": "任意の Agent",
+        "excludedAgents": "除外する Agent（このプロジェクトには不要）",
+        "recommendedSkills": "推奨スキル",
+        "recommendedSkillsHint": "カンマ区切り（例: tdd, ralph-loop）",
+        "agentStrategy": "Agent 戦略",
+        "taskDistributionGuide": "タスク分配ガイド"
+      },
+      "table": {
+        "includeInactive": "無効を含む",
+        "newEntry": "新規項目",
+        "loading": "読み込み中...",
+        "loadFail": "読み込みに失敗しました: {message}",
+        "colTitle": "タイトル",
+        "colPrimaryTag": "代表タグ",
+        "colTechStack": "技術スタック",
+        "colPriority": "優先度",
+        "colStatus": "ステータス",
+        "colActions": "操作",
+        "empty": "カタログ項目がありません"
+      },
+      "tags": {
+        "editTitle": "タグを編集",
+        "newTitle": "新しいタグ",
+        "newEntry": "新規タグ",
+        "loading": "読み込み中...",
+        "labelEn": "ラベル（英語）*",
+        "labelKo": "ラベル（韓国語）",
+        "description": "説明",
+        "colorCode": "カラーコード（例: #3B82F6）",
+        "sortOrder": "並び順",
+        "colLabel": "ラベル",
+        "colKorean": "韓国語",
+        "colColor": "カラー",
+        "colOrder": "順序",
+        "colStatus": "ステータス",
+        "colActions": "操作",
+        "empty": "タグがありません"
+      },
+      "page": {
+        "title": "Prototype カタログ",
+        "subtitle": "ウィザードの AI 提案と ZIP 生成時に参照されるカタログ項目を管理します"
+      },
+      "tagsPage": {
+        "title": "Prototype タグ",
+        "subtitle": "カタログ分類に使用するタグを管理します（固定の enum なしで自由に追加できます）"
+      }
+    },
+    "roi": {
+      "addItem": "項目を追加",
+      "editTitle": "項目を編集",
+      "empty": "項目がありません。",
+      "colKey": "キー",
+      "colLabel": "ラベル",
+      "colValue": "値",
+      "colStatus": "ステータス",
+      "keyLabel": "キー (key)",
+      "keyPlaceholder": "例: pm, saas, high",
+      "labelLabel": "ラベル",
+      "labelPlaceholder": "例: Project Manager",
+      "valueWithUnit": "値 ({unit})",
+      "valuePlaceholder": "例: 900000",
+      "effortByRole": "ロール別工数（日）",
+      "currencyValue": "{value} KRW",
+      "daysValue": "{key}:{value}日"
+    },
+    "markdownEditor": {
+      "edit": "編集",
+      "preview": "プレビュー",
+      "emptyPreview": "*内容を入力すると、ここにプレビューが表示されます。*"
+    },
+    "appSettings": {
+      "loading": "読み込み中...",
+      "variantCountTitle": "Prototype 提案数",
+      "variantCountDesc": "ウィザードでユーザーに提案する Prototype のバリエーション数（2〜5、デフォルト: 3）",
+      "ragTopKTitle": "Claude RAG top-k",
+      "ragTopKDesc": "AI が Prototype を生成する際に参照するカタログ項目数（1〜20、デフォルト: 8）",
+      "currentDbValue": "現在の DB 値: {value}"
+    },
+    "contracts": {
+      "title": "契約管理",
+      "subtitle": "中央契約を管理し、プロジェクトへ展開します",
+      "newContract": "新規契約",
+      "createFirst": "最初の契約を作成",
+      "emptyState": "登録された契約がありません",
+      "loadError": "契約一覧の読み込みに失敗しました。",
+      "types": {
+        "settings": "設定",
+        "skill": "スキル",
+        "agent": "Agent",
+        "pipeline": "パイプライン"
+      },
+      "lockState": {
+        "locked": "ロック",
+        "editable": "編集可能"
+      },
+      "filter": {
+        "allTypes": "すべてのタイプ"
+      },
+      "headers": {
+        "slug": "Slug",
+        "type": "タイプ",
+        "version": "バージョン",
+        "lock": "ロック",
+        "source": "ソース",
+        "updatedAt": "更新日時"
+      },
+      "create": {
+        "title": "新しい契約を作成",
+        "creating": "作成中..."
+      },
+      "form": {
+        "slugLabel": "Slug *",
+        "slugPlaceholder": "例: default-settings",
+        "slugRequired": "Slug を入力してください",
+        "invalidJson": "内容が有効な JSON ではありません",
+        "typeLabel": "タイプ",
+        "sourceLabel": "ソース",
+        "versionLabel": "バージョン",
+        "lockedLabel": "ロック",
+        "descriptionLabel": "説明",
+        "descriptionPlaceholder": "契約の説明",
+        "overridesLabel": "上書き許可フィールド（カンマ区切り）",
+        "overridesPlaceholder": "例: timeout, retry_count",
+        "contentLabel": "内容 (JSON)"
+      },
+      "detail": {
+        "loading": "読み込み中...",
+        "loadError": "契約の読み込みに失敗しました",
+        "deleteConfirm": "この契約を削除しますか？",
+        "backToList": "契約一覧",
+        "edit": "編集",
+        "viewMode": "閲覧モード",
+        "saving": "保存中..."
+      }
+    },
+    "audit": {
+      "title": "監査ログ",
+      "subtitle": "ロールと権限の変更履歴を確認します",
+      "loadError": "監査ログの読み込みに失敗しました。",
+      "emptyState": "監査ログがありません",
+      "filter": {
+        "allActions": "すべての操作"
+      },
+      "actions": {
+        "assign_system_role": "ロール変更",
+        "add_org_member": "メンバー追加",
+        "remove_org_member": "メンバー削除"
+      },
+      "headers": {
+        "time": "日時",
+        "action": "操作",
+        "actor": "実行者",
+        "target": "対象",
+        "change": "変更内容",
+        "resource": "リソース"
+      }
+    },
+    "users": {
+      "title": "ユーザー管理",
+      "subtitle": "ユーザー一覧とロールを管理します",
+      "loadError": "ユーザー一覧の読み込みに失敗しました。",
+      "emptyState": "登録されたユーザーがありません",
+      "totalUsers": "{count} 人のユーザー",
+      "roles": {
+        "superadmin": "スーパー管理者",
+        "admin": "管理者",
+        "member": "メンバー",
+        "viewer": "閲覧者"
+      },
+      "status": {
+        "active": "有効",
+        "inactive": "無効"
+      },
+      "headers": {
+        "user": "ユーザー",
+        "role": "ロール",
+        "status": "ステータス",
+        "joinedAt": "参加日",
+        "changeRole": "ロール変更"
+      }
+    },
+    "controlTower": {
+      "title": "Control Tower",
+      "subtitle": "顧客ごとのプロジェクト状況を管理します",
+      "refresh": "更新",
+      "searchPlaceholder": "顧客を検索...",
+      "totalCustomers": "{count} 社の顧客",
+      "emptyState": "顧客がありません",
+      "notFound": "顧客が見つかりません",
+      "employeeCount": "従業員 {size} 名",
+      "mainProduct": "主力製品: {product}",
+      "managerPm": "担当 PM: {name}",
+      "filter": {
+        "allStatuses": "すべてのステータス"
+      },
+      "status": {
+        "active": "稼働中",
+        "paused": "一時停止",
+        "archived": "アーカイブ済み"
+      },
+      "actions": {
+        "pause": "一時停止",
+        "resume": "再開",
+        "archive": "アーカイブ"
+      },
+      "card": {
+        "projectCount": "{count} 件のプロジェクト",
+        "activeSessionCount": "{count} 件進行中",
+        "manager": "担当: {name}"
+      },
+      "features": {
+        "title": "機能設定",
+        "livePreview": "Live Preview",
+        "livePreviewDesc": "ウィザードのソリューション分析機能を有効にするかどうか（Claude API コストが発生します）",
+        "livePreviewEnable": "Live Preview を有効化",
+        "livePreviewDisable": "Live Preview を無効化"
+      },
+      "projects": {
+        "heading": "プロジェクト ({total})",
+        "emptyState": "登録されたプロジェクトがありません",
+        "sessionCount": "{count} セッション",
+        "owner": "オーナー: {name}"
+      }
+    },
+    "recommendations": {
+      "title": "PM 推薦ログ",
+      "subtitle": "Claude/Rule 推薦の品質をモニタリングします",
+      "refresh": "更新",
+      "loading": "読み込み中...",
+      "emptyState": "推薦ログがありません。",
+      "notSelected": "未選択",
+      "score": "{score} 点",
+      "summary": {
+        "total": "推薦総数",
+        "claudeBased": "Claude ベース",
+        "avgLatency": "平均レイテンシ"
+      },
+      "filter": {
+        "all": "すべて",
+        "claudeOnly": "Claude のみ",
+        "fallbackOnly": "Fallback のみ"
+      },
+      "headers": {
+        "sessionId": "Session ID",
+        "createdAt": "作成日時",
+        "method": "方式",
+        "latency": "レイテンシ",
+        "topPm": "トップ PM",
+        "selectedPm": "選択された PM"
+      },
+      "expanded": {
+        "inputSnapshot": "入力スナップショット",
+        "finalRanking": "最終ランキング",
+        "finalScore": "最終: {score} 点"
+      }
+    },
+    "roiStandards": {
+      "title": "ROI レート / 工数基準",
+      "subtitle": "ウィザードの ROI 比較計算で使用する標準パラメーターを管理します。変更は新しいセッションに即時適用されます。",
+      "tabs": {
+        "role_rate": {
+          "label": "ロール別レート",
+          "desc": "ロール別の日額レート（KRW/日）"
+        },
+        "solution_effort": {
+          "label": "ソリューション工数",
+          "desc": "ソリューションタイプごとのロール別基準工数（日）"
+        },
+        "complexity_multiplier": {
+          "label": "複雑度係数",
+          "desc": "複雑度ごとの工数係数"
+        }
+      }
+    },
+    "adminSettings": {
+      "title": "全体設定",
+      "subtitle": "ウィザードの動作に影響する全体設定を管理します"
+    },
+    "registryAgents": {
+      "title": "Agent レジストリ",
+      "subtitle": "Agent カタログ項目を管理します"
+    },
+    "registryHooks": {
+      "title": "Hook レジストリ",
+      "subtitle": "Hook カタログ項目を管理します"
+    },
+    "registryMcps": {
+      "title": "MCP レジストリ",
+      "subtitle": "MCP サーバーのカタログ項目を管理します"
+    },
+    "registrySkills": {
+      "title": "スキルレジストリ",
+      "subtitle": "スキルカタログ項目を管理します"
+    }
+  },
+  "aiTeam": {
+    "roles": {
+      "architect": "アーキテクト",
+      "frontend": "フロントエンド",
+      "backend": "バックエンド",
+      "qa": "QA",
+      "security": "セキュリティ",
+      "devops": "DevOps",
+      "reviewer": "レビュアー"
+    },
+    "status": {
+      "requested": "リクエスト済み",
+      "decomposed": "分解済み",
+      "assigned": "割り当て済み",
+      "drafting": "ドラフト作成中",
+      "reviewing": "レビュー中",
+      "integrating": "統合中",
+      "validating": "検証中",
+      "approved": "承認済み",
+      "transitioning": "移行中",
+      "completed": "完了"
+    },
+    "subtaskStatus": {
+      "pending": "保留中",
+      "in_progress": "進行中",
+      "completed": "完了",
+      "failed": "失敗",
+      "blocked": "ブロック中"
+    },
+    "reviewStatus": {
+      "draft_submitted": "ドラフト提出済み",
+      "review_in_progress": "レビュー進行中",
+      "review_completed": "レビュー完了",
+      "merged": "マージ済み",
+      "rejected": "却下"
+    },
+    "pipeline": {
+      "title": "10 ステップパイプライン"
+    },
+    "session": {
+      "title": "新しいタスクリクエスト",
+      "titleLabel": "タスクタイトル *",
+      "titlePlaceholder": "構築する機能を記述してください...",
+      "descLabel": "説明",
+      "descPlaceholder": "背景、要件、制約などを記述してください...",
+      "createAndDecompose": "作成して分解",
+      "createFail": "セッションの作成に失敗しました",
+      "assignFail": "割り当てに失敗しました",
+      "decomposing": "要件を分析してサブタスクを生成しています...",
+      "decomposingHint": "AI が要件を分析し、サブタスクを生成しています",
+      "reviewTitle": "サブタスクをレビュー",
+      "reviewSubtitle": "{count} 件のタスクが作成されました。割り当てを確定すると Linear の issue が自動的に登録されます。",
+      "analysisResult": "要件分析の結果",
+      "keyFeatures": "主な機能:",
+      "moreCount": "他 {count} 件",
+      "confirmAssign": "割り当てを確定",
+      "assigning": "AI チームを割り当て中...",
+      "startingPipeline": "パイプラインを開始しています...",
+      "startingPipelineHint": "ドラフトの生成後、自動的に進行します",
+      "pushing": "Linear に issue を登録中...",
+      "pushingHint": "サブタスクを Linear の issue に変換しています",
+      "linearPushFail": "Linear issue の作成に失敗しました",
+      "doneTitle": "タスクが作成されました！",
+      "doneSubtitle": "{count} 件のサブタスクが割り当てられました",
+      "linearPushDone": "Linear issue を登録しました ({count})",
+      "linearWaitBadge": "待機（レビュー待ち）",
+      "linearPushFailTitle": "Linear issue の登録に失敗しました",
+      "linearNoCredential": "Linear API キーが設定されていません。<link>設定 → Linear で接続してください →</link>",
+      "goToDashboard": "ダッシュボードへ移動"
+    },
+    "review": {
+      "round": "ラウンド #{number}",
+      "draftLabel": "ドラフト ({role})",
+      "reviewLabel": "レビュー ({role})",
+      "diffLoading": "diff を読み込み中...",
+      "diffSummary": "変更の概要",
+      "mergedLabel": "マージ結果 ({strategy})",
+      "acceptDraft": "ドラフトを採用",
+      "acceptReview": "レビューを採用",
+      "reject": "却下",
+      "rejectReasonPlaceholder": "却下の理由を入力してください...",
+      "rejectReasonLabel": "却下の理由",
+      "confirm": "確定"
+    },
+    "subtask": {
+      "nextRecommended": "次に推奨",
+      "viewDetail": "詳細を表示",
+      "depUnapprovedList": "未承認: {list}",
+      "depUnresolvedCount": "前提条件 {count} 件が未承認",
+      "depAllApproved": "前提条件 {count} 件すべて承認済み",
+      "linearRegistering": "承認済み — Linear に登録中",
+      "linearUnregistered": "Linear 未登録（レビュー中）",
+      "approve": "承認",
+      "queueRegister": "キューに追加",
+      "resetToWait": "待機に戻す",
+      "dependencies": "前提タスク",
+      "depApproved": "承認済み",
+      "depUnapproved": "未承認",
+      "noDescription": "詳細な説明はありません。"
+    },
+    "page": {
+      "title": "AI チーム運用",
+      "subtitle": "3 層オーケストレーションダッシュボード",
+      "backToProjectAria": "プロジェクトへ戻る",
+      "refresh": "更新",
+      "newTask": "新しいタスクリクエスト",
+      "userApprovalMessage": "ユーザー承認",
+      "bootstrapPending": "セットアップ待ち — ダウンロードした ZIP を解凍したあと、<code>bash start.sh</code> を実行すると要件が自動的に登録されます。",
+      "bootstrapRunning": "要件を分析し、Linear に issue を登録しています…",
+      "bootstrapPendingReview": "分解されたサブタスクをレビューし、各カードを<strong>承認</strong>してください。承認すると、issue が <strong>Linear に自動的に登録</strong>されます。",
+      "bootstrapFailed": "自動登録中にエラーが発生しました。再試行するには、ローカルのターミナルで <code>bash scripts/bootstrap_clickeye.sh</code> を実行してください。",
+      "deleteSessionAria": "{title} を削除",
+      "noSessions": "まだ作成されたタスクはありません",
+      "firstTask": "最初のタスクをリクエスト",
+      "layerHumanAria": "Human レイヤー",
+      "layerHuman": "Human",
+      "currentPhase": "現在のフェーズ",
+      "generateDrafts": "AI ドラフトを生成",
+      "bootstrapReviewHint": "各カードを承認すると、自動的に Linear に登録されます",
+      "autoProgressing": "自動進行中…",
+      "resumeTitle": "パイプラインが停止した場合は再開してください",
+      "resume": "再開",
+      "approve": "承認",
+      "layerPmAria": "PM AI レイヤー",
+      "promptTemplate": "プロンプトテンプレート",
+      "detectedRisks": "検出されたリスク",
+      "reviewRounds": "レビューラウンド",
+      "aiDrafts": "AI ドラフト",
+      "localPipelineTitle": "コードはローカルパイプラインによって作成されます",
+      "localPipelineDesc": "各タスクカードの <strong>キュー</strong>ボタンをクリックしてレビューを完了してください。Linear issue が <strong>Todo</strong> に移動すると、ローカルパイプラインが自動的に Claude にコードの作成を指示します。",
+      "localPipelineNote": "パイプラインが実行されていない場合は、まず ZIP の <code>bash start.sh</code> で起動してください。安定した運用のためには、<code>bash scripts/install-service.sh</code> で systemd サービスを登録することをおすすめします。",
+      "linearSync": "Linear 同期",
+      "originalRequirement": "元の要件",
+      "linearIssuesCreated": "✓ Linear issue を作成しました: {ids}",
+      "linearCredMissing": "Linear の認証情報が見つかりません。",
+      "linearCredSaveLink": "設定で API キーを保存してください →",
+      "linearSyncHint": "ローカルの Claude Code で linear skill の sync コマンドを実行すると、上記の issue が自動的に作成されます。",
+      "layerAiTeamAria": "AI Team レイヤー",
+      "taskCount": "{count} 件のタスク",
+      "approvedCount": "{approved} / {total} 件承認済み",
+      "linearSync10s": "10 秒ごとに Linear 同期",
+      "linearSync30s": "30 秒ごとに Linear 同期",
+      "noSubtasks": "まだサブタスクはありません",
+      "deleteTaskTitle": "タスクリクエストを削除",
+      "deleteTaskConfirm": "<name>「{title}」</name>を本当に削除しますか？",
+      "deleteTaskDataNote": "すべてのサブタスクとレビューのデータが削除されます。",
+      "deleteTaskLinearNote": "⚠ Linear に登録された issue は削除されません。Linear で直接キャンセルまたは削除してください。"
+    }
+  },
+  "dashboard": {
+    "aiTeam": {
+      "title": "AIチーム活動ログ",
+      "emptyState": "まだ活動がありません",
+      "roles": {
+        "architect": "アーキテクト",
+        "frontend": "フロントエンド",
+        "backend": "バックエンド",
+        "qa": "QA",
+        "security": "セキュリティ",
+        "devops": "DevOps",
+        "reviewer": "レビュアー",
+        "agent": "Agent"
+      },
+      "status": {
+        "pending": "保留中",
+        "in_progress": "進行中",
+        "completed": "完了",
+        "failed": "失敗",
+        "blocked": "ブロック中"
+      },
+      "relative": {
+        "justNow": "たった今",
+        "minutesAgo": "{count}分前",
+        "hoursAgo": "{count}時間前",
+        "daysAgo": "{count}日前"
+      }
+    },
+    "artifactStatus": {
+      "title": "ステータス別の成果物",
+      "emptyState": "まだ成果物がありません",
+      "totalCount": "成果物合計 {count} 件",
+      "labels": {
+        "draft": "ドラフト",
+        "reviewed": "レビュー済み",
+        "revised": "修正済み",
+        "approved": "承認済み",
+        "in_development": "開発中",
+        "validated": "検証済み",
+        "released": "リリース済み"
+      }
+    },
+    "automation": {
+      "title": "AIと人間の作業比率",
+      "subtitle": "自動化作業と手動作業の比率",
+      "automatedShort": "自動化",
+      "aiAutomated": "AI自動化",
+      "manualWork": "手動作業"
+    },
+    "kpi": {
+      "automationRate": "自動化率",
+      "automationRateSub": "完了したサブタスクの割合",
+      "reviewAcceptance": "レビュー承認率",
+      "reviewAcceptanceSub": "修正なしで通過した成果物",
+      "artifacts": "成果物",
+      "releaseRate": "リリース率 {rate}%"
+    },
+    "phaseVelocity": {
+      "title": "フェーズ別の平均所要時間",
+      "subtitle": "各パイプラインフェーズの平均処理時間",
+      "emptyState": "まだフェーズデータがありません",
+      "sampleCount": "サンプル合計 {count} 件",
+      "duration": {
+        "seconds": "{value}秒",
+        "minutes": "{value}分",
+        "hours": "{value}時間"
+      },
+      "phases": {
+        "requested": "リクエスト済み",
+        "decomposed": "分解済み",
+        "assigned": "割り当て済み",
+        "drafting": "ドラフト作成中",
+        "reviewing": "レビュー中",
+        "revising": "修正中",
+        "approved": "承認済み",
+        "in_development": "開発",
+        "validated": "検証済み",
+        "released": "リリース済み"
+      }
+    },
+    "timeline": {
+      "title": "プロジェクトタイムライン",
+      "emptyState": "まだフェーズ履歴がありません",
+      "duration": {
+        "seconds": "{value}秒",
+        "minutes": "{value}分",
+        "hours": "{hours}時間",
+        "hoursMinutes": "{hours}時間 {minutes}分"
+      },
+      "phases": {
+        "requested": "リクエスト済み",
+        "decomposed": "分解済み",
+        "assigned": "割り当て済み",
+        "drafting": "ドラフト作成中",
+        "reviewing": "レビュー中",
+        "integrating": "統合中",
+        "validating": "検証中",
+        "approved": "承認済み",
+        "transitioning": "移行中",
+        "completed": "完了"
+      }
+    },
+    "quality": {
+      "title": "品質メトリクス",
+      "artifacts": "成果物",
+      "releaseRate": "リリース率 {rate}%",
+      "avgReviewScore": "平均レビュースコア",
+      "scoreValue": "{score} 点",
+      "reviewRounds": "{count} 回のレビュー",
+      "avgRevisionCount": "平均修正回数",
+      "revisionValue": "{count} 回",
+      "reviewCompletionRate": "レビュー完了率",
+      "sessions": "セッション",
+      "sessionsValue": "{count}",
+      "subtasks": "サブタスク",
+      "subtasksValue": "{count}"
+    },
+    "valueComparison": {
+      "title": "時間短縮の比較",
+      "subtitle": "ClickEyeの自動化時間と従来の手動開発の比較",
+      "manual": "手動",
+      "automated": "ClickEye自動化",
+      "savings": "{percent}% の時間短縮",
+      "duration": {
+        "seconds": "{value}秒",
+        "minutes": "{value}分",
+        "hours": "{value}時間"
+      }
+    },
+    "weeklyThroughput": {
+      "title": "週次スループット",
+      "subtitle": "週ごとに完了したタスク数",
+      "totalCount": "合計 {count} 件",
+      "emptyState": "まだ週次データがありません"
+    }
+  },
+  "contracts": {
+    "audit": {
+      "title": "契約監査ログ",
+      "filterAll": "すべて",
+      "loadError": "監査ログの読み込みに失敗しました。",
+      "emptyState": "監査ログがありません",
+      "colTime": "時刻",
+      "colType": "タイプ",
+      "colActor": "実行者",
+      "colContractId": "契約ID",
+      "colChanges": "変更内容",
+      "prevPageAria": "前のページ",
+      "nextPageAria": "次のページ",
+      "pageLabel": "ページ {page}",
+      "changeType": {
+        "create": "作成",
+        "update": "更新",
+        "delete": "削除",
+        "apply": "適用",
+        "override": "オーバーライド",
+        "sync": "同期"
+      }
+    },
+    "viewer": {
+      "slug": "Slug",
+      "type": "タイプ",
+      "version": "バージョン",
+      "lock": "ロック",
+      "locked": "ロック済み",
+      "editable": "編集可能",
+      "description": "説明",
+      "source": "ソース：",
+      "createdAt": "作成日：{date}",
+      "updatedAt": "更新日：{date}",
+      "allowedOverrides": "オーバーライド可能なフィールド",
+      "content": "コンテンツ（JSON）",
+      "types": {
+        "settings": "設定",
+        "skill": "スキル",
+        "agent": "Agent",
+        "pipeline": "パイプライン"
+      }
+    },
+    "override": {
+      "invalidFields": "許可されていないフィールド：{invalid}。許可されているフィールド：{allowed}",
+      "invalidJson": "有効なJSON形式ではありません",
+      "lockedNotice": "この契約はロックされています。オーバーライド可能なフィールド："
+    }
+  },
+  "credentials": {
+    "card": {
+      "daysUntilExpiry": "有効期限まで{days}日",
+      "saveSuccess": "{title}を保存しました。",
+      "saveFail": "保存に失敗しました。",
+      "deleteSuccess": "{title}を削除しました。",
+      "deleteFail": "削除に失敗しました。",
+      "savedTitle": "保存済み {title}",
+      "savedLabel": "保存済み",
+      "lastUpdated": "最終更新",
+      "replaceTitle": "{title}を置き換え",
+      "registerTitle": "{title}を登録",
+      "replacePlaceholder": "現在：{masked} — 新しい値を入力して置き換え",
+      "replaceBtn": "置き換え",
+      "saveBtn": "保存"
+    },
+    "guide": {
+      "copy": "コピー",
+      "envDownloadFail": ".envのダウンロードに失敗しました",
+      "downloadEnv": ".envをダウンロード",
+      "redownloadZip": "ZIPを再ダウンロード",
+      "title": "{channel} APIキーが変更されました",
+      "subtitle": "新しいキーを有効にするには、ローカルの.envファイルを更新してください",
+      "affectedProjects": ".envの更新が必要なプロジェクト（{count}）",
+      "localApplyTitle": "ローカルへの適用方法",
+      "confirm": "OK",
+      "steps": {
+        "step1Label": "1. .envをダウンロードするか、ZIP全体を再ダウンロード",
+        "step1Detail": "下のプロジェクトごとのボタンをクリックしてください。",
+        "step2Label": "2. ダウンロードした.envファイルでプロジェクトルートを上書き",
+        "step3Label": "3. リフレッシュスクリプトを実行",
+        "step4Label": "4. （任意）開いているClaude Codeセッションを再起動",
+        "step4Detail": "Ctrl+C → claude（プロジェクトルートから）"
+      }
+    }
+  },
+  "presets": {
+    "card": {
+      "ariaSelected": "{name} プリセットを選択中",
+      "ariaSelect": "{name} プリセットを選択",
+      "recommended": "推奨",
+      "agentsCount": "Agent {count}個",
+      "skillsCount": "スキル {count}個",
+      "pipelinesCount": "パイプライン {count}個",
+      "selected": "選択済み",
+      "startWithPreset": "このプリセットで開始"
+    }
+  }
+}

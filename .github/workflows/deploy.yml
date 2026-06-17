@@ -1,0 +1,50 @@
+# GitHub Actions — main 브랜치 push 시 EC2에 SSH 접속하여 빌드·배포
+# (서버에서 직접 빌드. 추가 레지스트리 인프라 불필요.)
+#
+# 필요한 GitHub Secrets (Settings → Secrets and variables → Actions):
+#   EC2_HOST     : EC2 Elastic IP 또는 호스트네임 (예: 13.237.170.70)
+#   EC2_USER     : 배포 사용자 (Ubuntu=ubuntu, AL2023=ec2-user)
+#   EC2_SSH_KEY  : 배포용 개인키(PEM) 전체 내용
+#   EC2_SSH_PORT : (선택) SSH 포트, 기본 22
+
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}   # 수동 실행 버튼
+
+concurrency:
+  group: deploy-clickeye-web-demo
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH (build on server)
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.EC2_SSH_PORT || 22 }}
+          command_timeout: 30m   # 서버 풀빌드(next build) 여유 확보
+          script_stop: true      # 한 줄이라도 실패하면 배포 중단
+          script: |
+            set -euo pipefail
+            APP_DIR=/opt/apps/clickeye-web-demo
+            cd "$APP_DIR"
+            COMPOSE="docker compose -f docker-compose.prod.yml --env-file .env.prod"
+            git fetch --all --prune
+            git reset --hard origin/main          # 서버 로컬 변경 무시하고 origin/main 으로 정렬
+
+            # 빌드 전 정리 — 멈춘 컨테이너·dangling 이미지만 (볼륨/인증서 보존)
+            docker container prune -f || true
+            docker image prune -f || true
+
+            $COMPOSE build web                    # Next standalone 이미지 빌드
+            $COMPOSE up -d                         # web + caddy 기동
+
+            docker image prune -f                  # 빌드로 쌓인 dangling 이미지 정리
+            $COMPOSE ps

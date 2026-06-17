@@ -1,0 +1,39 @@
+# clickeye-web-demo 프로덕션 스택 (단일 프로젝트 · 내장 Caddy)
+#   사용: docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+#   - web   : Next.js standalone (포트 미게시, 내부 3000)
+#   - caddy : 80/443 소유, {$DOMAIN} 자동 HTTPS, web 으로 프록시
+#
+# 백엔드/DB/Redis 없음 (mock 데모). 멀티프로젝트로 확장하려면 docs/DEPLOYMENT.md 참고.
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    env_file: [.env.prod]          # AUTH_SECRET / AUTH_URL / AUTH_TRUST_HOST ...
+    expose:
+      - "3000"                     # 외부 미게시, Caddy 만 내부에서 접근
+    restart: unless-stopped
+    networks: [appnet]
+
+  caddy:
+    image: caddy:2-alpine
+    env_file: [.env.prod]          # {$DOMAIN} 주입
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data           # 발급 인증서 영속 (재기동해도 유지)
+      - caddy_config:/config
+    depends_on:
+      - web
+    restart: unless-stopped
+    networks: [appnet]
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  appnet:

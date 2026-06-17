@@ -1,0 +1,7 @@
+# Caddy 리버스 프록시 (내장형, 단일 프로젝트) — 자동 HTTPS
+#  - {$DOMAIN} 은 docker-compose 가 .env.prod 에서 주입 (예: 13.237.170.70.sslip.io)
+#  - 백엔드 없는 프론트 단독 데모이므로 모든 경로를 Next.js(web:3000) 로 전달
+{$DOMAIN} {
+	encode gzip
+	reverse_proxy web:3000
+}

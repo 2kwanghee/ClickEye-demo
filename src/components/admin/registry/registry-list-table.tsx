@@ -1,0 +1,214 @@
+"use client";
+
+import { useState } from "react";
+import { Plus, Pencil, Trash2, AlertCircle, Eye } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { toast } from "sonner";
+
+import {
+  type RegistryItemResponse,
+  type RegistryItemCreateRequest,
+} from "@/lib/api-client";
+import type { RegistryAdminType } from "@/hooks/use-registry-admin";
+import {
+  useRegistryItems,
+  useDeleteRegistryItem,
+} from "@/hooks/use-registry-admin";
+import { RegistryEditorDrawer } from "./registry-editor-drawer";
+
+const INITIAL_FORM: RegistryItemCreateRequest = {
+  name: "",
+  slug: "",
+  description: "",
+  body_md: "",
+  version: "0.1.0",
+  category: "",
+  is_public: true,
+  config_schema: {},
+};
+
+interface BodyMdModalProps {
+  content: string;
+  onClose: () => void;
+}
+
+function BodyMdModal({ content, onClose }: BodyMdModalProps) {
+  const t = useTranslations("admin.registry");
+  const tA = useTranslations("common.aria");
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
+      <div
+        className="absolute inset-0 bg-black/40"
+        onClick={onClose}
+        onKeyDown={(e) => e.key === "Escape" && onClose()}
+        role="button"
+        tabIndex={0}
+        aria-label={tA("close")}
+      />
+      <div className="relative w-full max-w-2xl mx-4 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-surface)] p-6">
+        <button
+          type="button"
+          onClick={onClose}
+          className="absolute right-4 top-4 text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+          aria-label={tA("close")}
+        >
+          ✕
+        </button>
+        <h3 className="mb-3 text-sm font-semibold text-[var(--text-primary)]">body_md</h3>
+        <pre className="max-h-[60vh] overflow-auto rounded-lg bg-zinc-50 p-4 font-mono text-xs text-[var(--text-secondary)] whitespace-pre-wrap">
+          {content || t("bodyMdEmpty")}
+        </pre>
+      </div>
+    </div>
+  );
+}
+
+export interface RegistryListTableProps {
+  type: RegistryAdminType;
+}
+
+export function RegistryListTable({ type }: RegistryListTableProps) {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [editingItem, setEditingItem] = useState<RegistryItemResponse | null>(null);
+  const [bodyMdPreview, setBodyMdPreview] = useState<string | null>(null);
+
+  const { data, isLoading, error } = useRegistryItems(type, { limit: 200 });
+  const deleteMutation = useDeleteRegistryItem(type);
+  const t = useTranslations("admin.registry");
+  const tC = useTranslations("common.actions");
+  const tCommon = useTranslations("admin.common");
+  const tT = useTranslations("toast.registry");
+  const tG = useTranslations("toast.generic");
+
+  const items = data?.items ?? [];
+
+  function openAdd() {
+    setEditingItem(null);
+    setDrawerOpen(true);
+  }
+
+  function openEdit(item: RegistryItemResponse) {
+    setEditingItem(item);
+    setDrawerOpen(true);
+  }
+
+  if (isLoading) {
+    return <div className="py-12 text-center text-sm text-[var(--text-muted)]">{t("loading")}</div>;
+  }
+
+  if (error) {
+    return (
+      <div className="flex items-center gap-2 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <AlertCircle className="h-4 w-4 shrink-0" />
+        {(error as Error).message}
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {bodyMdPreview !== null && (
+        <BodyMdModal content={bodyMdPreview} onClose={() => setBodyMdPreview(null)} />
+      )}
+
+      <RegistryEditorDrawer
+        type={type}
+        item={editingItem}
+        open={drawerOpen}
+        onClose={() => {
+          setDrawerOpen(false);
+          setEditingItem(null);
+        }}
+        initialData={INITIAL_FORM}
+      />
+
+      <div className="flex justify-end">
+        <button
+          type="button"
+          onClick={openAdd}
+          className="flex items-center gap-2 rounded-xl bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800"
+        >
+          <Plus className="h-4 w-4" />
+          {t("addType", { type: t(`types.${type}`) })}
+        </button>
+      </div>
+
+      {items.length === 0 ? (
+        <div className="py-12 text-center text-sm text-[var(--text-muted)]">{t("empty")}</div>
+      ) : (
+        <div className="overflow-hidden rounded-xl border border-[var(--border-subtle)]">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-[var(--border-subtle)] bg-[var(--bg-hover)]">
+                <th className="px-4 py-3 text-left text-xs font-medium text-[var(--text-muted)]">{t("col.name")}</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[var(--text-muted)]">Slug</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[var(--text-muted)]">{t("col.category")}</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[var(--text-muted)]">{t("col.version")}</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[var(--text-muted)]">{t("col.public")}</th>
+                <th className="px-4 py-3 text-right text-xs font-medium text-[var(--text-muted)]">{t("col.actions")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {items.map((item) => (
+                <tr key={item.id} className="border-b border-[var(--border-subtle)] hover:bg-[var(--bg-hover)]">
+                  <td className="px-4 py-3">
+                    <div className="text-sm text-[var(--text-primary)]">{item.name}</div>
+                    {item.description && (
+                      <div className="max-w-[200px] truncate text-xs text-[var(--text-muted)]">
+                        {item.description}
+                      </div>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 font-mono text-sm text-[var(--text-secondary)]">{item.slug}</td>
+                  <td className="px-4 py-3 text-sm text-[var(--text-secondary)]">{item.category ?? "—"}</td>
+                  <td className="px-4 py-3 text-sm text-[var(--text-secondary)]">{item.version}</td>
+                  <td className="px-4 py-3 text-xs text-[var(--text-secondary)]">{item.is_public ? "✓" : "—"}</td>
+                  <td className="px-4 py-3 text-right">
+                    <div className="flex justify-end gap-1">
+                      {item.body_md && (
+                        <button
+                          type="button"
+                          onClick={() => setBodyMdPreview(item.body_md)}
+                          className="inline-flex items-center gap-1 rounded-lg border border-[var(--border-subtle)] px-2.5 py-1 text-xs text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-hover)]"
+                          aria-label={t("bodyMdPreviewAria")}
+                        >
+                          <Eye className="h-3 w-3" />
+                          MD
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => openEdit(item)}
+                        className="inline-flex items-center gap-1 rounded-lg border border-[var(--border-subtle)] px-2.5 py-1 text-xs text-[var(--text-secondary)] transition-colors hover:bg-[var(--bg-hover)]"
+                        aria-label={t("editAria", { name: item.name })}
+                      >
+                        <Pencil className="h-3 w-3" />
+                        {tCommon("edit")}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (!confirm(t("deleteConfirm", { name: item.name }))) return;
+                          deleteMutation.mutate(item.id, {
+                            onSuccess: () => toast.success(tT("deleteSuccess")),
+                            onError: (e: Error) => toast.error(e instanceof Error && e.message ? e.message : tG("deleteFail")),
+                          });
+                        }}
+                        disabled={deleteMutation.isPending}
+                        className="inline-flex items-center gap-1 rounded-lg border border-red-200 px-2.5 py-1 text-xs text-red-700 transition-colors hover:bg-red-50 disabled:opacity-50"
+                        aria-label={t("deleteAria", { name: item.name })}
+                      >
+                        <Trash2 className="h-3 w-3" />
+                        {tC("delete")}
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </>
+  );
+}

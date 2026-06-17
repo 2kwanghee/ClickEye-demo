@@ -1,0 +1,2523 @@
+{
+  "common": {
+    "actions": {
+      "create": "Buat",
+      "cancel": "Batal",
+      "save": "Simpan",
+      "delete": "Hapus",
+      "close": "Tutup",
+      "submit": "Kirim",
+      "processing": "Memproses...",
+      "loginIn": "Sedang masuk...",
+      "login": "Masuk"
+    },
+    "aria": {
+      "close": "Tutup",
+      "languageToggle": "Ubah bahasa",
+      "notifications": "Notifikasi",
+      "help": "Bantuan"
+    },
+    "header": {
+      "viewGuide": "Lihat panduan",
+      "restartTour": "Mulai ulang tutorial",
+      "logout": "Keluar"
+    },
+    "roleGuard": {
+      "title": "Akses ditolak",
+      "description": "Anda memerlukan hak administrator untuk mengakses halaman ini."
+    },
+    "projectForm": {
+      "nameLabel": "Nama proyek",
+      "namePlaceholder": "mis. Proyek AI saya",
+      "descriptionLabel": "Deskripsi",
+      "descriptionPlaceholder": "Deskripsi singkat tentang proyek Anda (opsional)"
+    },
+    "projectDialog": {
+      "newProject": "Proyek baru",
+      "deleteTitle": "Hapus proyek",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus proyek <name>{name}</name>? Tindakan ini tidak dapat dibatalkan.",
+      "deleting": "Menghapus..."
+    },
+    "errorPage": {
+      "title": "Terjadi kesalahan",
+      "description": "Terjadi kesalahan yang tidak diketahui. Silakan coba lagi.",
+      "retry": "Coba lagi"
+    },
+    "notFound": {
+      "description": "Halaman yang Anda minta tidak dapat ditemukan",
+      "backHome": "Kembali ke beranda"
+    },
+    "meta": {
+      "description": "Platform orkestrasi pengembangan AI Agent"
+    }
+  },
+  "validation": {
+    "required": "Field ini wajib diisi",
+    "email": "Silakan masukkan email yang valid",
+    "url": "Silakan masukkan URL yang valid",
+    "name": "Silakan masukkan nama",
+    "slug": "Silakan masukkan slug",
+    "slugPattern": "Hanya huruf kecil, angka, dan tanda hubung yang diperbolehkan",
+    "password": "Silakan masukkan kata sandi Anda",
+    "passwordMin": "Kata sandi harus minimal 8 karakter",
+    "confirmPassword": "Silakan konfirmasi kata sandi Anda",
+    "projectName": "Silakan masukkan nama proyek",
+    "max100": "Maksimal 100 karakter",
+    "max200": "Maksimal 200 karakter",
+    "passwordMismatch": "Kata sandi tidak cocok",
+    "integration": {
+      "nonAscii": "{field} tidak boleh mengandung karakter non-ASCII (Korea, emoji, dll.). Gunakan hanya huruf dan angka.",
+      "connectFailed": "Tidak dapat menjangkau server validasi. Periksa jaringan atau input Anda.",
+      "requestFailed": "Permintaan validasi gagal. Periksa jaringan Anda.",
+      "requestFailedDetail": "Permintaan validasi gagal: {detail}"
+    }
+  },
+  "toast": {
+    "generic": {
+      "saveSuccess": "Tersimpan",
+      "saveFail": "Gagal menyimpan",
+      "deleteSuccess": "Terhapus",
+      "deleteFail": "Gagal menghapus",
+      "requestError": "Terjadi kesalahan saat memproses permintaan Anda",
+      "loginRequired": "Anda harus masuk terlebih dahulu.",
+      "loginRequiredRefresh": "Anda harus masuk terlebih dahulu. Silakan muat ulang halaman.",
+      "sessionDeleteError": "Terjadi kesalahan saat menghapus sesi."
+    },
+    "contracts": {
+      "createSuccess": "Kontrak dibuat",
+      "createFail": "Gagal membuat kontrak",
+      "updateSuccess": "Kontrak diperbarui",
+      "updateFail": "Gagal memperbarui kontrak",
+      "deleteSuccess": "Kontrak dihapus",
+      "deleteFail": "Gagal menghapus kontrak",
+      "applySuccess": "Kontrak diterapkan ke proyek",
+      "applyFail": "Gagal menerapkan kontrak",
+      "syncSuccess": "{count} kontrak disinkronkan ke Agent",
+      "syncFail": "Gagal menyinkronkan",
+      "overrideUpdateSuccess": "Override diperbarui",
+      "overrideUpdateFail": "Gagal memperbarui override"
+    },
+    "pm": {
+      "createSuccess": "Profil PM dibuat.",
+      "deleteSuccess": "Profil PM dihapus.",
+      "updateSuccess": "Profil PM diperbarui.",
+      "nameSlugRequired": "Nama dan slug wajib diisi.",
+      "markdownLoadFail": "Gagal memuat Markdown.",
+      "markdownSaveSuccess": "Markdown tersimpan.",
+      "compositionAddSuccess": "{count} item ditambahkan.",
+      "compositionAddFail": "Terjadi kesalahan saat menambahkan."
+    },
+    "users": {
+      "roleChangeSuccess": "Peran diubah menjadi {role}",
+      "roleChangeFail": "Gagal mengubah peran"
+    },
+    "projects": {
+      "fetchFail": "Gagal memuat proyek",
+      "createFail": "Gagal membuat proyek."
+    },
+    "solutions": {
+      "sessionCreateFail": "Gagal membuat sesi.",
+      "sessionMissing": "Informasi sesi hilang. Silakan mulai ulang dari awal.",
+      "companyNameMissing": "Nama perusahaan tidak ada. Silakan kembali ke langkah 1 dan masukkan nama perusahaan.",
+      "sessionExpired": "Sesi berakhir. Silakan masuk kembali.",
+      "networkError": "Silakan periksa koneksi jaringan Anda"
+    },
+    "members": {
+      "addSuccess": "Anggota ditambahkan",
+      "addFail": "Gagal menambahkan anggota",
+      "removeSuccess": "Anggota dihapus",
+      "removeFail": "Gagal menghapus anggota",
+      "userIdRequired": "Silakan masukkan ID pengguna"
+    },
+    "registry": {
+      "updateSuccess": "Item diperbarui.",
+      "addSuccess": "Item ditambahkan.",
+      "deleteSuccess": "Item dihapus."
+    },
+    "prototypeCatalog": {
+      "updateSuccess": "Item katalog diperbarui",
+      "createSuccess": "Item katalog dibuat",
+      "saveFail": "Gagal menyimpan",
+      "deleteSuccess": "Terhapus",
+      "deleteFail": "Gagal menghapus",
+      "tagUpdateSuccess": "Tag diperbarui",
+      "tagCreateSuccess": "Tag dibuat"
+    },
+    "appSettings": {
+      "prototypeVariantSaveSuccess": "Jumlah varian Prototipe tersimpan",
+      "ragTopKSaveSuccess": "RAG top-k tersimpan"
+    }
+  },
+  "wizard": {
+    "step4": {
+      "pmRecommend": {
+        "analyzing": "Menganalisis PM terbaik untuk prototipe Anda",
+        "complete": "Analisis rekomendasi PM selesai!",
+        "progressLabel": "Progres rekomendasi PM",
+        "cardsLabel": "Status rekomendasi PM",
+        "nextHint": "Klik tombol Next di bawah untuk memilih PM.",
+        "failTitle": "Analisis rekomendasi PM gagal",
+        "failDesc": "Terjadi kesalahan sementara. Silakan coba lagi.",
+        "retry": "Coba lagi",
+        "matchReasons": "Alasan kecocokan",
+        "analysisComplete": "Analisis PM \"{name}\" selesai"
+      },
+      "pmSelect": {
+        "loadingTitle": "Menganalisis rekomendasi PM...",
+        "loadingDesc": "Mencari profil PM yang dioptimalkan untuk prototipe Anda",
+        "loadingStep1": "Menganalisis kebutuhan prototipe...",
+        "loadingStep2": "Mencocokkan profil PM...",
+        "loadingStep3": "Menyelesaikan pemilihan PM yang optimal...",
+        "emptyState": "Tidak ada profil PM yang direkomendasikan",
+        "recommendBanner": "AI telah merekomendasikan PM terbaik berdasarkan prototipe yang Anda pilih. Tingkat kecocokan yang lebih tinggi menunjukkan probabilitas keberhasilan proyek yang lebih baik.",
+        "compositionLabel": "Komposisi PM yang dipilih",
+        "listAriaLoading": "Memuat profil PM",
+        "listAriaLabel": "Daftar profil PM"
+      },
+      "pmComposition": {
+        "noSelection": "Tidak ada PM yang dipilih.",
+        "backToSelection": "Kembali ke pemilihan PM",
+        "loadingItems": "Memuat elemen komposisi...",
+        "errorTitle": "Gagal memuat komposisi",
+        "retry": "Coba lagi",
+        "nextHint": "Tim default PM ini (agent, skill, MCP, hook) akan otomatis dipilih pada langkah konfigurasi agent berikutnya. Item tim PM terkunci dan tidak dapat dihapus, tetapi Anda dapat menambahkan item lain dengan bebas.",
+        "reselectBtn": "Pilih ulang PM",
+        "listAriaLabel": "Daftar komposisi PM",
+        "itemRequired": "Wajib",
+        "itemOptional": "Opsional",
+        "matchRate": "{score}% cocok",
+        "agents": "AI Agent",
+        "skills": "Skill",
+        "hooks": "Hook",
+        "mcpServers": "MCP Server",
+        "plugins": "Plugin"
+      }
+    },
+    "step5": {
+      "agents": {
+        "pmLockBanner": "Item tim default {pmName} telah diterapkan secara otomatis. Item yang terkunci tidak dapat dihapus, tetapi Anda dapat menambahkan item tambahan dengan bebas.",
+        "catalogRecBanner": "Agent dan skill telah direkomendasikan berdasarkan katalog prototipe yang Anda pilih. Sesuaikan sesuai kebutuhan.",
+        "defaultBanner": "Tinjau konfigurasi agent untuk prototipe yang Anda pilih dan sesuaikan sesuai kebutuhan.",
+        "pmTeamBadge": "Tim PM",
+        "pmTeamTitle": "Item tim default PM {pmName}",
+        "sectionAgents": "AI Agent",
+        "agentsLoadError": "Gagal memuat agent.",
+        "sectionSkills": "Skill Integrasi",
+        "ticketSource": "Sumber Tiket",
+        "ticketRequired": "Wajib",
+        "ticketSelectOne": "Pilih 1",
+        "ticketDesc": "Pilih platform untuk mengelola isu/tiket.",
+        "skillsLoadError": "Gagal memuat skill.",
+        "ticketLockedByPm": "{pmName} telah mengunci {label}. Sumber tiket lain tidak dapat dipilih.",
+        "ticketRequiredAlert": "Silakan pilih 1 sumber tiket (Linear atau Notion)",
+        "additionalSkills": "Skill Tambahan",
+        "optional": "(Opsional)",
+        "mcpSection": "MCP Server",
+        "mcpLoadError": "Gagal memuat MCP server.",
+        "hooksSection": "Hook",
+        "hooksLoadError": "Gagal memuat hook.",
+        "recommendedBadge": "Direkomendasikan",
+        "defaultPmName": "PM yang dipilih"
+      },
+      "platform": {
+        "description": "Pilih platform Agent untuk menjalankan solusi yang Anda hasilkan.",
+        "notSupportedByPm": "Tidak didukung oleh PM",
+        "recommended": "Direkomendasikan",
+        "comingSoon": "Segera hadir",
+        "comingSoonNote": "Dukungan Gemini CLI, Cursor, dan Codex akan tersedia pada pembaruan mendatang.",
+        "claudeCodeDesc": "AI coding agent berbasis Anthropic Claude",
+        "geminiCliDesc": "Agent CLI berbasis Google Gemini",
+        "cursorDesc": "Editor kode AI-first",
+        "codexDesc": "Agent berbasis OpenAI Codex"
+      },
+      "os": {
+        "description": "Pilih lingkungan OS untuk mengekstrak dan menjalankan proyek. Skrip launcher untuk lingkungan yang Anda pilih akan disertakan.",
+        "recommended": "Direkomendasikan",
+        "comingSoon": "Segera hadir",
+        "wslNotInstalled": "Belum menginstal WSL2?",
+        "wslGuideDesc": "WSL2 adalah fitur resmi Microsoft untuk menjalankan lingkungan Linux di Windows.",
+        "wslStep1": "Jalankan di PowerShell (sebagai Administrator):",
+        "wslStep2": "Setelah me-restart PC, buka aplikasi Ubuntu",
+        "wslStep3": "Atur nama pengguna dan kata sandi, lalu selesai",
+        "wslGuideLink": "Buka panduan instalasi resmi →",
+        "wsl2Desc": "Windows Subsystem for Linux 2 — lingkungan yang direkomendasikan resmi oleh Claude Code",
+        "windowsDesc": "Eksekusi langsung via PowerShell / cmd",
+        "macosDesc": "Terminal zsh / bash",
+        "linuxDesc": "Ubuntu, Debian, Fedora, dll."
+      }
+    },
+    "step6": {
+      "env": {
+        "authTitle": "Autentikasi Claude",
+        "authApiKeyLabel": "API Key",
+        "authApiKeyDesc": "Masukkan langsung key sk-ant-... yang diterbitkan dari Anthropic Console.",
+        "authOAuthLabel": "OAuth Browser (claude login)",
+        "authOAuthDesc": "Hanya untuk pelanggan Claude Pro/Max. Saat Anda menjalankan bash start.sh, claude login akan berjalan secara otomatis.",
+        "oauthNote": "ANTHROPIC_API_KEY tidak akan disertakan dalam .env. Login browser akan dimulai otomatis saat Anda menjalankan bash start.sh.",
+        "requiredKeysTitle": "API Key yang Diperlukan",
+        "requiredKeysSummary": "({satisfied}/{total} dikonfigurasi)",
+        "guideLink": "Panduan Penerbitan",
+        "statusSet": "Diatur",
+        "statusDeferred": "Masukkan nanti",
+        "statusRequired": "Wajib",
+        "editBtn": "Ubah",
+        "enterBtn": "Masukkan",
+        "laterBtn": "Nanti",
+        "cancelBtn": "Batal",
+        "saveBtn": "Simpan",
+        "nonAsciiWarning": "Karakter non-ASCII (Korea, emoji, dll.) otomatis dihapus. Masukkan hanya huruf dan angka Inggris.",
+        "apiKeyNeeded": "API Key Diperlukan",
+        "setupGuideBtn": "Panduan Penyiapan",
+        "missingKeysAlert": "{count} key wajib belum dikonfigurasi. Masukkan nilai atau tandai sebagai \"Masukkan nanti\".",
+        "deferredKeysNote": "{count} key untuk dimasukkan nanti — Anda dapat menambahkannya pada langkah konfirmasi akhir.",
+        "trackingTitle": "Metode Pelacakan Real-time",
+        "trackingOptional": "(Opsional)",
+        "trackingDesc": "Pilih cara memicu Claude lokal secara otomatis saat status isu Linear berubah.",
+        "cfTitle": "Cloudflare Tunnel",
+        "cfDesc": "Gratis · URL Statis (Direkomendasikan)",
+        "ngrokTitle": "ngrok",
+        "ngrokDesc": "URL tetap berbayar / sementara gratis",
+        "pollingTitle": "Polling 30 detik",
+        "pollingDesc": "Tidak perlu webhook · jeda 30 detik",
+        "ngrokToken": "ngrok Auth Token",
+        "ngrokTokenLink": "(Dapatkan dari ngrok.com)",
+        "cfNote": "Jalankan bash scripts/setup-tunnel.sh setelah mengekstrak untuk menginstal cloudflared secara otomatis.",
+        "pollingNote": "Jalankan python3 scripts/linear_watcher.py untuk melakukan polling Linear setiap 30 detik. Tidak perlu server webhook.",
+        "securityNote": "Key yang dimasukkan disimpan di .env dalam file ZIP. Jangan bagikan file ZIP. Lihat folder docs/api-keys/ dalam ZIP jika ragu.",
+        "securityNoteOAuth": "Dalam mode OAuth browser, key Anthropic tidak disertakan dalam .env. claude login akan dimulai otomatis saat Anda menjalankan bash start.sh.",
+        "extraVarsTitle": "Variabel Lingkungan Tambahan",
+        "emptyValue": "(kosong)",
+        "addVarTitle": "Tambah Variabel Lingkungan",
+        "addVarOptional": "(Opsional)",
+        "addVarValuePlaceholder": "Nilai (dapat dimasukkan nanti · huruf/angka)",
+        "anthropicKeyLabel": "Anthropic API key",
+        "anthropicKeyDesc": "Key autentikasi yang diperlukan untuk memanggil model AI Claude",
+        "validating": "Memvalidasi..."
+      },
+      "roi": {
+        "title": "Perbandingan ROI",
+        "desc": "Bandingkan biaya membangun solusi yang sama dengan perekrutan tradisional dibandingkan ClickEye.",
+        "baselineCard": "Perekrutan Tradisional",
+        "clickeyeCard": "Dengan ClickEye",
+        "timeSuffix": "perkiraan",
+        "savingsLabel": "Perkiraan Penghematan",
+        "savingsRateLabel": "Tingkat Penghematan",
+        "traditionalLabel": "Tradisional",
+        "calcFailed": "Gagal menghitung ROI",
+        "breakdownTitle": "Rincian per Peran",
+        "resetBtn": "Atur ulang ke Standar",
+        "perDay": " KRW/hari",
+        "adjustedBadge": "Disesuaikan",
+        "rateNote": "* Menyesuaikan tarif tidak mengubah nilai standar administrator. Hanya berlaku untuk sesi ini. Versi formula: {version}",
+        "rolePm": "Project Manager",
+        "roleBe": "Backend Developer",
+        "roleFe": "Frontend Developer",
+        "roleQa": "QA Engineer",
+        "roleDesigner": "UI/UX Designer",
+        "daysUnit": " hari"
+      }
+    },
+    "step7": {
+      "simpleConfirm": {
+        "sectionCompany": "Info Perusahaan",
+        "companyName": "Nama perusahaan",
+        "businessType": "Jenis bisnis",
+        "mainProduct": "Produk utama",
+        "businessTypeInternal": "Alat Internal",
+        "solutionTypeFullstack": "Fullstack",
+        "solutionTypeInternalTool": "Alat Internal",
+        "solutionTypeCustom": "Kustom",
+        "sectionPrototype": "Prototipe Solusi",
+        "protoName": "Nama",
+        "protoType": "Tipe",
+        "noPrototype": "Tidak ada prototipe yang dipilih",
+        "sectionPm": "PM",
+        "pmSelected": "PM dipilih (ID: {id}...)",
+        "noPm": "Tidak ada PM yang dipilih",
+        "sectionAgents": "Agent & Skill",
+        "agentsLabel": "Agent",
+        "skillsLabel": "Skill",
+        "noAgents": "Belum dikonfigurasi",
+        "noSkills": "Tidak ada",
+        "sectionPlatform": "Platform",
+        "noPlatform": "Belum dikonfigurasi",
+        "sectionEnv": "Variabel Lingkungan",
+        "envCount": "{count} dikonfigurasi",
+        "allConfirmed": "Semua pengaturan dikonfirmasi",
+        "submitHint": "Membuat proyek akan menyimpan konfigurasi solusi Anda"
+      },
+      "confirmation": {
+        "regionLabel": "Konfirmasi akhir",
+        "sectionCompany": "Info Perusahaan",
+        "reconfigBtn": "Konfigurasi ulang",
+        "companyName": "Nama perusahaan",
+        "industry": "Industri",
+        "businessType": "Jenis bisnis",
+        "mainProduct": "Produk utama",
+        "authMethod": "Autentikasi Claude",
+        "authOAuth": "Login Browser OAuth",
+        "authApiKey": "API Key",
+        "sectionPrototype": "Prototipe Solusi",
+        "reselectBtn": "Pilih ulang",
+        "noPrototype": "Tidak ada prototipe yang dipilih",
+        "sectionPm": "Project Manager",
+        "pmLoading": "Memuat info PM...",
+        "noPm": "Tidak ada PM yang dipilih",
+        "pmCompositionTitle": "Komposisi PM",
+        "sectionRoi": "Ringkasan Perbandingan ROI",
+        "recalcBtn": "Hitung ulang",
+        "baselineCost": "Biaya perekrutan tradisional",
+        "clickeyeCost": "Biaya penerapan ClickEye",
+        "savingsAmount": "Perkiraan penghematan",
+        "savingsRate": "Tingkat penghematan",
+        "formulaVersion": "Versi formula:",
+        "deferredTitle": "API Key yang Belum Diatur ({count})",
+        "deferredDesc": "Ini adalah key yang Anda pilih untuk dimasukkan nanti. Masukkan sekarang atau edit file .env secara langsung setelah membuat proyek.",
+        "deferredSaveBtn": "Simpan",
+        "allConfirmed": "Semua pengaturan dikonfirmasi",
+        "proceedHint": "Klik \"Proceed\" untuk membuat proyek Anda",
+        "businessTypeInternal": "Alat Internal",
+        "industryIt": "IT/Software",
+        "industryFintech": "Fintech/Keuangan",
+        "industryEcommerce": "E-commerce",
+        "industryHealthcare": "Kesehatan",
+        "industryEducation": "Pendidikan",
+        "industryManufacturing": "Manufaktur",
+        "industryLogistics": "Logistik",
+        "industryMarketing": "Marketing",
+        "industryGame": "Game",
+        "industryOther": "Lainnya",
+        "solutionTypeFullstack": "Fullstack",
+        "solutionTypeInternalTool": "Alat Internal",
+        "solutionTypeCustom": "Kustom",
+        "notSet": "Belum diatur",
+        "validating": "Memvalidasi...",
+        "deferredPlaceholder": "Masukkan nilai (alfanumerik)",
+        "stepNavAriaLabel": "Pergi ke langkah {label}",
+        "compositionAgents": "Agent",
+        "compositionSkills": "Skill",
+        "compositionMcp": "MCP",
+        "compositionHooks": "Hook"
+      }
+    },
+    "pmCompositionView": {
+      "title": "Komposisi {name}",
+      "loading": "Memuat info komposisi...",
+      "empty": "Tidak ada item komposisi.",
+      "agents": "AI Agent",
+      "skills": "Skill",
+      "mcpServers": "MCP Server",
+      "hooks": "Hook"
+    },
+    "metricBadges": {
+      "weeksUnit": "mgg",
+      "personsUnit": "",
+      "maintenance": {
+        "low": "Pemeliharaan rendah",
+        "medium": "Pemeliharaan sedang",
+        "high": "Pemeliharaan tinggi"
+      }
+    },
+    "comparisonTable": {
+      "metric": "Metrik",
+      "recommended": "Direkomendasikan",
+      "rows": {
+        "architecture": "Arsitektur",
+        "devDuration": "Durasi pengembangan",
+        "teamSize": "Ukuran tim",
+        "monthlyCost": "Biaya bulanan",
+        "complexity": "Kompleksitas (semakin rendah semakin sederhana)",
+        "scalability": "Skalabilitas (semakin tinggi semakin baik)",
+        "maintenance": "Tingkat kesulitan pemeliharaan",
+        "techStack": "Tech stack",
+        "skillRequirements": "Skill yang diperlukan",
+        "companyFit": "Kesesuaian perusahaan",
+        "pros": "Kelebihan",
+        "cons": "Kekurangan"
+      },
+      "maintenance": {
+        "low": "Rendah",
+        "medium": "Sedang",
+        "high": "Tinggi"
+      }
+    },
+    "prototypeCard": {
+      "recommended": "Direkomendasikan",
+      "pros": "Kelebihan",
+      "cons": "Kekurangan",
+      "skillRequirements": "Skill yang diperlukan",
+      "aiMatchNote": "Teks analisis AI saat ini ditampilkan dalam bahasa Korea. i18n backend sedang dikerjakan.",
+      "solutionTypes": {
+        "saas": "SaaS",
+        "restApi": "REST API",
+        "fullstack": "Web Full-stack",
+        "internalTool": "Alat Internal",
+        "mvp": "MVP",
+        "custom": "Kustom"
+      },
+      "complexityLabel": "Kompleksitas",
+      "scalabilityLabel": "Skalabilitas"
+    },
+    "step1": {
+      "companyName": {
+        "label": "Nama perusahaan",
+        "placeholder": "mis. Acme Corp",
+        "required": "Silakan masukkan nama perusahaan",
+        "max200": "Maksimal 200 karakter"
+      },
+      "companySize": {
+        "label": "Ukuran perusahaan",
+        "required": "Silakan pilih ukuran perusahaan",
+        "options": {
+          "startup": {
+            "label": "Startup",
+            "sub": "1–10"
+          },
+          "small": {
+            "label": "Kecil",
+            "sub": "11–50"
+          },
+          "medium": {
+            "label": "Menengah",
+            "sub": "51–200"
+          },
+          "midLarge": {
+            "label": "Menengah-besar",
+            "sub": "201–1.000"
+          },
+          "enterprise": {
+            "label": "Enterprise",
+            "sub": "1.000+"
+          }
+        }
+      },
+      "industry": {
+        "label": "Industri",
+        "required": "Silakan pilih industri",
+        "options": {
+          "it": "IT/Software",
+          "fintech": "Keuangan/Fintech",
+          "ecommerce": "E-commerce/Ritel",
+          "healthcare": "Kesehatan/Medis",
+          "education": "Pendidikan/Edutech",
+          "manufacturing": "Manufaktur",
+          "logistics": "Logistik",
+          "marketing": "Marketing/Periklanan",
+          "game": "Game/Hiburan",
+          "other": "Lainnya"
+        }
+      },
+      "techStack": {
+        "label": "Tech stack",
+        "optional": "(opsional, bisa banyak)",
+        "selectedCount": "{count} dipilih",
+        "categories": {
+          "language": "Bahasa",
+          "framework": "Framework / Library",
+          "database": "Database",
+          "cloud": "Cloud / Infrastruktur"
+        }
+      },
+      "mainProduct": {
+        "label": "Produk/layanan utama",
+        "placeholder": "mis. Platform HR enterprise",
+        "required": "Silakan jelaskan produk/layanan utama Anda",
+        "max500": "Maksimal 500 karakter"
+      },
+      "businessType": {
+        "label": "Jenis bisnis",
+        "required": "Silakan pilih jenis bisnis",
+        "options": {
+          "b2b": {
+            "label": "B2B",
+            "description": "Bisnis"
+          },
+          "b2c": {
+            "label": "B2C",
+            "description": "Konsumen"
+          },
+          "b2b2c": {
+            "label": "B2B2C",
+            "description": "Model hibrida"
+          },
+          "internal": {
+            "label": "Alat Internal",
+            "description": "Sistem internal"
+          }
+        }
+      },
+      "companyDescription": {
+        "label": "Deskripsi perusahaan",
+        "optional": "(opsional)",
+        "placeholder": "Jelaskan latar belakang perusahaan, struktur tim, tingkat teknologi, dll.",
+        "max1000": "Maksimal 1.000 karakter"
+      },
+      "solutionRequest": {
+        "label": "Jelaskan solusi yang Anda butuhkan",
+        "hint": "Tulis dengan bebas dalam bahasa alami. AI akan menganalisis dan merancang solusi yang optimal.",
+        "placeholder": "mis. Kami ingin mengotomatiskan pengelolaan data pelanggan yang saat ini ditangani di Excel. Kami membutuhkan sistem CRM untuk 10 anggota tim penjualan, idealnya terintegrasi dengan Slack...",
+        "required": "Silakan masukkan minimal 50 karakter",
+        "max2000": "Maksimal 2.000 karakter",
+        "minHint": "({remaining} lagi)"
+      },
+      "autoDecompose": {
+        "title": "Analisis Otomatis ClickEye",
+        "ariaLabel": "Analisis Otomatis ClickEye",
+        "description": "Saat AKTIF, menjalankan <code>bash start.sh</code> setelah pengunduhan akan otomatis menganalisis dan menguraikan kebutuhan solusi untuk menghasilkan kartu tinjauan AI Team. Matikan untuk merancang secara manual."
+      },
+      "prefillTargetUsers": "Pengguna target",
+      "prefillFeatures": "Fitur utama"
+    },
+    "step2": {
+      "starting": "Mempersiapkan...",
+      "completed": "Prototipe dihasilkan!",
+      "generating": "AI sedang merancang prototipe solusi",
+      "counterAriaLabel": "{ready} dari {total} selesai",
+      "progressAriaLabel": "Progres pembuatan prototipe",
+      "listAriaLabel": "Status pembuatan prototipe",
+      "cardGeneratingAriaLabel": "Membuat prototipe",
+      "cardReadyAriaLabel": "Prototipe \"{name}\" siap",
+      "waitingHint": "Ini biasanya memakan waktu 30 detik hingga 1 menit. Mohon tunggu.",
+      "doneHint": "Klik tombol <strong>Next</strong> di bawah untuk meninjau prototipe.",
+      "disabled": {
+        "title": "Pratinjau langsung tidak tersedia",
+        "description": "Fitur pratinjau langsung saat ini dinonaktifkan.",
+        "contactAdmin": "Silakan hubungi administrator untuk mengaktifkan fitur ini."
+      },
+      "failed": {
+        "title": "Pembuatan prototipe gagal",
+        "description": "Terjadi kesalahan sementara. Silakan coba lagi.",
+        "retry": "Coba lagi"
+      }
+    },
+    "step3": {
+      "empty": {
+        "title": "Tidak ada prototipe yang dihasilkan",
+        "description": "Silakan kembali dan tinjau informasinya."
+      },
+      "noComparison": "Tidak ada prototipe untuk dibandingkan.",
+      "aiHint": "Kandidat solusi yang dianalisis AI. Pilih arah yang paling sesuai.",
+      "viewCards": "Kartu",
+      "viewCompare": "Bandingkan",
+      "listAriaLabel": "Daftar prototipe solusi"
+    },
+    "shell": {
+      "header": {
+        "newTitle": "Solusi baru",
+        "newSubtitle": "AI merancang solusi yang disesuaikan untuk perusahaan Anda",
+        "modernizeTitle": "Modernisasi kode yang ada",
+        "modernizeSubtitle": "Hubungkan repo GitHub dan AI akan mendiagnosis kode Anda serta otomatis mendaftarkan tugas modernisasi"
+      },
+      "nav": {
+        "prev": "Kembali",
+        "next": "Berikutnya",
+        "proceed": "Lanjutkan",
+        "creating": "Membuat...",
+        "analyzing": "Menganalisis...",
+        "prevAria": "Pergi ke langkah sebelumnya",
+        "nextAria": "Pergi ke langkah berikutnya ({label})",
+        "submitAria": "Buat proyek",
+        "groupAria": "Navigasi wizard",
+        "previewToggleAria": "Buka pratinjau langsung",
+        "previewToggleTitle": "Pratinjau langsung",
+        "restartTourAria": "Putar ulang panduan wizard",
+        "solutionsLink": "Solusi",
+        "solutionsLinkAria": "Pergi ke daftar solusi"
+      },
+      "stepper": {
+        "navAria": "Progres wizard solusi",
+        "stepAria": "{label} ({current}/{total}) - {status}",
+        "statusCompleted": "selesai",
+        "statusCurrent": "langkah saat ini",
+        "statusUpcoming": "berikutnya"
+      },
+      "steps": {
+        "company": {
+          "label": "Info perusahaan",
+          "description": "Masukkan info perusahaan dan kebutuhan solusi"
+        },
+        "generation": {
+          "label": "Pembuatan",
+          "description": "AI menghasilkan prototipe solusi"
+        },
+        "prototypes": {
+          "label": "Prototipe",
+          "description": "Pilih dari kandidat solusi yang dihasilkan AI"
+        },
+        "pm-recommendation": {
+          "label": "Rekomendasi PM",
+          "description": "AI menganalisis PM yang optimal"
+        },
+        "pm-selection": {
+          "label": "Pemilihan PM",
+          "description": "Pilih AI project manager"
+        },
+        "pm-composition": {
+          "label": "Komposisi PM",
+          "description": "Tinjau komponen PM yang dipilih"
+        },
+        "agents": {
+          "label": "Agent",
+          "description": "Tinjau penyiapan AI agent"
+        },
+        "platform": {
+          "label": "Platform",
+          "description": "Pilih platform agent"
+        },
+        "os": {
+          "label": "Runtime",
+          "description": "Pilih lingkungan OS untuk menjalankan solusi"
+        },
+        "env": {
+          "label": "Variabel lingkungan",
+          "description": "Masukkan API key dan variabel lingkungan"
+        },
+        "roi": {
+          "label": "Perbandingan ROI",
+          "description": "Perkirakan nilai efisiensi penerapan ClickEye"
+        },
+        "confirm": {
+          "label": "Tinjauan akhir",
+          "description": "Tinjau pengaturan dan buat proyek"
+        },
+        "repo-connect": {
+          "label": "Hubungkan GitHub",
+          "description": "Hubungkan repo GitHub untuk mengimpor basis kode Anda yang ada"
+        },
+        "repo-select": {
+          "label": "Pilih repositori",
+          "description": "Pilih repo dan branch untuk dianalisis"
+        },
+        "diagnose": {
+          "label": "Diagnosis kode",
+          "description": "AI menganalisis kode"
+        },
+        "diagnosis-review": {
+          "label": "Tinjauan diagnosis",
+          "description": "Pilih skenario dan rekomendasi modernisasi"
+        }
+      }
+    },
+    "preview": {
+      "title": "Pratinjau langsung",
+      "closeAria": "Tutup pratinjau",
+      "panelAria": "Ringkasan progres penyiapan solusi",
+      "skeletonAria": "Memuat pratinjau",
+      "emptyStepSummary": "Selesaikan langkah ini untuk melihat ringkasan.",
+      "emptyBlueprint": "Masukkan kebutuhan solusi untuk melihat blueprint AI.",
+      "emptyPanel": "Saat Anda melanjutkan melalui wizard, pengaturan Anda akan muncul di sini.",
+      "blueprint": {
+        "tooShort": "Masukkan sedikit lebih banyak detail untuk melihat blueprint.",
+        "creditError": "Kredit Anthropic API tidak mencukupi.",
+        "creditServerSuffix": " Key server bersama telah kehabisan kredit.",
+        "creditUserSuffix": " Isi ulang di Plans & Billing lalu coba lagi.",
+        "registerKey": "Daftarkan API key saya →",
+        "authError": "Autentikasi API key gagal.",
+        "authUserSuffix": " Periksa key Anda di halaman pengaturan.",
+        "authServerSuffix": " Periksa pengaturan ANTHROPIC_API_KEY.",
+        "resetKey": "Atur ulang API key →",
+        "genericError": "Terjadi kesalahan sementara. Silakan coba lagi sebentar.",
+        "complexityPrefix": "Kompleksitas",
+        "features": "Fitur utama",
+        "techStack": "Tech stack yang direkomendasikan",
+        "keyRequirements": "Kebutuhan utama",
+        "complexity": {
+          "low": "Rendah",
+          "medium": "Sedang",
+          "high": "Tinggi"
+        }
+      },
+      "summary": {
+        "companyName": "Perusahaan",
+        "industry": "Industri",
+        "businessType": "Jenis bisnis",
+        "companySize": "Ukuran",
+        "agents": "Agent",
+        "skills": "Skill",
+        "hooks": "Hook",
+        "platform": "Platform",
+        "os": "Runtime",
+        "authMethod": "Metode autentikasi",
+        "envVars": "Variabel lingkungan",
+        "noPrototype": "Tidak ada prototipe yang dipilih.",
+        "noPm": "Tidak ada PM yang dipilih.",
+        "noAgents": "Tidak ada agent yang dipilih.",
+        "noPlatform": "Tidak ada platform yang dipilih.",
+        "noOs": "Tidak ada runtime yang dipilih.",
+        "noRoi": "Analisis ROI belum selesai.",
+        "pmComposition": "Komponen PM dikonfirmasi.",
+        "confirm": "Semua pengaturan selesai.",
+        "matching": "{score}% cocok",
+        "countValue": "{count}",
+        "envCountValue": "{count} diatur",
+        "savings": "Penghematan",
+        "savingsRatio": "Tingkat penghematan",
+        "industryMap": {
+          "it": "IT / Software",
+          "fintech": "Keuangan / Fintech",
+          "ecommerce": "E-commerce / Ritel",
+          "healthcare": "Kesehatan / Medis",
+          "education": "Pendidikan / Edtech",
+          "manufacturing": "Manufaktur",
+          "logistics": "Logistik / Pengiriman",
+          "marketing": "Marketing / Periklanan",
+          "game": "Game / Hiburan",
+          "other": "Lainnya"
+        },
+        "businessTypeMap": {
+          "b2b": "B2B",
+          "b2c": "B2C",
+          "b2b2c": "B2B2C",
+          "internal": "Alat Internal"
+        },
+        "companySizeMap": {
+          "startup": "Startup",
+          "small": "Kecil",
+          "medium": "Kecil-menengah",
+          "mid-large": "Menengah-besar",
+          "enterprise": "Enterprise"
+        },
+        "authMethodMap": {
+          "api_key": "API key",
+          "oauth_browser": "OAuth browser"
+        },
+        "platformMap": {
+          "claude-code": "Claude Code",
+          "gemini-cli": "Gemini CLI",
+          "cursor": "Cursor",
+          "codex": "Codex"
+        },
+        "osMap": {
+          "wsl2": "WSL2"
+        }
+      }
+    },
+    "tour": {
+      "steps": {
+        "progress": {
+          "title": "Langkah-langkah progres",
+          "content": "Wizard ini memandu Anda melalui setiap langkah. Klik langkah yang telah selesai untuk kembali dan mengedit kapan saja."
+        },
+        "input": {
+          "title": "Input langkah demi langkah",
+          "content": "Mulai dari info perusahaan hingga penyiapan agent dan variabel lingkungan, setiap langkah mengumpulkan apa yang dibutuhkan AI untuk merancang solusi Anda."
+        },
+        "navigation": {
+          "title": "Navigasi langkah",
+          "content": "Kembali ke langkah sebelumnya atau maju. Setelah semua kolom wajib terisi, tombol Next akan aktif."
+        }
+      },
+      "locale": {
+        "back": "Kembali",
+        "close": "Tutup",
+        "last": "Selesai",
+        "next": "Berikutnya",
+        "skip": "Lewati"
+      }
+    },
+    "prototypePreview": {
+      "menuCount": "{count} menu",
+      "pageCount": "{count} halaman",
+      "colorPalette": "Palet warna",
+      "menuStructure": "Struktur menu",
+      "pageLayout": "Tata letak halaman",
+      "moreCount": "+{count}"
+    },
+    "pmProfileCard": {
+      "match": "{score}% cocok",
+      "completedCount": "Selesai",
+      "usageCount": "Penggunaan",
+      "successRate": "Tingkat keberhasilan",
+      "avgCompletionDays": "Rata-rata hari",
+      "daysValue": "{days}h"
+    },
+    "modernize": {
+      "repoConnect": {
+        "regionLabel": "Hubungkan GitHub",
+        "title": "Hubungkan repositori GitHub",
+        "description": "ClickEye Modernize mengakses repo privat Anda secara aman melalui GitHub App. Hanya meminta izin minimal (Contents read, Metadata read).",
+        "loading": "Memuat instalasi...",
+        "loadFail": "Gagal memuat info instalasi.",
+        "installUrlFail": "Gagal menerbitkan URL instalasi",
+        "installing": "Menunggu instalasi GitHub...",
+        "connectBtn": "Hubungkan GitHub",
+        "repoCount": "{count} repositori",
+        "permissionLabel": "Izin",
+        "permissionAll": "Semua",
+        "permissionSelected": "Dipilih",
+        "connectOther": "Hubungkan akun lain"
+      },
+      "repoSelect": {
+        "regionLabel": "Pilih repositori",
+        "connectFirst": "Hubungkan akun GitHub Anda terlebih dahulu.",
+        "instruction": "Pilih repositori dan branch untuk dianalisis.",
+        "refreshAria": "Segarkan daftar repositori",
+        "refresh": "Segarkan",
+        "loading": "Memuat repositori...",
+        "loadFail": "Gagal memuat daftar repositori.",
+        "emptyState": "Tidak ada repositori yang dapat diakses. Pastikan Anda memilih repo saat instalasi GitHub App.",
+        "privateAria": "privat",
+        "selected": "Dipilih"
+      },
+      "diagnose": {
+        "regionLabel": "Diagnosis kode",
+        "repoFallback": "Repositori",
+        "analyzing": "Menganalisis {repo}",
+        "analyzingDesc": "AI meng-clone dan memindai repositori, lalu menganalisis dependensi dan struktur kode. Ini biasanya memakan waktu 30–90 detik.",
+        "percentComplete": "{progress}% selesai",
+        "stepClone": "Clone repositori",
+        "stepDetect": "Deteksi bahasa/framework",
+        "stepDeps": "Analisis dependensi",
+        "stepOutdated": "Periksa paket usang",
+        "stepSampling": "Sampel kode",
+        "stepSummary": "Ringkasan AI",
+        "stepDone": "Selesai",
+        "creatingSession": "Membuat sesi analisis...",
+        "failTitle": "Analisis gagal",
+        "unknownError": "Terjadi kesalahan yang tidak diketahui.",
+        "retry": "Coba lagi",
+        "readyMessage": "Analisis selesai. Tinjau rekomendasi pada langkah berikutnya.",
+        "missingConnection": "Koneksi GitHub atau pemilihan repositori belum ada. Silakan kembali ke langkah sebelumnya.",
+        "createSessionFail": "Gagal membuat sesi analisis",
+        "statusFail": "Gagal mengambil status"
+      },
+      "diagnosisReview": {
+        "regionLabel": "Tinjauan diagnosis",
+        "detectedStack": "Stack yang terdeteksi",
+        "aiSummary": "Ringkasan diagnosis AI",
+        "scenarioTitle": "Skenario modernisasi",
+        "scenarioVersionup": {
+          "title": "VersionUp",
+          "desc": "Upgrade versi paket + penanganan runtime EOL"
+        },
+        "scenarioRefactor": {
+          "title": "Refactor",
+          "desc": "Pembersihan code smell / layering / dead code"
+        },
+        "scenarioLanguageMigrate": {
+          "title": "LanguageMigrate",
+          "desc": "Migrasi stack (mis. Express → FastAPI)"
+        },
+        "recommendations": "Rekomendasi",
+        "selectedCount": "({accepted}/{total} dipilih)",
+        "noRecommendations": "Tidak ada rekomendasi. Coba ubah skenario atau jalankan ulang analisis.",
+        "selectRec": "Pilih {title}",
+        "loading": "Memuat hasil diagnosis...",
+        "loadFail": "Gagal memuat hasil analisis"
+      },
+      "confirm": {
+        "regionLabel": "Konfirmasi akhir",
+        "summaryTitle": "Ringkasan konfigurasi",
+        "repoLabel": "Repositori",
+        "branchLabel": "Branch",
+        "scenarioLabel": "Skenario",
+        "acceptedLabel": "Rekomendasi yang dipilih",
+        "acceptedCount": "{count}",
+        "finalizeWithLinear": "Daftarkan otomatis ke Linear + unduh ZIP",
+        "finalizeZipOnly": "Unduh ZIP saja (lewati pendaftaran Linear)",
+        "selectAtLeastOne": "Pilih minimal satu rekomendasi untuk melanjutkan.",
+        "done": "Selesai",
+        "zipStarted": "Unduhan ZIP dimulai",
+        "zipReady": "ZIP siap",
+        "linearRegistered": "{count} terdaftar di Linear",
+        "linearFailed": "{count} gagal",
+        "openParentIssue": "Buka isu induk Linear",
+        "redownloadZip": "Unduh ulang ZIP",
+        "finalizeFail": "Finalisasi gagal",
+        "zipDownloadFail": "Unduhan ZIP gagal"
+      }
+    }
+  },
+  "setupGuide": {
+    "title": "Solusi dibuat!",
+    "subtitle": "Ikuti langkah-langkah di bawah ini untuk menyiapkan lingkungan pengembangan lokal Anda",
+    "stepsAriaLabel": "Prosedur penyiapan",
+    "integrationsTitle": "Panduan Penyiapan Integrasi",
+    "workflowTitle": "Alur Kerja Setelah Penyiapan",
+    "workflowDesc1": "bash start.sh → Pemeriksaan lingkungan · Mulai layanan latar belakang · Keluar otomatis",
+    "workflowDesc2Wsl": "bash scripts/install-service.sh → Daftarkan layanan systemd (pulih otomatis setelah WSL2 dimulai ulang)",
+    "workflowDesc3Wsl": "ClickEye Web → AI Team → Setujui tugas (Todo)",
+    "workflowDesc3": "ClickEye Web → AI Team → Setujui tugas (Todo)",
+    "workflowDesc4Wsl": "Pipeline lokal otomatis memanggil Claude untuk menulis kode",
+    "workflowDesc4": "Pipeline lokal otomatis memanggil Claude untuk menulis kode",
+    "workflowSlide": "Panduan slide berbagi tim: docs/setup-guide.pptx di dalam ZIP",
+    "goToProjectBtn": "Buka halaman proyek",
+    "projectPageHint": "Unduh ZIP dan periksa status integrasi di halaman proyek",
+    "step1Label": "Unduh ZIP",
+    "step1Desc": "Klik tombol \"Unduh ZIP\" di halaman proyek",
+    "step1Link": "Buka halaman proyek",
+    "step2Label": "Ekstrak",
+    "step2DescWsl": "Ekstrak ke folder yang Anda inginkan di terminal WSL2 Ubuntu",
+    "step2Desc": "Ekstrak file ZIP ke folder yang Anda inginkan",
+    "step2CommandWsl": "unzip '<project>'.zip -d ~/projects/my-project && cd ~/projects/my-project",
+    "step2Command": "unzip '<project>'.zip -d my-project && cd my-project",
+    "step2NoteWsl": "Jalankan dari terminal WSL alih-alih mengeklik dua kali ZIP di Windows Explorer",
+    "step3Label": "Jalankan Skrip Launcher",
+    "step3Desc": "Memeriksa lingkungan, memulai layanan di latar belakang, lalu keluar otomatis. Pipeline tetap berjalan bahkan setelah terminal ditutup.",
+    "step3Command": "bash start.sh",
+    "step4LabelWsl": "Daftarkan sebagai Layanan Persisten (Direkomendasikan)",
+    "step4Label": "Verifikasi Penyiapan Selesai",
+    "step4DescWsl": "Layanan akan otomatis pulih setelah WSL2 dimatikan atau dimulai ulang. Daftarkan sebagai layanan pengguna systemd.",
+    "step4Desc": "Setelah AI Team ClickEye Web mendaftarkan tugas, pipeline lokal akan berjalan otomatis.",
+    "step4CommandWsl": "bash scripts/install-service.sh",
+    "step4NoteWsl": "Opsional tetapi direkomendasikan untuk operasi yang stabil"
+  },
+  "onboarding": {
+    "preset": {
+      "title": "Mulai Cepat",
+      "subtitle": "Pilih preset untuk mengonfigurasi Agent, skill, dan pipeline secara otomatis",
+      "presetsTitle": "Pilih Preset",
+      "presetsCount": "({count})",
+      "presetsLoading": "Memuat preset...",
+      "presetsEmpty": "Tidak ada preset yang tersedia. Konfigurasikan secara manual di wizard.",
+      "skipBtn": "Lewati dan konfigurasikan secara manual",
+      "applyBtn": "Terapkan preset dan mulai"
+    },
+    "maturity": {
+      "title": "Penilaian Kematangan",
+      "subtitle": "Nilai kematangan pengembangan tim Anda dan dapatkan rekomendasi preset",
+      "skipBtn": "Lewati dan konfigurasikan secara manual",
+      "resultTitle": "Hasil Penilaian",
+      "resultSubtitle": "Kami telah menganalisis kematangan pengembangan AI tim Anda",
+      "loadingQuestions": "Memuat pertanyaan...",
+      "questionsError": "Tidak dapat memuat pertanyaan. Silakan coba lagi nanti.",
+      "goToWizard": "Buka wizard"
+    },
+    "naturalLanguage": {
+      "title": "Konfigurasikan dengan bahasa alami",
+      "subtitle": "Jelaskan proyek Anda dalam bahasa alami untuk mendapatkan rekomendasi konfigurasi optimal",
+      "placeholder": "mis. Saya ingin membangun SaaS dengan Next.js + FastAPI. Saya membutuhkan code review dan otomatisasi pengujian.",
+      "ariaLabel": "Input konfigurasi bahasa alami",
+      "analyzeAriaLabel": "Analisis konfigurasi",
+      "analyzing": "Menganalisis...",
+      "analyzeBtn": "Analisis",
+      "resultTitle": "Hasil Analisis AI",
+      "confidence": "Tingkat keyakinan {percent}%",
+      "agentsCount": "{count} Agent",
+      "skillsCount": "{count} skill",
+      "pipelinesCount": "{count} pipeline",
+      "proceedBtn": "Mulai wizard dengan analisis ini"
+    },
+    "questionnaire": {
+      "progressLabel": "{answered}/{total} terjawab",
+      "prevBtn": "Sebelumnya",
+      "analyzing": "Menganalisis...",
+      "checkResults": "Lihat Hasil",
+      "nextBtn": "Berikutnya",
+      "categories": {
+        "team": {
+          "label": "Kapabilitas Tim",
+          "description": "Beri tahu kami tentang ukuran tim dan tingkat pengalaman AI Anda"
+        },
+        "process": {
+          "label": "Proses Pengembangan",
+          "description": "Kami memeriksa code review dan strategi branching Anda"
+        },
+        "tooling": {
+          "label": "Alat Pengembangan",
+          "description": "Kami menilai tingkat IDE dan otomatisasi pengujian Anda"
+        },
+        "ci": {
+          "label": "CI/CD",
+          "description": "Kami memeriksa pipeline dan frekuensi deployment Anda"
+        },
+        "ai": {
+          "label": "Pemanfaatan AI",
+          "description": "Kami mengevaluasi penggunaan alat AI dan manajemen kualitas Anda"
+        }
+      }
+    },
+    "maturityResult": {
+      "viewPresets": "Lihat Preset yang Direkomendasikan",
+      "configureManually": "Konfigurasikan secara manual"
+    },
+    "tour": {
+      "steps": {
+        "navigation": {
+          "title": "Menu navigasi",
+          "content": "Gunakan sidebar kiri untuk berpindah cepat ke fitur utama dasbor."
+        },
+        "newSolution": {
+          "title": "Buat solusi baru",
+          "content": "Rancang solusi AI Agent melalui wizard 7 langkah dan unduh sebagai ZIP."
+        },
+        "settings": {
+          "title": "Pengaturan (integrasi Linear)",
+          "content": "Konfigurasikan pengaturan tim seperti manajemen anggota organisasi dan integrasi proyek Linear."
+        },
+        "aiTeam": {
+          "title": "AI Team",
+          "content": "Bangun AI Team Anda di dalam proyek serta jalankan dan pantau pipeline otomatisasi."
+        },
+        "help": {
+          "title": "Bantuan",
+          "content": "Anda dapat melihat panduan pengguna atau memulai ulang tutorial ini di sini kapan saja."
+        }
+      }
+    }
+  },
+  "solutions": {
+    "page": {
+      "title": "Wizard Solusi",
+      "subtitle": "AI secara otomatis merancang solusi yang disesuaikan dengan perusahaan Anda",
+      "newBtn": "Solusi baru",
+      "newBtnAria": "Mulai wizard solusi baru",
+      "heroTitle": "Rancang solusi AI dengan wizard 7 langkah",
+      "heroDesc": "Masukkan info perusahaan Anda dan AI akan menghasilkan Prototipe khusus, lalu memandu Anda melalui rekomendasi PM, konfigurasi Agent, dan pemilihan platform.",
+      "heroLink": "Mulai sekarang",
+      "recentSessions": "Sesi Terbaru",
+      "loadingAria": "Memuat daftar sesi",
+      "emptyState": "Belum ada sesi",
+      "emptyStateHint": "Mulai wizard solusi baru",
+      "startBtn": "Mulai solusi baru",
+      "loadError": "Tidak dapat memuat daftar sesi.",
+      "recentSessionsListAria": "Daftar sesi solusi terbaru",
+      "openSessionAria": "Buka sesi {name}"
+    },
+    "status": {
+      "completed": "Selesai",
+      "generating": "Menghasilkan",
+      "pending": "Tertunda",
+      "failed": "Gagal"
+    },
+    "new": {
+      "resumeTitle": "Anda memiliki sesi yang sedang berlangsung",
+      "resumeDesc": "Anda dapat melanjutkan sesi wizard sebelumnya atau memulai yang baru.",
+      "noRequest": "(Tidak ada permintaan)",
+      "sessionCompleted": "Prototipe dihasilkan",
+      "sessionGenerating": "Menghasilkan",
+      "sessionPending": "Tertunda",
+      "startNew": "Mulai baru",
+      "sessionDeleteAria": "Hapus sesi",
+      "retry": "Coba lagi",
+      "proceed": "Lanjutkan apa adanya"
+    },
+    "meta": {
+      "newTitle": "Solusi baru | ClickEye",
+      "newDescription": "Rancang solusi AI secara otomatis dengan wizard 7 langkah"
+    },
+    "modernizeConnected": {
+      "title": "GitHub terhubung",
+      "redirecting": "Mengalihkan ke wizard sebentar lagi..."
+    }
+  },
+  "projects": {
+    "page": {
+      "wizardBannerTitle": "Wizard Solusi Baru",
+      "wizardBannerDesc": "Rancang sendiri solusi AI Anda dan mulai langsung dengan unduhan ZIP",
+      "wizardBannerBtn": "Mulai rancang solusi",
+      "wizardBannerBtnAria": "Mulai wizard solusi baru",
+      "modernizeBannerTitle": "Modernisasi kode yang ada",
+      "modernizeBannerDesc": "Hubungkan repositori GitHub dan AI akan mendiagnosis kode lalu mendaftarkan tugas modernisasi secara otomatis ke Linear",
+      "modernizeBannerBtn": "Hubungkan repositori",
+      "modernizeBannerBtnAria": "Mulai wizard modernisasi kode",
+      "title": "Proyek",
+      "subtitle": "Kelola proyek yang akan dikerjakan oleh Agent AI",
+      "searchPlaceholder": "Cari proyek...",
+      "searchAria": "Cari proyek",
+      "filterAll": "Semua",
+      "filterActive": "Aktif",
+      "filterArchived": "Diarsipkan",
+      "loadError": "Gagal memuat proyek.",
+      "prevPageAria": "Halaman sebelumnya",
+      "nextPageAria": "Halaman berikutnya",
+      "pageAria": "Halaman {page}",
+      "totalCount": "Total {count} proyek"
+    },
+    "detail": {
+      "backToList": "Daftar proyek",
+      "staleKeyTitle": "API key telah berubah",
+      "staleKeyDesc": "File .env lokal Anda perlu diperbarui. {keys} key sudah usang.",
+      "staleKeyAnthropicLabel": "Anthropic",
+      "staleKeyLinearLabel": "Linear",
+      "downloadEnv": "Unduh .env",
+      "downloadZip": "Unduh ulang ZIP",
+      "editTitle": "Edit proyek",
+      "submitLabel": "Simpan",
+      "editBtn": "Ubah",
+      "dashboardBtn": "Dasbor",
+      "settingsBtn": "Pengaturan",
+      "loading": "Memuat...",
+      "loadError": "Gagal memuat proyek: {message}",
+      "statusActive": "Aktif",
+      "statusArchived": "Diarsipkan",
+      "createdAt": "Dibuat: {date}",
+      "statusMeta": "Status: {status}",
+      "configSummary": "Ringkasan Konfigurasi",
+      "labelCompany": "Perusahaan",
+      "labelSolution": "Solusi",
+      "labelAgents": "Agent",
+      "labelSkills": "Skills",
+      "labelPipelines": "Pipeline",
+      "labelPlatform": "Platform",
+      "noWizardData": "Tidak ada konfigurasi wizard. Jalankan kembali wizard solusi untuk membuat ulang ZIP.",
+      "oauthNote": "Mode autentikasi OAuth browser. claude login akan berjalan otomatis saat Anda menjalankan bash start.sh.",
+      "envNote": "API key tidak disimpan di server. Key ditulis langsung ke .env di dalam ZIP.",
+      "missingEnvAlert": "{count} variabel lingkungan wajib ({labels}) harus diisi untuk mengunduh ZIP.",
+      "downloadBtn": "Unduh ZIP",
+      "downloading": "Mengunduh...",
+      "downloadHintMissing": "Isi variabel lingkungan untuk mengunduh",
+      "downloadHintReady": "ZIP akan dibuat dengan konfigurasi tersimpan + API key Anda",
+      "sanitizedWarning": "Karakter non-ASCII (Korea, emoji, dll.) akan dihapus otomatis. Masukkan hanya huruf dan angka.",
+      "dangerZoneTitle": "Zona Berbahaya",
+      "dangerZoneDesc": "Tindakan di bawah ini tidak dapat dibatalkan. Lanjutkan dengan hati-hati.",
+      "resetTitle": "Atur ulang proyek",
+      "resetDesc": "Menghapus konfigurasi wizard, tiket, artefak, dan data sesi. ID dan nama proyek tetap dipertahankan.",
+      "resetBtn": "Atur ulang",
+      "deleteTitle": "Hapus proyek",
+      "deleteDesc": "Menghapus proyek beserta seluruh data terkaitnya secara permanen.",
+      "deleteBtn": "Hapus",
+      "resetSuccess": "Proyek telah diatur ulang.",
+      "resetKeyUpdateNote": "Perbarui LICENSE_KEY di file .env lokal Anda dengan key baru di atas.",
+      "notSet": "Belum diatur",
+      "countItem": "{count} item",
+      "redownloadError": "Gagal mengunduh ulang",
+      "editFail": "Gagal memperbarui.",
+      "validating": "Memvalidasi...",
+      "solutionTypeFullstack": "Fullstack",
+      "solutionTypeInternalTool": "Alat Internal",
+      "solutionTypeCustom": "Kustom",
+      "licenseKeyLabel": "License key baru:"
+    },
+    "linear": {
+      "cardTitle": "Status Integrasi Linear",
+      "compactNote": "(untuk otomasi server)",
+      "refreshBtn": "Segarkan",
+      "credentialsSaved": "Kredensial tersimpan",
+      "credentialsSavedDesc": "Linear API key telah terdaftar",
+      "teamIdDesc": "Team ID: {teamId}",
+      "credentialsNotSavedDesc": "Masukkan Linear API key dan team ID saat membuat proyek untuk menyimpannya secara otomatis",
+      "apiKeyConfirmed": "API key terkonfirmasi",
+      "startAiTeamBtn": "Mulai AI Team",
+      "newSolutionBtn": "Buat solusi baru",
+      "savedNote": "Kredensial Linear tersimpan untuk proyek ini.",
+      "notSavedNote": "Masukkan Linear API key Anda di wizard pembuatan proyek untuk menyimpannya pada proyek ini."
+    },
+    "reset": {
+      "title": "Atur ulang proyek",
+      "warning": "Mengatur ulang proyek <name>{name}</name> akan menghapus data di bawah ini secara permanen. Tindakan ini tidak dapat dibatalkan.",
+      "confirmLabel": "Untuk mengonfirmasi, ketik nama proyek <name>{name}</name>",
+      "itemWizard": "Konfigurasi wizard (wizard_data)",
+      "itemTickets": "Tiket dan event",
+      "itemSessions": "Sesi dan pesan orchestrator",
+      "itemArtifacts": "Artefak",
+      "itemAgents": "Info koneksi Agent",
+      "itemConfigs": "Konfigurasi proyek (project_configs)",
+      "itemOverrides": "Override kontrak",
+      "itemLicense": "License key (diterbitkan ulang sebagai key baru)",
+      "resetting": "Mengatur ulang...",
+      "resetBtn": "Atur ulang"
+    },
+    "list": {
+      "emptyTitle": "Belum ada proyek",
+      "emptyHint": "Buat proyek pertama Anda untuk memulai",
+      "createBtn": "Buat proyek baru"
+    },
+    "card": {
+      "automationRate": "Tingkat otomasi",
+      "reviewAcceptanceRate": "Tingkat penerimaan tinjauan",
+      "releasedArtifacts": "Artefak yang dirilis",
+      "keyStale": "Perlu pembaruan key"
+    },
+    "pmFeedback": {
+      "title": "Umpan balik PM",
+      "subtitle": "Berikan penilaian untuk PM yang Anda gunakan",
+      "later": "Nanti",
+      "usageCount": "{count} kali penggunaan",
+      "usedLabel": "Digunakan",
+      "thanks": "Terima kasih atas umpan balik Anda. Ini membantu kami meningkatkan PM kami.",
+      "like": "Suka",
+      "dislike": "Kurang bagus",
+      "commentPlaceholder": "Beri tahu kami apa yang dilakukan PM ini dengan baik dan apa yang bisa ditingkatkan. Ini sangat membantu kami.",
+      "submitting": "Mengirim...",
+      "submit": "Kirim umpan balik"
+    },
+    "dashboard": {
+      "title": "Dasbor {name}",
+      "fallbackName": "Proyek",
+      "lastGenerated": "Terakhir dibuat: {date}",
+      "refresh": "Segarkan",
+      "loadError": "Gagal memuat laporan. Silakan coba lagi."
+    },
+    "insights": {
+      "title": "Wawasan KPI {name}",
+      "fallbackName": "Proyek",
+      "lastAggregated": "Terakhir diagregasi: {date}",
+      "refresh": "Segarkan",
+      "loadError": "Gagal memuat data KPI. Silakan coba lagi."
+    },
+    "settings": {
+      "notFound": "Proyek tidak ditemukan.",
+      "backToList": "Kembali ke daftar",
+      "title": "Pengaturan proyek",
+      "subtitle": "Edit info proyek dan kelola statusnya",
+      "basicInfo": "Info dasar",
+      "updateSuccess": "Proyek diperbarui.",
+      "statusTitle": "Status proyek",
+      "statusDesc": "Anda dapat mengarsipkan atau mengaktifkan kembali proyek",
+      "archiveBtn": "Arsipkan",
+      "activateBtn": "Aktifkan"
+    },
+    "contracts": {
+      "loading": "Memuat...",
+      "active": "Aktif",
+      "inactive": "Tidak aktif",
+      "editCancelAria": "Batalkan pengeditan",
+      "editOverrideAria": "Ubah override",
+      "updatedAt": "Diperbarui: {date}",
+      "applyTitle": "Terapkan kontrak",
+      "applyDesc": "Pilih kontrak pusat untuk diterapkan ke proyek ini.",
+      "noAvailable": "Tidak ada kontrak yang tersedia untuk diterapkan",
+      "applying": "Menerapkan...",
+      "applyBtn": "Terapkan",
+      "backToDetail": "Detail proyek",
+      "title": "Kontrak proyek",
+      "subtitle": "Kelola kontrak dan override yang diterapkan ke proyek ini",
+      "syncBtn": "Sinkronkan",
+      "loadError": "Gagal memuat kontrak proyek.",
+      "totalCount": "Total {count}",
+      "emptyState": "Tidak ada kontrak yang diterapkan",
+      "applyFirst": "Terapkan kontrak pertama Anda"
+    }
+  },
+  "settings": {
+    "members": {
+      "title": "Anggota Organisasi",
+      "subtitle": "Undang dan kelola anggota organisasi",
+      "inviteBtn": "Undang anggota",
+      "userIdLabel": "User ID",
+      "userIdPlaceholder": "Masukkan UUID...",
+      "roleLabel": "Peran",
+      "addingBtn": "Menambahkan...",
+      "addBtn": "Tambah",
+      "cancelBtn": "Batal",
+      "loadError": "Gagal memuat daftar anggota.",
+      "colUser": "Pengguna",
+      "colRole": "Peran",
+      "colStatus": "Status",
+      "colJoinedAt": "Bergabung",
+      "colActions": "Tindakan",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus?",
+      "confirmBtn": "Konfirmasi",
+      "removeTitle": "Hapus anggota",
+      "statusActive": "Aktif",
+      "statusInactive": "Tidak aktif",
+      "emptyState": "Tidak ada anggota organisasi",
+      "emptyStateHint": "Gunakan tombol 'Undang anggota' di atas untuk menambahkan anggota",
+      "totalCount": "Total {count} anggota",
+      "roles": {
+        "org_admin": "Admin",
+        "org_member": "Anggota",
+        "org_viewer": "Viewer"
+      }
+    },
+    "linear": {
+      "title": "Integrasi Linear",
+      "subtitle": "Tugas AI Team didaftarkan otomatis sebagai isu Linear, dan Claude lokal berjalan otomatis saat status berubah.",
+      "savedTitle": "Kredensial tersimpan",
+      "apiKeyLabel_header": "API key",
+      "teamIdLabel_header": "Team ID",
+      "webhookSecretLabel_header": "Webhook secret",
+      "tunnelUrlLabel_header": "Tunnel URL",
+      "webhookRegistered": "Webhook Linear terdaftar",
+      "formTitle_update": "Perbarui kredensial",
+      "formTitle_new": "Daftarkan kredensial",
+      "apiKeyLabel": "Linear API key",
+      "apiKeyKeepEmpty": "(kosongkan untuk mempertahankan yang sekarang)",
+      "teamIdLabel": "Team ID",
+      "apiKeyHelp": "Diterbitkan dari Linear → Settings → API → Personal API keys",
+      "teamIdHelp": "Linear → Settings → Workspace → Teams → Klik nama tim → Salin ID",
+      "webhookSectionTitle": "Konfigurasi Webhook",
+      "webhookSectionNote": "(untuk pemicu Claude real-time)",
+      "tunnelUrlLabel": "Tunnel URL",
+      "webhookSecretLabel": "Webhook secret (opsional)",
+      "tunnelUrlHelp": "URL yang muncul setelah menjalankan setup-tunnel.sh di dalam ZIP",
+      "webhookPlaceholderSet": "Diatur - masukkan nilai baru untuk mengubah",
+      "webhookPlaceholderUnset": "Buat dengan openssl rand -hex 32",
+      "updateBtn": "Perbarui",
+      "saveBtn": "Simpan",
+      "deleteBtn": "Hapus",
+      "saveSuccess_webhook": "Tersimpan. Webhook Linear telah didaftarkan otomatis.",
+      "saveSuccess": "Kredensial Linear tersimpan.",
+      "deleteSuccess": "Kredensial Linear dihapus.",
+      "saveFail": "Gagal menyimpan.",
+      "deleteFail": "Gagal menghapus.",
+      "webhookSet": "Diatur",
+      "webhookNotSet": "Belum diatur",
+      "tunnelNotSet": "Belum diatur",
+      "guide": {
+        "tunnelTitle": "Bagaimana cara mendapatkan tunnel URL?",
+        "tunnelDesc": "Tunnel URL adalah alamat eksternal yang membuat server webhook lokal Anda dapat diakses dari internet. Alamat ini dikonfigurasi otomatis saat Anda menjalankan bash start.sh.",
+        "tunnelStep1Title": "Jalankan launcher setelah mengekstrak (tunnel & webhook dikonfigurasi otomatis)",
+        "tunnelStep2Title": "Periksa tunnel URL yang diterbitkan",
+        "tunnelStep2Paste": "Tempelkan URL keluaran ke kolom input di bawah ini.",
+        "tunnelStep3Title": "Saat URL perlu disegarkan (setelah WSL2 di-restart)",
+        "tunnelStep3Note": "Menjalankan ulang akan mendaftarkan ulang webhook dengan URL baru secara otomatis.",
+        "tunnelWarning": "Tunnel Cloudflare gratis mengubah URL saat WSL2 di-restart. Jalankan bash start.sh lagi setelah restart. Mendaftarkannya sebagai layanan systemd (install-service.sh) menjaga server webhook dan watcher tetap berjalan otomatis.",
+        "tunnelDocsLink": "Dokumentasi resmi Cloudflare Tunnel",
+        "webhookTitle": "Apa itu webhook secret?",
+        "webhookDesc": "String acak yang digunakan untuk verifikasi tanda tangan saat Linear mengirim event ke server lokal Anda. Opsional tetapi disarankan demi keamanan.",
+        "webhookGenerateTitle": "Buat secret acak di terminal:",
+        "webhookPasteDesc": "Salin keluaran dan masukkan baik ke kolom input di bawah ini maupun ke WEBHOOK_SECRET di file .env dalam ZIP.",
+        "webhookNote": "Saat Anda mendaftarkan tunnel URL, ClickEye otomatis mendaftarkan Webhook Linear. Secret yang Anda masukkan di sini diterapkan ke webhook tersebut."
+      }
+    },
+    "anthropic": {
+      "title": "Kredensial Anthropic",
+      "subtitle": "Daftarkan kredensial yang diperlukan untuk metode autentikasi Claude Anda. Kredensial yang sesuai dengan mode yang dipilih di wizard akan diinjeksikan otomatis saat membuat ZIP.",
+      "apiKeySection": "Mode API Key",
+      "oauthSection": "Mode OAuth Browser",
+      "apiKeyCardTitle": "API Key",
+      "apiKeyCardDescription": "Digunakan saat mode 'API Key' dipilih di wizard. Key diinjeksikan otomatis ke .env dalam ZIP sebagai ANTHROPIC_API_KEY.",
+      "apiKeyInvalid": "Format tidak valid (harus dimulai dengan sk-ant-... dan minimal 20 karakter)",
+      "apiKeyExternalLink": "Terbitkan dari console.anthropic.com → API Keys (format sk-ant-...)",
+      "apiKeyHelper": "Key disimpan di server dengan enkripsi Fernet. Saat menganalisis cetak biru solusi di wizard, key ini digunakan lebih dulu dan kredit dari akun Anda sendiri akan dipakai sebelum key server.",
+      "oauthNoRegistrationTitle": "Tidak perlu pendaftaran terpisah",
+      "oauthNoRegistrationDesc": "Saat mode 'OAuth Browser' dipilih di wizard, tidak ada kredensial yang disimpan di cloud ClickEye.",
+      "oauthBullet1": "Saat Anda menjalankan bash start.sh, claude login berjalan otomatis.",
+      "oauthBullet2": "Token autentikasi hanya disimpan di keychain OS (~/.claude.json) dan tidak dikirim ke ClickEye.",
+      "oauthBullet3": "Tidak ada yang perlu dikelola di halaman ini untuk mode ini. Pilih metode autentikasi Anda di wizard dan unduh ZIP."
+    },
+    "language": {
+      "title": "Bahasa / Language",
+      "subtitle": "Pilih bahasa tampilan yang Anda inginkan"
+    }
+  },
+  "guide": {
+    "title": "Panduan Pengguna",
+    "subtitle": "Panduan langkah demi langkah untuk menggunakan platform ClickEye.",
+    "toc": "Daftar Isi"
+  },
+  "auth": {
+    "login": {
+      "title": "Selamat datang kembali",
+      "subtitle": "Masuk untuk mengelola AI Agent Anda",
+      "registeredSuccess": "Pendaftaran selesai. Silakan masuk.",
+      "credentialsError": "Email atau kata sandi salah",
+      "orContinueWithEmail": "Atau lanjutkan dengan email",
+      "emailLabel": "Email",
+      "passwordLabel": "Kata sandi",
+      "forgotPassword": "Lupa kata sandi?",
+      "passwordPlaceholder": "Masukkan kata sandi Anda",
+      "submit": "Masuk",
+      "submitting": "Sedang masuk...",
+      "noAccountPrompt": "Belum punya akun?",
+      "signupLink": "Daftar"
+    },
+    "register": {
+      "title": "Mulai sekarang",
+      "subtitle": "Buat akun gratis dan rasakan kekuatan AI Agent",
+      "genericError": "Terjadi kesalahan saat pendaftaran",
+      "orContinueWithEmail": "Atau daftar dengan email",
+      "emailLabel": "Email",
+      "nameLabel": "Nama",
+      "namePlaceholder": "Nama tampilan Anda",
+      "passwordLabel": "Kata sandi",
+      "passwordPlaceholder": "Minimal 8 karakter",
+      "confirmPasswordLabel": "Konfirmasi kata sandi",
+      "confirmPasswordPlaceholder": "Masukkan ulang kata sandi Anda",
+      "requirements": {
+        "minLength": "8+ karakter",
+        "hasUpper": "Huruf kapital",
+        "hasNumber": "Angka"
+      },
+      "termsPrefix": "Dengan mendaftar, Anda menyetujui",
+      "termsLink": "Ketentuan Layanan",
+      "termsConjunction": "dan",
+      "privacyLink": "Kebijakan Privasi",
+      "termsSuffix": " kami.",
+      "submit": "Buat akun",
+      "submitting": "Sedang mendaftar...",
+      "hasAccountPrompt": "Sudah punya akun?",
+      "loginLink": "Masuk"
+    },
+    "layout": {
+      "tabLogin": "Masuk",
+      "tabRegister": "Daftar",
+      "heroTitleLine1": "Pengalaman pengembangan baru",
+      "heroTitleLine2": "tempat AI menulis kode",
+      "heroDescLine1": "Dari penugasan tiket hingga code review dan pembuatan PR.",
+      "heroDescLine2": "Temui AI Agent pengembangan yang tidak pernah tidur.",
+      "features": {
+        "orchestration": {
+          "title": "Orkestrasi AI Agent",
+          "desc": "Agent pengembangan otonom berbasis Claude"
+        },
+        "security": {
+          "title": "Keamanan enterprise",
+          "desc": "Lingkungan eksekusi terisolasi dan manajemen lisensi"
+        },
+        "automation": {
+          "title": "Alur kerja otomatis",
+          "desc": "Otomatisasi menyeluruh dari tiket hingga PR"
+        }
+      },
+      "copyright": "© 2026 ClickEye. All rights reserved."
+    }
+  },
+  "nav": {
+    "main": "Navigasi utama",
+    "sidebar": {
+      "collapse": "Ciutkan sidebar",
+      "expand": "Bentangkan sidebar"
+    },
+    "items": {
+      "newSolution": "Solusi baru",
+      "projects": "Proyek",
+      "guide": "Panduan"
+    },
+    "sections": {
+      "settings": "Pengaturan",
+      "admin": "Admin"
+    },
+    "settings": {
+      "members": "Anggota organisasi",
+      "anthropic": "Kredensial Anthropic"
+    },
+    "admin": {
+      "controlTower": "Control tower",
+      "users": "Manajemen pengguna",
+      "contracts": "Kontrak",
+      "pm": "Manajemen PM",
+      "agentsRegistry": "Registry Agent",
+      "skillsRegistry": "Registry Skill",
+      "mcpsRegistry": "Registry MCP",
+      "prototypeCatalog": "Katalog Prototipe",
+      "prototypeTags": "Tag Prototipe",
+      "roiStandards": "Standar ROI",
+      "globalSettings": "Pengaturan global",
+      "recommendations": "Log rekomendasi",
+      "audit": "Log audit"
+    }
+  },
+  "home": {
+    "nav": {
+      "features": "Fitur",
+      "howItWorks": "Cara kerja",
+      "platforms": "Platform",
+      "login": "Masuk",
+      "ctaStart": "Mulai merancang"
+    },
+    "hero": {
+      "badge": "Pembuat solusi AI yang mengutamakan web",
+      "titleLine1": "Rancang sendiri,",
+      "titleLine2": "mulai dengan satu ZIP,",
+      "titleLine3": "pengembangan AI",
+      "descLine1": "Pilih agent, skill, dan pipeline di browser, lalu kami",
+      "descLine2": "membuat proyek untuk Claude Code / Gemini CLI / Cursor / Codex secara otomatis.",
+      "primaryCta": "Mulai merancang",
+      "secondaryCta": "Lihat cara kerjanya",
+      "wizardSteps": {
+        "company": "Perusahaan",
+        "solution": "Solusi",
+        "agent": "Agent",
+        "skill": "Skills",
+        "pipeline": "Pipeline",
+        "platform": "Platform",
+        "preview": "Pratinjau"
+      },
+      "agentSelectPrompt": "Pilih Agent AI yang akan diterapkan pada proyek Anda",
+      "agentRequired": "Wajib",
+      "recommendationNote": "Rekomendasi berdasarkan tipe solusi Anda telah diterapkan",
+      "demoAgents": {
+        "harness": "Insinyur harness",
+        "backend": "Backend senior",
+        "frontend": "Spesialis frontend",
+        "uiux": "Desainer UI/UX",
+        "devops": "DevOps",
+        "fullstack": "Fullstack"
+      }
+    },
+    "features": {
+      "sectionTitle": "Mengapa ClickEye?",
+      "sectionDescription": "Platform otomasi pengembangan AI — rancang di web, kirim sebagai ZIP",
+      "wizard": {
+        "title": "Wizard 7 langkah",
+        "desc": "Rancang solusi AI dalam 7 langkah di browser Anda, dari info perusahaan hingga pilihan platform. Mulai tanpa menulis satu baris kode pun."
+      },
+      "catalog": {
+        "title": "Katalog rekomendasi otomatis",
+        "desc": "Pilih tipe solusi dan kami merekomendasikan agent, skill, serta pipeline secara otomatis — termasuk pipeline teruji seperti Harness, TDD, dan tinjauan AI."
+      },
+      "security": {
+        "title": "Model keamanan BYOK",
+        "desc": "API key hanya berada di file .env dalam ZIP. Desain Zero-Trust yang tidak pernah menyimpan key di server."
+      },
+      "platform": {
+        "title": "Dukungan multi-platform",
+        "desc": "Claude Code, Gemini CLI, Cursor, Codex. Apa pun alat AI coding yang Anda gunakan, wizard yang sama menghasilkan proyek dengan kualitas yang sama."
+      }
+    },
+    "metrics": {
+      "badge": "Metrik pelanggan nyata",
+      "sectionTitle": "Terbukti lewat angka",
+      "sectionDescription": "Metrik pengembangan nyata dari tim yang menggunakan ClickEye",
+      "automation": {
+        "label": "Rata-rata tingkat otomasi",
+        "desc": "87% subtugas ditangani oleh AI"
+      },
+      "review": {
+        "label": "Tingkat penerimaan tinjauan",
+        "desc": "Disetujui pada tinjauan pertama tanpa revisi"
+      },
+      "speed": {
+        "label": "Pengembangan lebih cepat",
+        "desc": "Rata-rata 3,5x lebih cepat daripada manual"
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "Bagaimana cara kerjanya?",
+      "sectionDescription": "Lengkapi lingkungan pengembangan AI Anda dalam tiga langkah",
+      "design": {
+        "title": "Rancang di web",
+        "desc": "Setelah masuk, gunakan wizard 7 langkah untuk memilih info perusahaan, tipe solusi, agent, skill, pipeline, dan platform. Rekomendasi diterapkan berdasarkan tipe solusi Anda."
+      },
+      "download": {
+        "title": "Unduh ZIP",
+        "desc": "Setelah dikonfigurasi, pratinjau file dan unduh ZIP proyek — termasuk CLAUDE.md, panduan agent, .env, dan setiap pengaturan."
+      },
+      "run": {
+        "title": "Jalankan secara lokal",
+        "desc": "Ekstrak dan luncurkan alat AI coding Anda. claude, gemini, cursor — setiap alat membaca panduan proyek dan langsung mulai mengembangkan."
+      },
+      "terminal": {
+        "loadingClaudeMd": "Membaca CLAUDE.md...",
+        "harnessActivated": "Pipeline 4 tahap harness engineering diaktifkan",
+        "starting": "Memulai pengembangan proyek"
+      }
+    },
+    "platforms": {
+      "sectionTitle": "Platform yang didukung",
+      "sectionDescription": "Apa pun alat AI coding yang Anda gunakan, ClickEye menghasilkan konfigurasi yang tepat untuknya",
+      "claudeCode": {
+        "name": "Claude Code",
+        "desc": "Agent AI terminal Anthropic"
+      },
+      "geminiCli": {
+        "name": "Gemini CLI",
+        "desc": "Agent AI terminal Google"
+      },
+      "cursor": {
+        "name": "Cursor",
+        "desc": "IDE AI-native"
+      },
+      "codex": {
+        "name": "Codex",
+        "desc": "Agent AI terminal OpenAI"
+      }
+    },
+    "earlyAccess": {
+      "sectionTitle": "Gratis saat ini",
+      "sectionDescLine1": "Gunakan semua fitur secara gratis selama periode early-access.",
+      "sectionDescLine2": "Yang Anda perlukan hanyalah API key platform AI Anda.",
+      "planName": "Early Access",
+      "freeBadge": "Gratis",
+      "features": {
+        "unlimitedWizard": "Wizard 7 langkah tanpa batas",
+        "catalog": "Semua katalog agent & skill",
+        "platforms": "Mendukung 4 platform AI",
+        "downloads": "Unduhan ZIP tanpa batas"
+      },
+      "cta": "Mulai gratis",
+      "byokNote": "BYOK — Bring Your Own Key. Kami tidak pernah menyimpan API key di server kami."
+    },
+    "finalCta": {
+      "title": "Pengembangan AI dalam 7 langkah",
+      "description": "Rancang di browser, mulai dengan ZIP. API key Anda tetap berada di perangkat Anda.",
+      "button": "Mulai merancang"
+    },
+    "footer": {
+      "copyright": "© 2026 ClickEye. All rights reserved."
+    }
+  },
+  "admin": {
+    "common": {
+      "add": "Tambah",
+      "edit": "Ubah",
+      "active": "Aktif",
+      "inactive": "Nonaktif",
+      "translationMissing": "Belum diterjemahkan",
+      "langKorean": "Korea",
+      "langEnglish": "Inggris",
+      "tagInputPlaceholder": "Ketik lalu tekan Enter",
+      "pagination": {
+        "prev": "Halaman sebelumnya",
+        "next": "Halaman berikutnya",
+        "page": "Halaman {page}",
+        "total": "{count} total"
+      }
+    },
+    "pm": {
+      "loading": "Memuat...",
+      "backToList": "Kembali ke daftar",
+      "saveMd": "Simpan MD",
+      "sections": {
+        "basic": "Info dasar",
+        "composition": "Komposisi",
+        "specialtyTags": "Tag keahlian",
+        "freeText": "Deskripsi bebas",
+        "skill": "SKILL — Tag tech stack",
+        "agent": "AGENT — Tag industri",
+        "supportedPlatforms": "Platform yang didukung",
+        "feedback": "Umpan balik pengguna"
+      },
+      "form": {
+        "nameRequired": "Nama *",
+        "slugRequired": "Slug *",
+        "title": "Jabatan",
+        "domain": "Domain",
+        "domainPlaceholder": "mis. saas, fintech",
+        "yearsExperience": "Tahun pengalaman",
+        "language": "Bahasa",
+        "langKorean": "Korea",
+        "langEnglish": "Inggris",
+        "activeStatus": "Status aktif",
+        "specialties": "Keahlian",
+        "specialtiesPlaceholder": "mis. product, saas",
+        "preferredSolutionTypes": "Tipe solusi yang disukai",
+        "preferredSolutionTypesPlaceholder": "mis. saas, rest-api",
+        "description": "Deskripsi satu baris",
+        "bioLong": "Bio terperinci (bio_long) — dikirim ke Claude untuk rekomendasi PM",
+        "bioLongPlaceholder": "Jelaskan keahlian, pengalaman, dan gaya PM secara terperinci.",
+        "bioLongHint": "Semakin spesifik dan terperinci, semakin tinggi kualitas rekomendasi Claude.",
+        "techStackTags": "Tag tech stack",
+        "techStackTagsPlaceholder": "mis. nextjs, fastapi, react",
+        "industryTags": "Tag industri",
+        "industryTagsPlaceholder": "mis. fintech, ecommerce, healthtech",
+        "supportedPlatforms": "Platform AI yang didukung",
+        "supportedPlatformsPlaceholder": "mis. claude-code, cursor, gemini-cli, codex",
+        "supportedPlatformsHint": "Masukkan slug platform Agent AI yang didukung PM ini. Platform yang tidak didukung dinonaktifkan pada Wizard Langkah 7 (pemilihan platform)."
+      },
+      "enTranslation": {
+        "sectionTitle": "Terjemahan Inggris (i18n)",
+        "missingCount": "{count} belum diisi",
+        "note": "Teks yang ditampilkan kepada pengguna berbahasa Inggris. Kosongkan untuk menggunakan teks asli Korea.",
+        "nameLabel": "Nama (name_en)",
+        "titleLabel": "Jabatan (title_en)",
+        "descriptionLabel": "Deskripsi satu baris (description_en)",
+        "bioLabel": "Bio terperinci (bio_long_en)"
+      },
+      "feedback": {
+        "likes": "Suka",
+        "dislikes": "Tidak suka",
+        "totalFeedback": "Total umpan balik",
+        "usageCount": "Jumlah penggunaan",
+        "empty": "Belum ada umpan balik",
+        "noComment": "Tidak ada komentar"
+      },
+      "pagination": {
+        "prev": "Sebelumnya",
+        "next": "Berikutnya"
+      },
+      "list": {
+        "title": "Manajemen profil PM",
+        "subtitle": "Buat dan ubah profil PM AI (khusus admin)",
+        "createPm": "Buat PM",
+        "createTitle": "Buat profil PM baru",
+        "namePlaceholder": "mis. Alex Chen",
+        "slugPlaceholder": "mis. alex-chen",
+        "titlePlaceholder": "mis. Senior PM",
+        "descriptionPlaceholder": "Deskripsi singkat tentang PM",
+        "deleteConfirm": "Hapus PM \"{name}\"?",
+        "colName": "Nama",
+        "colDomain": "Domain",
+        "colSpecialty": "Keahlian",
+        "colUsage": "Penggunaan",
+        "colFeedback": "Umpan balik",
+        "colStatus": "Status",
+        "colActions": "Tindakan",
+        "usageUnit": "kali",
+        "empty": "Belum ada profil PM. Tambahkan dengan tombol di atas."
+      },
+      "composition": {
+        "title": "Komposisi (tim)",
+        "hint": "Anda hanya dapat menambahkan item yang terdaftar di registry. Anda dapat memilih beberapa item per tipe.",
+        "loading": "Memuat...",
+        "add": "Tambah",
+        "adding": "Menambahkan...",
+        "emptyItems": "Belum ada item yang ditambahkan.",
+        "removeConfirm": "Hapus \"{name}\"?",
+        "removeAria": "Hapus {name}",
+        "sectionLabels": {
+          "agent": "Agent AI",
+          "skill": "Skills",
+          "mcp_server": "MCP Server",
+          "hook": "Hooks"
+        }
+      },
+      "picker": {
+        "searchPlaceholder": "Cari berdasarkan nama atau slug...",
+        "loading": "Memuat...",
+        "noResults": "Tidak ada hasil.",
+        "alreadyAdded": "Sudah ditambahkan",
+        "selectedCount": "{count} dipilih",
+        "selectPrompt": "Pilih item",
+        "addCount": "Tambah ({count})"
+      },
+      "markdownPane": {
+        "title": "Penyuntingan MD lengkap",
+        "subtitle": "Markdown lengkap termasuk frontmatter YAML",
+        "note": "Konten di bawah <code>---bio---</code> digunakan untuk rekomendasi PM Claude. Klik Simpan untuk menerapkan."
+      }
+    },
+    "registry": {
+      "types": {
+        "agents": "Agent",
+        "skills": "Skills",
+        "hooks": "Hooks",
+        "mcps": "MCP Server"
+      },
+      "loading": "Memuat...",
+      "empty": "Tidak ada item.",
+      "addType": "Tambah {type}",
+      "editTitle": "Ubah {type}",
+      "addTitle": "Tambah {type}",
+      "col": {
+        "name": "Nama",
+        "category": "Kategori",
+        "version": "Versi",
+        "public": "Publik",
+        "actions": "Tindakan"
+      },
+      "bodyMdEmpty": "(kosong)",
+      "bodyMdPreviewAria": "Pratinjau body_md",
+      "editAria": "Ubah {name}",
+      "deleteAria": "Hapus {name}",
+      "deleteConfirm": "Hapus item \"{name}\"?",
+      "fields": {
+        "version": "Versi",
+        "category": "Kategori",
+        "name": "Nama",
+        "namePlaceholder": "mis. Claude Code Agent",
+        "description": "Deskripsi",
+        "descriptionPlaceholder": "Deskripsi satu baris",
+        "bodyMdHint": "(Deskripsi terperinci dalam Markdown)",
+        "bodyMdPlaceholder": "# Tulis dalam format markdown\n## Fitur\n- Fitur 1\n- Fitur 2",
+        "nameEn": "Nama (Inggris)",
+        "descriptionEn": "Deskripsi (Inggris)",
+        "bodyMdEn": "body_md (Inggris)",
+        "isPublic": "Publik (ditampilkan ke pengguna biasa)",
+        "metadataTitle": "Metadata (digunakan oleh algoritma rekomendasi)",
+        "tags": "Tag",
+        "tagsPlaceholder": "mis. project-management, automation",
+        "domains": "Domain",
+        "domainsPlaceholder": "mis. fintech, ecommerce, healthcare",
+        "compatibleSpecialties": "Keahlian PM yang kompatibel",
+        "compatibleSpecialtiesPlaceholder": "mis. fullstack, backend, frontend",
+        "slugPlaceholder": "mis. claude-code",
+        "categoryPlaceholder": "mis. ai, automation"
+      }
+    },
+    "prototypeCatalog": {
+      "tabs": {
+        "basic": "Info dasar",
+        "tech": "Komposisi teknologi",
+        "proscons": "Kelebihan & kekurangan",
+        "agent": "Konteks Agent"
+      },
+      "drawer": {
+        "editTitle": "Ubah entri katalog",
+        "newTitle": "Entri katalog baru"
+      },
+      "fields": {
+        "slug": "Slug *",
+        "slugHint": "Hanya huruf kecil, angka, dan tanda hubung (mis. saas-fullstack-standard)",
+        "title": "Judul *",
+        "description": "Deskripsi",
+        "tags": "Tag",
+        "tagsHint": "Dipisahkan koma (mis. saas, fullstack, multi-tenant)",
+        "primaryTag": "Tag utama (primary_tag)",
+        "primaryTagHint": "mis. saas, rest-api, mvp",
+        "designPatternHint": "mis. saas-fullstack",
+        "architecturePatternHint": "mis. monolithic 3-tier",
+        "priority": "Prioritas (lebih tinggi tampil dulu)",
+        "active": "Aktif",
+        "activate": "Aktifkan",
+        "techStackTags": "Tag tech stack",
+        "techStackTagsHint": "Dipisahkan koma (mis. Next.js, FastAPI, PostgreSQL)",
+        "pros": "Kelebihan (satu per baris)",
+        "prosPlaceholder": "mis.\nMudah diskalakan dengan desain API-first\nDukungan multi-tenant",
+        "cons": "Kekurangan (satu per baris)",
+        "consPlaceholder": "mis.\nPenyiapan awal yang rumit\nKurva belajar yang curam",
+        "designPhilosophy": "Filosofi desain",
+        "implementationConstraints": "Batasan implementasi (satu per baris)",
+        "recommendedAgents": "Agent yang direkomendasikan",
+        "recommendedAgentsHint": "Dipisahkan koma (mis. backend, fullstack, frontend)",
+        "optionalAgents": "Agent opsional",
+        "excludedAgents": "Agent yang dikecualikan (tidak diperlukan untuk proyek ini)",
+        "recommendedSkills": "Skills yang direkomendasikan",
+        "recommendedSkillsHint": "Dipisahkan koma (mis. tdd, ralph-loop)",
+        "agentStrategy": "Strategi Agent",
+        "taskDistributionGuide": "Panduan distribusi tugas"
+      },
+      "table": {
+        "includeInactive": "Sertakan yang nonaktif",
+        "newEntry": "Entri baru",
+        "loading": "Memuat...",
+        "loadFail": "Gagal memuat: {message}",
+        "colTitle": "Judul",
+        "colPrimaryTag": "Tag utama",
+        "colTechStack": "Tech stack",
+        "colPriority": "Prioritas",
+        "colStatus": "Status",
+        "colActions": "Tindakan",
+        "empty": "Tidak ada entri katalog"
+      },
+      "tags": {
+        "editTitle": "Ubah tag",
+        "newTitle": "Tag baru",
+        "newEntry": "Tag baru",
+        "loading": "Memuat...",
+        "labelEn": "Label (Inggris) *",
+        "labelKo": "Label (Korea)",
+        "description": "Deskripsi",
+        "colorCode": "Kode warna (mis. #3B82F6)",
+        "sortOrder": "Urutan",
+        "colLabel": "Label",
+        "colKorean": "Korea",
+        "colColor": "Warna",
+        "colOrder": "Urutan",
+        "colStatus": "Status",
+        "colActions": "Tindakan",
+        "empty": "Tidak ada tag"
+      },
+      "page": {
+        "title": "Katalog Prototipe",
+        "subtitle": "Kelola entri katalog yang dirujuk saat saran AI Wizard dan pembuatan ZIP"
+      },
+      "tagsPage": {
+        "title": "Tag Prototipe",
+        "subtitle": "Kelola tag yang digunakan untuk klasifikasi katalog (tambahkan bebas tanpa enum tetap)"
+      }
+    },
+    "roi": {
+      "addItem": "Tambah item",
+      "editTitle": "Ubah item",
+      "empty": "Tidak ada item.",
+      "colKey": "Key",
+      "colLabel": "Label",
+      "colValue": "Nilai",
+      "colStatus": "Status",
+      "keyLabel": "Key (key)",
+      "keyPlaceholder": "mis. pm, saas, high",
+      "labelLabel": "Label",
+      "labelPlaceholder": "mis. Project Manager",
+      "valueWithUnit": "Nilai ({unit})",
+      "valuePlaceholder": "mis. 900000",
+      "effortByRole": "Effort per peran (hari)",
+      "currencyValue": "{value} KRW",
+      "daysValue": "{key}:{value}h"
+    },
+    "markdownEditor": {
+      "edit": "Ubah",
+      "preview": "Pratinjau",
+      "emptyPreview": "*Ketik konten untuk melihat pratinjau di sini.*"
+    },
+    "appSettings": {
+      "loading": "Memuat...",
+      "variantCountTitle": "Jumlah saran prototipe",
+      "variantCountDesc": "Jumlah varian prototipe yang disarankan kepada pengguna di Wizard (2–5, default: 3)",
+      "ragTopKTitle": "Claude RAG top-k",
+      "ragTopKDesc": "Jumlah entri katalog yang dirujuk saat AI membuat prototipe (1–20, default: 8)",
+      "currentDbValue": "Nilai DB saat ini: {value}"
+    },
+    "contracts": {
+      "title": "Manajemen Kontrak",
+      "subtitle": "Kelola kontrak terpusat dan terapkan ke proyek",
+      "newContract": "Kontrak Baru",
+      "createFirst": "Buat kontrak pertama",
+      "emptyState": "Tidak ada kontrak terdaftar",
+      "loadError": "Gagal memuat daftar kontrak.",
+      "types": {
+        "settings": "Pengaturan",
+        "skill": "Skill",
+        "agent": "Agent",
+        "pipeline": "Pipeline"
+      },
+      "lockState": {
+        "locked": "Terkunci",
+        "editable": "Dapat diubah"
+      },
+      "filter": {
+        "allTypes": "Semua tipe"
+      },
+      "headers": {
+        "slug": "Slug",
+        "type": "Tipe",
+        "version": "Versi",
+        "lock": "Kunci",
+        "source": "Sumber",
+        "updatedAt": "Diperbarui"
+      },
+      "create": {
+        "title": "Buat Kontrak Baru",
+        "creating": "Membuat..."
+      },
+      "form": {
+        "slugLabel": "Slug *",
+        "slugPlaceholder": "mis. default-settings",
+        "slugRequired": "Silakan masukkan slug",
+        "invalidJson": "Konten bukan JSON yang valid",
+        "typeLabel": "Tipe",
+        "sourceLabel": "Sumber",
+        "versionLabel": "Versi",
+        "lockedLabel": "Terkunci",
+        "descriptionLabel": "Deskripsi",
+        "descriptionPlaceholder": "Deskripsi kontrak",
+        "overridesLabel": "Field override yang diizinkan (dipisahkan koma)",
+        "overridesPlaceholder": "mis. timeout, retry_count",
+        "contentLabel": "Konten (JSON)"
+      },
+      "detail": {
+        "loading": "Memuat...",
+        "loadError": "Gagal memuat kontrak",
+        "deleteConfirm": "Hapus kontrak ini?",
+        "backToList": "Daftar kontrak",
+        "edit": "Ubah",
+        "viewMode": "Mode lihat",
+        "saving": "Menyimpan..."
+      }
+    },
+    "audit": {
+      "title": "Log Audit",
+      "subtitle": "Tinjau riwayat perubahan peran dan izin",
+      "loadError": "Gagal memuat log audit.",
+      "emptyState": "Tidak ada log audit",
+      "filter": {
+        "allActions": "Semua tindakan"
+      },
+      "actions": {
+        "assign_system_role": "Perubahan peran",
+        "add_org_member": "Anggota ditambahkan",
+        "remove_org_member": "Anggota dihapus"
+      },
+      "headers": {
+        "time": "Waktu",
+        "action": "Tindakan",
+        "actor": "Pelaku",
+        "target": "Target",
+        "change": "Perubahan",
+        "resource": "Sumber daya"
+      }
+    },
+    "users": {
+      "title": "Manajemen Pengguna",
+      "subtitle": "Kelola seluruh daftar pengguna dan peran mereka",
+      "loadError": "Gagal memuat daftar pengguna.",
+      "emptyState": "Tidak ada pengguna terdaftar",
+      "totalUsers": "{count} pengguna",
+      "roles": {
+        "superadmin": "Super Admin",
+        "admin": "Admin",
+        "member": "Anggota",
+        "viewer": "Viewer"
+      },
+      "status": {
+        "active": "Aktif",
+        "inactive": "Nonaktif"
+      },
+      "headers": {
+        "user": "Pengguna",
+        "role": "Peran",
+        "status": "Status",
+        "joinedAt": "Bergabung",
+        "changeRole": "Ubah peran"
+      }
+    },
+    "controlTower": {
+      "title": "Control Tower",
+      "subtitle": "Kelola status proyek per pelanggan",
+      "refresh": "Segarkan",
+      "searchPlaceholder": "Cari pelanggan...",
+      "totalCustomers": "{count} pelanggan",
+      "emptyState": "Tidak ada pelanggan",
+      "notFound": "Pelanggan tidak ditemukan",
+      "employeeCount": "{size} karyawan",
+      "mainProduct": "Produk utama: {product}",
+      "managerPm": "PM penanggung jawab: {name}",
+      "filter": {
+        "allStatuses": "Semua status"
+      },
+      "status": {
+        "active": "Aktif",
+        "paused": "Dijeda",
+        "archived": "Diarsipkan"
+      },
+      "actions": {
+        "pause": "Jeda",
+        "resume": "Lanjutkan",
+        "archive": "Arsipkan"
+      },
+      "card": {
+        "projectCount": "{count} proyek",
+        "activeSessionCount": "{count} berlangsung",
+        "manager": "Penanggung jawab: {name}"
+      },
+      "features": {
+        "title": "Pengaturan Fitur",
+        "livePreview": "Live Preview",
+        "livePreviewDesc": "Apakah fitur analisis solusi Wizard diaktifkan (menimbulkan biaya Claude API)",
+        "livePreviewEnable": "Aktifkan live preview",
+        "livePreviewDisable": "Nonaktifkan live preview"
+      },
+      "projects": {
+        "heading": "Proyek ({total})",
+        "emptyState": "Tidak ada proyek terdaftar",
+        "sessionCount": "{count} sesi",
+        "owner": "Pemilik: {name}"
+      }
+    },
+    "recommendations": {
+      "title": "Log Rekomendasi PM",
+      "subtitle": "Pantau kualitas rekomendasi Claude/Rule",
+      "refresh": "Segarkan",
+      "loading": "Memuat...",
+      "emptyState": "Tidak ada log rekomendasi.",
+      "notSelected": "Tidak dipilih",
+      "score": "{score} poin",
+      "summary": {
+        "total": "Total rekomendasi",
+        "claudeBased": "Berbasis Claude",
+        "avgLatency": "Latensi rata-rata"
+      },
+      "filter": {
+        "all": "Semua",
+        "claudeOnly": "Hanya Claude",
+        "fallbackOnly": "Hanya fallback"
+      },
+      "headers": {
+        "sessionId": "Session ID",
+        "createdAt": "Dibuat",
+        "method": "Metode",
+        "latency": "Latensi",
+        "topPm": "PM teratas",
+        "selectedPm": "PM yang dipilih"
+      },
+      "expanded": {
+        "inputSnapshot": "Snapshot input",
+        "finalRanking": "Peringkat akhir",
+        "finalScore": "Akhir: {score} poin"
+      }
+    },
+    "roiStandards": {
+      "title": "Standar Tarif / Effort ROI",
+      "subtitle": "Kelola parameter standar yang digunakan dalam perhitungan perbandingan ROI Wizard. Perubahan langsung berlaku untuk sesi baru.",
+      "tabs": {
+        "role_rate": {
+          "label": "Tarif Peran",
+          "desc": "Tarif harian per peran (KRW/hari)"
+        },
+        "solution_effort": {
+          "label": "Effort Solusi",
+          "desc": "Hari kerja dasar per peran berdasarkan tipe solusi"
+        },
+        "complexity_multiplier": {
+          "label": "Pengali Kompleksitas",
+          "desc": "Pengali effort berdasarkan kompleksitas"
+        }
+      }
+    },
+    "adminSettings": {
+      "title": "Pengaturan Global",
+      "subtitle": "Kelola pengaturan global yang memengaruhi perilaku Wizard"
+    },
+    "registryAgents": {
+      "title": "Registry Agent",
+      "subtitle": "Kelola entri katalog Agent"
+    },
+    "registryHooks": {
+      "title": "Registry Hook",
+      "subtitle": "Kelola entri katalog hook"
+    },
+    "registryMcps": {
+      "title": "Registry MCP",
+      "subtitle": "Kelola entri katalog MCP server"
+    },
+    "registrySkills": {
+      "title": "Registry Skill",
+      "subtitle": "Kelola entri katalog skill"
+    }
+  },
+  "aiTeam": {
+    "roles": {
+      "architect": "Architect",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "qa": "QA",
+      "security": "Security",
+      "devops": "DevOps",
+      "reviewer": "Reviewer"
+    },
+    "status": {
+      "requested": "Diminta",
+      "decomposed": "Diuraikan",
+      "assigned": "Ditugaskan",
+      "drafting": "Membuat draf",
+      "reviewing": "Meninjau",
+      "integrating": "Mengintegrasikan",
+      "validating": "Memvalidasi",
+      "approved": "Disetujui",
+      "transitioning": "Bertransisi",
+      "completed": "Selesai"
+    },
+    "subtaskStatus": {
+      "pending": "Tertunda",
+      "in_progress": "Berlangsung",
+      "completed": "Selesai",
+      "failed": "Gagal",
+      "blocked": "Terblokir"
+    },
+    "reviewStatus": {
+      "draft_submitted": "Draf dikirim",
+      "review_in_progress": "Tinjauan berlangsung",
+      "review_completed": "Tinjauan selesai",
+      "merged": "Digabungkan",
+      "rejected": "Ditolak"
+    },
+    "pipeline": {
+      "title": "Pipeline 10 langkah"
+    },
+    "session": {
+      "title": "Permintaan tugas baru",
+      "titleLabel": "Judul tugas *",
+      "titlePlaceholder": "Jelaskan fitur yang akan dibangun...",
+      "descLabel": "Deskripsi",
+      "descPlaceholder": "Latar belakang, persyaratan, batasan, dll...",
+      "createAndDecompose": "Buat & uraikan",
+      "createFail": "Gagal membuat sesi",
+      "assignFail": "Gagal menugaskan",
+      "decomposing": "Menganalisis persyaratan dan membuat subtugas...",
+      "decomposingHint": "AI sedang menganalisis persyaratan dan membuat subtugas",
+      "reviewTitle": "Tinjau subtugas",
+      "reviewSubtitle": "{count} tugas telah dibuat. Mengonfirmasi penugasan secara otomatis mendaftarkan issue Linear.",
+      "analysisResult": "Hasil analisis persyaratan",
+      "keyFeatures": "Fitur utama:",
+      "moreCount": "dan {count} lainnya",
+      "confirmAssign": "Konfirmasi penugasan",
+      "assigning": "Menugaskan AI team...",
+      "startingPipeline": "Memulai pipeline...",
+      "startingPipelineHint": "Berlanjut otomatis setelah draf dibuat",
+      "pushing": "Mendaftarkan issue di Linear...",
+      "pushingHint": "Mengubah subtugas menjadi issue Linear",
+      "linearPushFail": "Gagal membuat issue Linear",
+      "doneTitle": "Tugas telah dibuat!",
+      "doneSubtitle": "{count} subtugas telah ditugaskan",
+      "linearPushDone": "Issue Linear terdaftar ({count})",
+      "linearWaitBadge": "Tunggu (menunggu tinjauan)",
+      "linearPushFailTitle": "Gagal mendaftarkan issue Linear",
+      "linearNoCredential": "Linear API key belum dikonfigurasi. <link>Hubungkan di Pengaturan → Linear →</link>",
+      "goToDashboard": "Buka dasbor"
+    },
+    "review": {
+      "round": "Putaran #{number}",
+      "draftLabel": "Draf ({role})",
+      "reviewLabel": "Tinjauan ({role})",
+      "diffLoading": "Memuat diff...",
+      "diffSummary": "Ringkasan perubahan",
+      "mergedLabel": "Hasil merge ({strategy})",
+      "acceptDraft": "Terima draf",
+      "acceptReview": "Terima tinjauan",
+      "reject": "Tolak",
+      "rejectReasonPlaceholder": "Masukkan alasan penolakan...",
+      "rejectReasonLabel": "Alasan penolakan",
+      "confirm": "Konfirmasi"
+    },
+    "subtask": {
+      "nextRecommended": "Direkomendasikan berikutnya",
+      "viewDetail": "Lihat detail",
+      "depUnapprovedList": "Belum disetujui: {list}",
+      "depUnresolvedCount": "{count} prasyarat belum disetujui",
+      "depAllApproved": "Semua {count} prasyarat disetujui",
+      "linearRegistering": "Disetujui — mendaftarkan di Linear",
+      "linearUnregistered": "Belum di Linear (sedang ditinjau)",
+      "approve": "Setujui",
+      "queueRegister": "Tambah ke antrean",
+      "resetToWait": "Kembali ke tunggu",
+      "dependencies": "Tugas prasyarat",
+      "depApproved": "Disetujui",
+      "depUnapproved": "Belum disetujui",
+      "noDescription": "Tidak ada deskripsi terperinci."
+    },
+    "page": {
+      "title": "Operasi AI Team",
+      "subtitle": "Dasbor orkestrasi tiga lapis",
+      "backToProjectAria": "Kembali ke proyek",
+      "refresh": "Segarkan",
+      "newTask": "Permintaan tugas baru",
+      "userApprovalMessage": "Persetujuan pengguna",
+      "bootstrapPending": "Menunggu penyiapan — setelah mengekstrak ZIP yang diunduh, jalankan <code>bash start.sh</code> untuk mendaftarkan persyaratan secara otomatis.",
+      "bootstrapRunning": "Menganalisis persyaratan dan mendaftarkan issue Linear…",
+      "bootstrapPendingReview": "Tinjau subtugas yang telah diuraikan dan <strong>setujui</strong> setiap kartu. Setelah disetujui, issue <strong>didaftarkan ke Linear secara otomatis</strong>.",
+      "bootstrapFailed": "Terjadi kesalahan saat pendaftaran otomatis. Untuk mencoba lagi, jalankan <code>bash scripts/bootstrap_clickeye.sh</code> di terminal lokal Anda.",
+      "deleteSessionAria": "Hapus {title}",
+      "noSessions": "Belum ada tugas yang dibuat",
+      "firstTask": "Minta tugas pertama Anda",
+      "layerHumanAria": "Lapis manusia",
+      "layerHuman": "Manusia",
+      "currentPhase": "Fase saat ini",
+      "generateDrafts": "Buat draf AI",
+      "bootstrapReviewHint": "Menyetujui setiap kartu mendaftarkannya ke Linear secara otomatis",
+      "autoProgressing": "Berlanjut otomatis…",
+      "resumeTitle": "Lanjutkan jika pipeline terhenti",
+      "resume": "Lanjutkan",
+      "approve": "Setujui",
+      "layerPmAria": "Lapis PM AI",
+      "promptTemplate": "Template prompt",
+      "detectedRisks": "Risiko terdeteksi",
+      "reviewRounds": "Putaran tinjauan",
+      "aiDrafts": "Draf AI",
+      "localPipelineTitle": "Kode ditulis oleh pipeline lokal",
+      "localPipelineDesc": "Selesaikan tinjauan dengan mengeklik tombol <strong>Antrean</strong> pada setiap kartu tugas. Ketika issue Linear berpindah ke <strong>Todo</strong>, pipeline lokal Anda secara otomatis menginstruksikan Claude untuk menulis kode.",
+      "localPipelineNote": "Jika pipeline tidak berjalan, mulai dulu dengan <code>bash start.sh</code> dari ZIP. Untuk operasi yang stabil, kami sarankan mendaftarkan service systemd dengan <code>bash scripts/install-service.sh</code>.",
+      "linearSync": "Sinkronisasi Linear",
+      "originalRequirement": "Persyaratan asli",
+      "linearIssuesCreated": "✓ Issue Linear dibuat: {ids}",
+      "linearCredMissing": "Kredensial Linear tidak ditemukan.",
+      "linearCredSaveLink": "Simpan API key Anda di pengaturan →",
+      "linearSyncHint": "Menjalankan perintah sync dari skill linear di Claude Code lokal membuat issue di atas secara otomatis.",
+      "layerAiTeamAria": "Lapis AI Team",
+      "taskCount": "{count} tugas",
+      "approvedCount": "{approved} / {total} disetujui",
+      "linearSync10s": "Sinkronisasi Linear setiap 10 detik",
+      "linearSync30s": "Sinkronisasi Linear setiap 30 detik",
+      "noSubtasks": "Belum ada subtugas",
+      "deleteTaskTitle": "Hapus permintaan tugas",
+      "deleteTaskConfirm": "Apakah Anda yakin ingin menghapus <name>“{title}”</name>?",
+      "deleteTaskDataNote": "Semua data subtugas dan tinjauan akan dihapus.",
+      "deleteTaskLinearNote": "⚠ Issue yang terdaftar di Linear tidak akan dihapus. Silakan batalkan atau hapus langsung di Linear."
+    }
+  },
+  "dashboard": {
+    "aiTeam": {
+      "title": "Log aktivitas tim AI",
+      "emptyState": "Belum ada aktivitas",
+      "roles": {
+        "architect": "Architect",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "qa": "QA",
+        "security": "Keamanan",
+        "devops": "DevOps",
+        "reviewer": "Peninjau",
+        "agent": "Agent"
+      },
+      "status": {
+        "pending": "Tertunda",
+        "in_progress": "Sedang berjalan",
+        "completed": "Selesai",
+        "failed": "Gagal",
+        "blocked": "Terhambat"
+      },
+      "relative": {
+        "justNow": "Baru saja",
+        "minutesAgo": "{count} mnt lalu",
+        "hoursAgo": "{count} jam lalu",
+        "daysAgo": "{count} hr lalu"
+      }
+    },
+    "artifactStatus": {
+      "title": "Artefak menurut status",
+      "emptyState": "Belum ada artefak",
+      "totalCount": "Total {count} artefak",
+      "labels": {
+        "draft": "Draf",
+        "reviewed": "Ditinjau",
+        "revised": "Direvisi",
+        "approved": "Disetujui",
+        "in_development": "Dalam pengembangan",
+        "validated": "Tervalidasi",
+        "released": "Dirilis"
+      }
+    },
+    "automation": {
+      "title": "Rasio kerja AI vs manusia",
+      "subtitle": "Rasio tugas otomatis terhadap tugas manual",
+      "automatedShort": "Otomatis",
+      "aiAutomated": "Diotomatiskan AI",
+      "manualWork": "Kerja manual"
+    },
+    "kpi": {
+      "automationRate": "Tingkat otomasi",
+      "automationRateSub": "Porsi subtugas yang selesai",
+      "reviewAcceptance": "Tingkat penerimaan tinjauan",
+      "reviewAcceptanceSub": "Artefak yang lolos tanpa revisi",
+      "artifacts": "Artefak",
+      "releaseRate": "Tingkat rilis {rate}%"
+    },
+    "phaseVelocity": {
+      "title": "Durasi rata-rata per fase",
+      "subtitle": "Waktu pemrosesan rata-rata untuk setiap fase pipeline",
+      "emptyState": "Belum ada data fase",
+      "sampleCount": "Total {count} sampel",
+      "duration": {
+        "seconds": "{value}d",
+        "minutes": "{value}mnt",
+        "hours": "{value}j"
+      },
+      "phases": {
+        "requested": "Diminta",
+        "decomposed": "Diuraikan",
+        "assigned": "Ditugaskan",
+        "drafting": "Pembuatan draf",
+        "reviewing": "Peninjauan",
+        "revising": "Revisi",
+        "approved": "Disetujui",
+        "in_development": "Pengembangan",
+        "validated": "Tervalidasi",
+        "released": "Dirilis"
+      }
+    },
+    "timeline": {
+      "title": "Linimasa proyek",
+      "emptyState": "Belum ada riwayat fase",
+      "duration": {
+        "seconds": "{value}d",
+        "minutes": "{value}mnt",
+        "hours": "{hours}j",
+        "hoursMinutes": "{hours}j {minutes}mnt"
+      },
+      "phases": {
+        "requested": "Diminta",
+        "decomposed": "Diuraikan",
+        "assigned": "Ditugaskan",
+        "drafting": "Pembuatan draf",
+        "reviewing": "Peninjauan",
+        "integrating": "Integrasi",
+        "validating": "Validasi",
+        "approved": "Disetujui",
+        "transitioning": "Transisi",
+        "completed": "Selesai"
+      }
+    },
+    "quality": {
+      "title": "Metrik kualitas",
+      "artifacts": "Artefak",
+      "releaseRate": "Tingkat rilis {rate}%",
+      "avgReviewScore": "Skor tinjauan rata-rata",
+      "scoreValue": "{score} poin",
+      "reviewRounds": "{count} tinjauan",
+      "avgRevisionCount": "Revisi rata-rata",
+      "revisionValue": "{count} kali",
+      "reviewCompletionRate": "Tingkat penyelesaian tinjauan",
+      "sessions": "Sesi",
+      "sessionsValue": "{count}",
+      "subtasks": "Subtugas",
+      "subtasksValue": "{count}"
+    },
+    "valueComparison": {
+      "title": "Perbandingan penghematan waktu",
+      "subtitle": "Waktu otomasi ClickEye vs. pengembangan manual tradisional",
+      "manual": "Manual",
+      "automated": "Otomasi ClickEye",
+      "savings": "{percent}% waktu hemat",
+      "duration": {
+        "seconds": "{value}d",
+        "minutes": "{value}mnt",
+        "hours": "{value}j"
+      }
+    },
+    "weeklyThroughput": {
+      "title": "Throughput mingguan",
+      "subtitle": "Tugas yang selesai per minggu",
+      "totalCount": "Total {count}",
+      "emptyState": "Belum ada data mingguan"
+    }
+  },
+  "contracts": {
+    "audit": {
+      "title": "Log audit Kontrak",
+      "filterAll": "Semua",
+      "loadError": "Gagal memuat log audit.",
+      "emptyState": "Tidak ada log audit",
+      "colTime": "Waktu",
+      "colType": "Tipe",
+      "colActor": "Aktor",
+      "colContractId": "ID Kontrak",
+      "colChanges": "Perubahan",
+      "prevPageAria": "Halaman sebelumnya",
+      "nextPageAria": "Halaman berikutnya",
+      "pageLabel": "Halaman {page}",
+      "changeType": {
+        "create": "Buat",
+        "update": "Perbarui",
+        "delete": "Hapus",
+        "apply": "Terapkan",
+        "override": "Override",
+        "sync": "Sinkronkan"
+      }
+    },
+    "viewer": {
+      "slug": "Slug",
+      "type": "Tipe",
+      "version": "Versi",
+      "lock": "Kunci",
+      "locked": "Terkunci",
+      "editable": "Dapat diedit",
+      "description": "Deskripsi",
+      "source": "Sumber:",
+      "createdAt": "Dibuat: {date}",
+      "updatedAt": "Diperbarui: {date}",
+      "allowedOverrides": "Field override yang diizinkan",
+      "content": "Konten (JSON)",
+      "types": {
+        "settings": "Pengaturan",
+        "skill": "Skill",
+        "agent": "Agent",
+        "pipeline": "Pipeline"
+      }
+    },
+    "override": {
+      "invalidFields": "Field tidak diizinkan: {invalid}. Field yang diizinkan: {allowed}",
+      "invalidJson": "Bukan format JSON yang valid",
+      "lockedNotice": "Kontrak ini terkunci. Field yang dapat di-override:"
+    }
+  },
+  "credentials": {
+    "card": {
+      "daysUntilExpiry": "{days} hari hingga kedaluwarsa",
+      "saveSuccess": "{title} tersimpan.",
+      "saveFail": "Gagal menyimpan.",
+      "deleteSuccess": "{title} dihapus.",
+      "deleteFail": "Gagal menghapus.",
+      "savedTitle": "{title} tersimpan",
+      "savedLabel": "Tersimpan",
+      "lastUpdated": "Terakhir diperbarui",
+      "replaceTitle": "Ganti {title}",
+      "registerTitle": "Daftarkan {title}",
+      "replacePlaceholder": "Saat ini: {masked} — masukkan nilai baru untuk mengganti",
+      "replaceBtn": "Ganti",
+      "saveBtn": "Simpan"
+    },
+    "guide": {
+      "copy": "Salin",
+      "envDownloadFail": "Gagal mengunduh .env",
+      "downloadEnv": "Unduh .env",
+      "redownloadZip": "Unduh ulang ZIP",
+      "title": "API key {channel} Anda telah berubah",
+      "subtitle": "Perbarui file .env lokal Anda agar key baru berlaku",
+      "affectedProjects": "Proyek yang perlu pembaruan .env ({count})",
+      "localApplyTitle": "Cara menerapkan secara lokal",
+      "confirm": "OK",
+      "steps": {
+        "step1Label": "1. Unduh .env atau unduh ulang ZIP lengkap",
+        "step1Detail": "Klik tombol per proyek di bawah ini.",
+        "step2Label": "2. Timpa root proyek dengan file .env yang diunduh",
+        "step3Label": "3. Jalankan skrip refresh",
+        "step4Label": "4. (Opsional) Mulai ulang sesi Claude Code yang sedang terbuka",
+        "step4Detail": "Ctrl+C → claude (dari root proyek)"
+      }
+    }
+  },
+  "presets": {
+    "card": {
+      "ariaSelected": "Preset {name} dipilih",
+      "ariaSelect": "Pilih preset {name}",
+      "recommended": "Direkomendasikan",
+      "agentsCount": "{count} Agent",
+      "skillsCount": "{count} skill",
+      "pipelinesCount": "{count} pipeline",
+      "selected": "Dipilih",
+      "startWithPreset": "Mulai dengan preset ini"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# 빌드 컨텍스트에서 제외 (이미지 내부에서 새로 생성/설치)
+node_modules
+.next
+dist
+.git
+.idea
+.ruff_cache
+.agents
+.codex
+*.tsbuildinfo
+npm-debug.log*
+
+# 시크릿/로컬 환경 (이미지에 절대 포함 금지)
+.env
+.env.local
+.env.prod
